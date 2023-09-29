@@ -86,6 +86,7 @@ button {
   padding: 0.45rem;
   outline: 2px solid white;
   box-shadow: 0rem 0rem 0.45rem black;
+  font-size:0.95rem
   font-weight: 500;
   background-color: rgb(187, 0, 0);
 }
@@ -97,7 +98,7 @@ button {
   background-color: rgb(72, 170, 255, 0.85);
   color: white;
   padding: 0.4rem;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   box-shadow: 0rem 0rem 0.45rem rgb(40, 154, 255);
   text-shadow: 0rem 0rem 0.2rem rgb(0, 0, 0, 0.15);
   font-weight: 450;
