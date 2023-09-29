@@ -57,8 +57,7 @@ h2 {
 button,input {
   font-size: 1rem;
   border-radius: 0 0.4rem 0 0.4rem;
-  transition: all 200ms ease-in-out;
-  border: 2px solid white;
+  transition: all 200ms ease-in-out;
   outline: none;
 }
 input:active,input:hover{
