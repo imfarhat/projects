@@ -4,7 +4,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
-  background-image: linear-gradient(rgb(72, 170, 255, 0.75), aliceblue, white, white, white, white, white, white);
+  background-image: linear-gradient(rgb(72, 170, 255, 0.75), aliceblue, white, white, white, white, white);
   min-height: 100vh;
   background-size:cover;
   background-repeat: no-repeat;
