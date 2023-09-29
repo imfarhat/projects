@@ -67,10 +67,6 @@ input:active,input:hover{
 .js-error-message,.js-error-date, .error-message {
   color: red;
   margin-bottom: 0.25rem;
-  border-radius: 0 0.4rem 0 0.4rem;
-  padding: 0.35rem;
-  background-color: white;
-  border: 1.5px solid grey;
 }
 .js-success-message {
   color: green;
