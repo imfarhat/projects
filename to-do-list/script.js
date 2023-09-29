@@ -23,7 +23,9 @@ function renderTodoList() {
   const html = `
     <div>${name}</div>
     <div>${dueDate}</div>
-    <button class= "delete-todo-btn" onkeydown="handleKeydown(event);"
+    <button class= "delete-todo-btn" 
+    title="Click to remove correspoing task from the list"
+    onkeydown="handleKeydown(event);"
     onclick="
       todoList.splice(${i}, 1);
       updateLocalStorage();
