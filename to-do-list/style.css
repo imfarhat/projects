@@ -4,7 +4,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
-  background:linear-gradient(rgb(71, 169, 255),aliceblue,white);
+  background:linear-gradient(rgb(71, 169, 255),aliceblue);
   background-size:contain;
   background-repeat: no-repeat;
 }
