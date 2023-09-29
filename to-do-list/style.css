@@ -42,7 +42,7 @@ h2 {
   padding: 0.4rem 0.35rem ;
   cursor: pointer;
   /*border: 2px solid rgb(0, 150, 0);*/
-  border: 2px solid white;
+  border: 2px solid green;
   margin-right: 0.5rem;
 }
 .delete-todo-btn {
