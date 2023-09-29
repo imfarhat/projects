@@ -88,7 +88,7 @@ button {
 .reset-todo-btn {
   position: relative;
   padding: 0.4rem;
-  box-shadow: 0rem 0rem 0.45rem black;
+  box-shadow: 0rem 0rem 0.45rem rgb(187, 0, 0);
   font-size:0.9rem;
   font-weight: 450;
   background-color: rgb(187, 0, 0);
