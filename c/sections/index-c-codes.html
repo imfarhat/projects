@@ -1,0 +1,588 @@
+<!--Code for 1st code to let user copy and not mess us the index.html-->
+<textarea class="text-code-hide" id="codeTextarea1">
+/*Write a program in C print 'Hellow World!'*/
+
+#include<stdio.h>
+int main ()
+{
+  printf ("\nHellow World!");
+  return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea2">
+/*Write a program in C to perfrom addition of two integers*/
+
+#include<stdio.h>
+int main ()
+{
+  int a, b, s;
+  printf ("\nEnter the first integer: ");
+  scanf ("%d", &a);
+  printf ("\nEnter the second integer: ");
+  scanf ("%d", &b);
+  s = a + b;
+  printf ("\nThe result of %d + %d = %d",a,b,s);
+  return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea3">
+/*Write a program in C to check a number is even or odd*/
+
+#include<stdio.h>
+int main ()
+{
+  int n;
+  printf ("\nEnter the number: ");
+  scanf ("%d", &n);
+  if (n%2==0)   
+    printf("\n%d is an even number", n);
+  else
+    printf("\n%d is a odd number", n);
+  return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea4">
+/*Write a program in C to to find out the maximum of three integers*/
+// Using traditional and nested if else without a fourth variable
+//Not preferrable, just for building the logic
+
+#include<stdio.h>
+int main ()
+{
+  int a, b, c;
+  printf ("\nEnter the first number: ");
+  scanf ("%d", &a);
+  printf ("\nEnter the second number: ");
+  scanf ("%d", &b);
+  printf ("\nEnter the third number: ");
+  scanf ("%d", &c);
+  if (a>b)
+  {   
+    if (a>c)   
+      printf("\n%d is the largest number", a);
+    else
+      printf("\n%d is the largest number", c);
+  }
+  else
+  {   
+    if (b>c) 
+      printf("\n%d is the largest number", b);
+    else
+      printf("\n%d is the largest number", c);
+  }
+  return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea5">
+/*Write a program in C to to find out the maximum of three integers*/
+// Using a fourth variable max to store max value - Preffered in exams
+
+#include<stdio.h>
+int main ()
+{
+  int a, b, c, max=0;
+  printf ("\nEnter the three numbers one by one: "); //taking three inputs in one go
+  scanf ("%d %d %d", &a, &b, &c); 
+  if (a>max)
+    max=a; //storing the highest value in max
+  if (b>max) //do not use else if as it will not go in each if condition and never update the max hence end up giving incorrect output 
+    max=b; //storing the highest value in max
+  if (c>max) //do not use else if as it will not go in each if condition and never update the max hence end up giving incorrect output
+    max=c; //storing the highest value in max	
+  printf("\n%d is the largest number", max);
+  return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea6">
+/*Write a program in C to print from 1 to n*/
+// Using a while (condition) loop
+
+#include<stdio.h>
+int main ()
+{
+  int n, i=1;
+  printf ("\nEnter the limit: "); //taking the highest value of series to print; if no incrementing done while condition being true, the loop wil run infinite times
+  scanf ("%d", &n); 
+  while (i <= n)
+  {
+    printf("\n%d", i);
+    i++; //incrementing value of i by 1 each time while loop runs	
+  }	
+  return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea7">
+/*Write a program in C to print Grade of students*/
+// Using switch case for grading & if, else for validations
+//Added validations and average marks in decimal and round off by removing the decimal part then calculates the Grade
+
+#include<stdio.h>
+int main ()
+{
+	int result;
+	float m1, m2, m3, resultFloat;
+	printf ("\nEnter the marks of three subjects: ");
+	scanf ("%f%f%f", &m1, &m2, &m3); 
+	if ((m1>100 || m2>100 ||m3>100) || (m1<0 || m2<0 ||m3<0)) //Added validation to overcome negative and over limit marks and make sure user provides correct inputs
+		printf ("\nEneter valid marks of each subject (out of 100)");
+	else {
+		resultFloat = (float) (m1+m2+m3)/3;
+		printf("\nThe average of marks entered is %f",resultFloat);
+		result = (int) (m1+m2+m3)/3;
+		printf("\nRounding off marks to integer by removing decimal part...\nNew average marks: %d",result);
+		
+		switch (result)
+		{
+			case 91 ... 100:
+				printf ("\nGrade 'O'");
+				break;
+			case 81 ... 90:
+				printf ("\nGrade 'E'");
+				break;
+			case 71 ... 80:
+				printf ("\nGrade 'A'");
+				break;
+			case 61 ... 70:
+				printf ("\nGrade 'B'");
+				break;
+			case 51 ... 60:
+				printf ("\nGrade 'C'");
+				break;
+			case 40 ... 50:
+				printf ("\nGrade 'D'");
+				break;
+			case 0 ... 39:
+				printf ("\nGrade 'F' (Fail)");
+				break;
+			default:
+				printf ("\nAn error occured while caculation (For Developer: Check result/grade conditions and related datatypes)");
+		}
+	}		
+	return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea8">
+/*Write a program in C to print Grade of students*/
+// Using if, else if & else for grading and validations
+//Added validations and average marks in decimal and round off by removing the decimal part then calculates the Grade
+
+#include<stdio.h>
+int main ()
+{
+  int result;
+  float m1, m2, m3, resultFloat;
+  printf ("\nEnter the marks of three subjects: ");
+  scanf ("%f%f%f", &m1, &m2, &m3); 
+  if ((m1>100 || m2>100 ||m3>100) || (m1<0 || m2<0 ||m3<0)) //Added validation to overcome negative and over limit marks and make sure user provides correct inputs
+    printf ("\nEneter valid marks of each subject (out of 100)");
+  else {
+    resultFloat = (float) (m1+m2+m3)/3;
+    printf("\nThe average of marks entered is %f",resultFloat);
+    result = (int) (m1+m2+m3)/3;
+    printf("\nRounding off marks to integer by removing decimal part...\nNew average marks: %d",result);
+    if (result >= 91 && result <=100)
+      printf ("\nGrade 'O'");
+    else if (result >= 81 && result <=90)
+      printf ("\nGrade 'E'");
+    else if (result >= 71 && result <=80)
+      printf ("\nGrade 'A'");
+    else if (result >= 61 && result <=70)
+      printf ("\nGrade 'B'");
+    else if (result >= 51 && result <=60)
+      printf ("\nGrade 'C'");
+    else if (result >= 40 && result <=50)
+      printf ("\nGrade 'D'");
+    else if (result >= 0 && result <40)
+      printf ("\nGrade 'F' (Fail)");
+    else
+      printf ("\nAn error occured while caculation (For Developer: Check result/grade conditions and related datatypes)");	
+    }
+  return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea9">
+/*Write a program in C to check a number is palindrome/madam number or not*/
+// 125!=521 -> not palindrome, 121=121 -> palindrome (interchaning/swapping positions)
+
+#include<stdio.h>
+int main ()
+{
+  int n, m, r, d=0;
+  printf ("\nEnter the number: ");
+  scanf ("%d", &n); 
+  m = n; //duplicating the value of n in m
+  while (n!=0)
+  {
+    //these operations after running while loop condition is true would inter-change(swap) the positions of number, e.g. 125 will be 521.
+    r = n % 10;
+    d = d * 10 + r;
+    n = n / 10;
+  }
+  if (m == d)
+    printf ("\nEntered number: %d & Position interchanged(swapped) number: %d\nAs %d = %d so Enterd number %d is a PALINDROME Number", m, d, m ,d, m);
+  else
+    printf ("\nEntered number: %d & Position interchanged(swapped) number: %d\nAs %d != %d so Entered number %d is NOT a PALINDROME Number", m, d, m ,d, m);
+  return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea10">
+/*Write a program in C to calculate the factorial of a number*/
+
+#include<stdio.h>
+int main ()
+{
+  int n, i, f=1;
+  printf ("\nEnter the number to its calculate factorial: ");
+  scanf ("%d", &n); 
+  for (i=1; i<=n; i++) //incrementing loop by i++ i.e. i=i+1
+  {
+    f = f * i;
+  }
+  printf ("\nFactorial of %d is %d", n, f);
+  return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea11">
+/*Write a program in C to print the sum of folwoing series*/
+//Calculate Sum of Series: 1+2+3+4+5+....n=sum
+
+#include<stdio.h>
+int main ()
+{
+  int n, i, sum=0;
+  printf ("\nEnter the limit of the series to calculate its sum: ");
+  scanf ("%d", &n); 
+  for (i=1; i<=n; i++) //increment done after changing the vlaue in sum and sum changes before checking the condition i<=n
+  {
+    sum = sum +i;
+  }
+  printf ("\nSum of the series: %d", sum);
+  return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea12">
+/*Write a program in C to print the following series and its sum*/
+//Print Series & Sum: '1+2+3+4+5+....n=sum'
+
+#include<stdio.h>
+int main ()
+{
+  int n, i, sum=0;
+  printf ("\nEnter the limit of the series: ");
+  scanf ("%d", &n); 
+  for (i=1; i<=n; i++) //for calculating sum; increment done after changing the vlaue in sum and sum changes before checking the condition i<=n
+  {
+    sum = sum +i;
+  }
+  for (i=1; i<n; i++) // for printing '1+2+3+.......(n-1)+'
+  {
+    printf ("%d + ", i);
+  }
+  printf ("%d = %d", n, sum); // for printing 'n = sum'
+  return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea13">
+/*Write a program in C to print the following series and its sum*/
+//Print Series & Sum: '1+3+5+7+....n=sum'
+//As this is an odd series we need to keep in mind if the limit entered is odd or not;
+//To overcome the above issue we are running the loop till '1+3+5+7+....last second digit of series+' only and adding 'n' later to complete the series and the sum
+
+#include<stdio.h>
+int main ()
+{
+  int n, i, sum=0;
+  printf ("\nEnter the limit of the series: ");
+  scanf ("%d", &n); 
+  for (i=1; i<n; i+=2) //for calculating sum till last second digit of series; increment done after changing the vlaue in sum and sum changes before checking the condition i<n
+  {
+    sum = sum +i; // after running this loop till condition is true sum = '1+3+5+7+.....+last second digit of series'
+  }
+  sum = sum + n; //now sum = '1+3+5+7+.....last second digit of series+n'
+  for (i=1; i<n; i+=2) // for printing '+1+3+5+7+.......last second digit of series+'
+  {
+    printf ("%d + ", i);
+  }
+  printf ("%d = %d", n, sum); // for printing 'n = sum', n is last digit of series
+  return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea14">
+/*Write a program in C to print the following series and its sum*/
+//Print Series & Sum: '1+2+4+7+11+....n=sum'
+//As this is an incrementing interval/increment series we need to keep in mind if the limit entered is in same order followig the incrementing increment/interval
+//To overcome the above issue we are running the loop till '1+3+5+7+....last second digit of series+' only and adding 'n' later to complete the series and the sum
+
+#include<stdio.h>
+int main ()
+{
+  int n, i, k=0, sum=0;
+  printf ("\nEnter the limit of the series: ");
+  scanf ("%d", &n); 
+  for (i=1; i<n; i+=k) //for calculating sum till last second digit of series; increment done after changing the vlaue in sum and sum changes before checking the condition i<n
+  {
+    sum = sum +i; // after running this loop till condition is true sum = '1+2+4+7+11+.....+last second digit of series'
+    k++;
+  }
+  sum = sum + n; //now sum = '1+2+4+7+11+.....+last second digit of series+n'
+  k = 0; //resets value of k to 0 so that it can again be used in upcoming for loop
+  for (i=1; i<n; i+=k) // for printing '+1+3+5+7+.......last second digit of series+'
+  {
+    printf ("%d + ", i);
+    k++;
+  }
+  printf ("%d = %d", n, sum); // for printing 'n = sum', n is last digit of series
+  return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea15">
+/*Write a program in C to print the following pattern:
+1
+2  3
+4  5  6
+7  8  9  10
+*/
+
+#include<stdio.h>
+int main ()
+{
+  int n, i, j, k;
+  printf ("\nEnter the total number of lines: ");
+  scanf ("%d", &n);
+  k = 1;
+  for (i=1; i<=n; i++) //outer for loop i-> maintains line no.
+  {
+    printf ("\n");
+    for (j=1; j<=i; j++) //inner for loop j-. nos. in each line; using nested for loop, never use same variable in nested and main for loop
+    {
+      printf ("%d ",k); //placed 1 bar space after each no.; k starts from 1 and continues the nos. and for loop of i changes lines
+      k++;
+    }
+  }
+  return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea16">
+/*Write a program in C to print the following pattern:
+1
+2  3
+3  4  5 
+4  5  6  7
+5  6  7  8  9
+*/
+
+#include<stdio.h>
+int main ()
+{
+  int n, i, j, k;
+  printf ("\nEnter the total number of lines: ");
+  scanf ("%d", &n);
+  for (i=1; i<=n; i++) //outer for loop i-> maintains line no.
+  {
+    k = i; // starts the line with value = current line number, starting of line (k) = line no (i)
+    printf ("\n");
+    for (j=1; j<=i; j++) //inner for loop j-. nos. in each line; using nested for loop, never use same variable in nested and main for loop
+    {
+      printf ("%d ",k); //placed 1 bar space after each no.; k starts from 1 and continues the nos. and for loop of i changes lines
+      k++;
+    }
+  }
+  return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea17">
+/*Write a program in C to print the following pattern:
+1
+1  2
+1  2  3
+1  2  3  4
+1  2  3  4  5
+*/
+
+#include<stdio.h>
+int main ()
+{
+  int n, i, j;
+  printf ("\nEnter the total number of lines: ");
+  scanf ("%d", &n);
+  for (i=1; i<=n; i++) //outer for loop i-> maintains line no.
+  {
+    printf ("\n");
+    for (j=1; j<=i; j++) //inner for loop j-. nos. in each line; using nested for loop, never use same variable in nested and main for loop
+    {
+      printf ("%d ",j); //'\t' will add a 1 tab = 4 space bar space after each number, we will manulally place 1 bar space
+    }
+  }
+  return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea18">
+/*Write a program in C to print the following pattern:
+1
+1  2
+1  2  3
+1  2  3  4
+1  2  3  4  5
+*/
+
+#include<stdio.h>
+int main ()
+{
+int n, i, j, k;
+printf ("\nEnter the total number of lines: ");
+scanf ("%d", &n);
+for (i=1; i<=n; i++) //outer for loop i-> maintains line no.
+{
+printf ("\n");
+for (j=1; j<=n-i; j++) //inner for loop j-. nos. in each line; using nested for loop, never use same variable in nested and main for loop
+{
+printf ("  "); //placed 2 bar space after each no.; j starts from 1 and continues the nos. till n-i; and for loop of i changes lines
+}
+for (k=1; k<=i; k++)
+printf ("%d ", k);//1 bar space; keep half the space that of printed in outer for loop i, otherwise pattern will not form correctly
+}
+return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea19">
+/*Write a program in C to print the following pattern:
+            1
+         1  2  1
+      1  2  3  2  1
+   1  2  3  4  3  2  1
+1  2  3  4  5  4  3  2  1
+*/
+
+#include<stdio.h>
+int main ()
+{
+	int n, i, j, k, l;
+	printf ("\nEnter the total number of lines: ");
+	scanf ("%d", &n);
+	for (i=1; i<=n; i++) //outer for loop i-> maintains line no.
+	{
+		printf ("\n");
+		for (j=1; j<=n-i; j++) //inner for loop j-. nos. in each line; using nested for loop, never use same variable in nested and main for loop
+		{
+			printf ("  "); //placed 2 bar space after each no.; j starts from 1 and continues the nos. till n-i; and for loop of i changes lines
+		}
+		for (k=1; k<=i; k++)
+		printf ("%d ", k); //1 bar space; keep half the space that of printed in outer for loop i, otherwise pattern will not form correctly
+		/*Till here left side of the pattern will be printed*/
+		for (l=i-1; l>=1;l--) //for printing the right half of the pattern
+		printf ("%d ", l); //1 bar space; keep half the space that of printed in outer for loop i, otherwise pattern will not form correctly
+	}
+	return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea20">
+/*Write a program in C to raise one number to the power of another*/
+
+#include<stdio.h>
+#include<math.h>
+int main ()
+{
+  int b, p ,r;
+  printf ("\nEnter the base value: ");
+  scanf ("%d", &b);
+  printf ("\nEnter the power value: ");
+  scanf ("%d", &p);
+  r = pow (b, p); //must include math.h header file to use this function
+  printf("\nThe result of %d ^ %d = %d", b, p, r);
+  return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea21">
+/*Write a program in C to print the following series and its sum*/
+// Series: 1+2^2+3^3+4^4+5^5+.....n^n=sum
+
+#include<stdio.h>
+#include<math.h>
+int main ()
+{
+  int n, i;
+  unsigned long long int sum = 0; // Use a larger data type than int (%d) and long int (%ld) and unsigned do not store negatives
+  //Range: -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 (signed) or 0 to 18,446,744,073,709,551,615 (unsigned)
+  printf ("\nEnter the limit or last digit (only base) of series: ");
+  scanf ("%d", &n);
+  for (i=1; i<=n; i++)
+  {
+    sum = sum + (unsigned long long int) pow(i, i); //Calculates the sum of series
+  }
+  printf ("\n1");
+  for (i=2; i<=n; i++) //for continuing series after '1 + 2'
+  {
+    printf (" + %d ^ %d", i, i);
+  }
+  printf(" = %llu", sum);
+  return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea22">
+/*Write a program in C to print the following series's sum*/
+// Series: 1+2^2+3^3+4^4+5^5+.....n^n=sum
+
+#include<stdio.h>
+#include<math.h>
+int main ()
+{
+  int n, i;
+  unsigned long long int sum = 0; // Use a larger data type than int (%d) and long int (%ld) and unsigned do not store negatives
+  //Range: -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 (signed) or 0 to 18,446,744,073,709,551,615 (unsigned)
+  printf ("\nEnter the limit or last digit (only base) of series: ");
+  scanf ("%d", &n);
+  for (i=1; i<=n; i++)
+  {
+    sum = sum + (unsigned long long int) pow(i, i);
+  }
+  printf("\nThe sum of the series = %llu", sum);
+  return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea23">
+/*Write a program in C to print the following series and its sum*/
+// Series: 1+2+3^2+4^3+5^4+.....n^n-1=sum
+
+#include<stdio.h>
+#include<math.h>
+int main ()
+{
+  int n, i;
+  unsigned long long int sum = 0; // Use a larger data type than int (%d) and long int (%ld) and unsigned do not store negatives
+  //Range: -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 (signed) or 0 to 18,446,744,073,709,551,615 (unsigned)
+  printf ("\nEnter the limit or last digit (only base) of series: ");
+  scanf ("%d", &n);
+  for (i=1; i<=n; i++)
+  {
+    sum = sum + (unsigned long long int) pow(i, i-1); //Calculates the sum of series
+  }
+  printf ("\n1 + 2");
+  for (i=3; i<=n; i++) //for continuing series after '1 + 2'
+  {
+    printf (" + %d ^ %d", i, i-1);
+  }
+  printf(" = %llu", sum);
+  return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea24">
+/*Write a program in C to check a number is prime or not*/
+//Used tenary conditional operator in c for if else statements
+
+#include<stdio.h>
+int main ()
+{
+  int n, i, q=0; //q is used as a flag
+  printf ("\nEnter the number: ");
+  scanf ("%d", &n);
+  for (i=2; i<n; i++)
+  if (n%i==0) //Since prime no. is not divisble by any other than 1 and itself, so we checking if given no. is divisible by any no. other than 1 & self
+  {
+    q = 1;
+    break; //once if condition is staisfies the brack will act to come out of the loop
+  }
+  q == 0 ? printf ("\n%d is prime number", n) : printf ("\n%d not a is prime number", n);
+  //syntax for tenary conditional operator in c: condition ? if (withou semicolon) : else (put semicolon at last else part)
+  return 0;
+}
+</textarea>
