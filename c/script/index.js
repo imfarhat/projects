@@ -1,9 +1,23 @@
-function updateOutputBtnIcon(outputImgP,outputBtnIconP) {
+/*function updateOutputBtnIcon(outputImgP,outputBtnIconP) {
   let outputImg = document.querySelector(outputImgP);
   let outputBtnIcon = document.querySelector(outputBtnIconP);
   outputBtnIcon.classList.toggle('fa-eye-slash') && outputImg.classList.remove('js-output-img-hide');
   outputBtnIcon.classList.toggle('fa-eye') && outputImg.classList.add('js-output-img-hide');
-} 
+} */
+function updateOutputBtnIcon(outputImgP,outputBtnIconP) {
+  let outputImg = document.querySelector(outputImgP);
+  let outputBtnIcon = document.querySelector(outputBtnIconP);
+  
+  if (outputBtnIcon.classList.contains('fa-eye')) {
+    outputBtnIcon.classList.toggle('fa-eye');
+    outputBtnIcon.classList.toggle('fa-eye-slash');
+    outputImg.classList.remove('js-output-img-hide');
+  } else if (outputBtnIcon.classList.contains('fa-eye-slash')) {
+    outputBtnIcon.classList.toggle('fa-eye-slash');
+    outputBtnIcon.classList.toggle('fa-eye');
+    outputImg.classList.add('js-output-img-hide');
+  }
+}
 function updateThemeBtnIcon(codeImgDayP,codeImgNightP,themeBtnIconP) {
   let codeImgDay = document.querySelector(codeImgDayP);
   let codeImgNight = document.querySelector(codeImgNightP);
@@ -44,3 +58,19 @@ img.ondragstart = () => {
   return false;
 };
 document.addEventListener('contextmenu', event => event.preventDefault());
+/*// Function to load and insert external HTML content
+function includeHTML() {
+  fetch('sections/index-c-codes.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('included-buttons').innerHTML = data;
+    });
+    fetch('sections/index-sections.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('included-sections').innerHTML = data;
+    });
+}
+
+// Call the includeHTML function when the page loads
+window.addEventListener('load', includeHTML);*/
