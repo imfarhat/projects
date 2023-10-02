@@ -1,0 +1,16 @@
+/*Write a program in C to print the sum of folwoing series*/
+//Calculate Sum of Series: 1+2+3+4+5+....n=sum
+
+#include<stdio.h>
+int main ()
+{
+	int n, i, sum=0;
+	printf ("\nEnter the limit of the series to calculate its sum: ");
+	scanf ("%d", &n); 
+	for (i=1; i<=n; i++) //increment done after changing the vlaue in sum and sum changes before checking the condition i<=n
+	{
+		sum = sum +i;
+	}
+	printf ("\nSum of the series: %d", sum);
+	return 0;
+}

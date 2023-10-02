@@ -1,0 +1,38 @@
+/*Write a program in C to to find out the maximum of three integers*/
+// Using traditional if else without a fourth variable
+//Not preferrable, just for building the logic
+
+#include<stdio.h>
+int main ()
+{
+	int a, b, c;
+	printf ("\nEnter the first number: ");
+	scanf ("%d", &a);
+	printf ("\nEnter the second number: ");
+	scanf ("%d", &b);
+	printf ("\nEnter the third number: ");
+	scanf ("%d", &c);
+	if (a>b)
+	{   
+		if (a>c)
+		{   
+			printf("\n%d is the largest number", a);
+		}
+		else
+		{   
+			printf("\n%d is the largest number", c);
+		}
+	}
+	else
+	{   
+		if (b>c)
+		{   
+			printf("\n%d is the largest number", b);
+		}
+		else
+		{   
+			printf("\n%d is the largest number", c);
+		}
+	}
+	return 0;
+}

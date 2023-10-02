@@ -1,0 +1,8 @@
+/*Write a program in C print 'Hellow World!'*/
+
+#include<stdio.h>
+int main ()
+{
+	printf ("\nHellow World!");
+	return 0;
+}
