@@ -1,0 +1,21 @@
+/*Write a program in C to check a number is prime or not*/
+//Used tenary conditional operator in C for if else
+
+#include<stdio.h>
+int main ()
+{
+	int n, i, q=0; //q is used as a flag
+	printf ("\nEnter the number: ");
+	scanf ("%d", &n);
+	for (i=2; i<n; i++)
+	if (n%i==0) //prime no. is !divisble by any other than 1 and itself
+	{
+		q = 1;
+		break; //once condition true, break will act to come oyt of loop
+	}
+	q == 0 ? printf ("\n%d is prime number", n) :
+	 printf ("\n%d not a is prime number", n);
+	  /*syntax for tenary: condition ? if (if condition true) :
+	     else (if condition is false)*/
+	return 0;
+}
