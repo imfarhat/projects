@@ -208,7 +208,7 @@ button:active {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 1rem 1rem 1rem;
+    padding: 0 1rem 0.5rem 1rem;
   }
   .output-img {
     display: flex;
