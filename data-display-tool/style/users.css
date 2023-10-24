@@ -1,0 +1,130 @@
+html,body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100vw;
+  min-height: 100vw;
+}
+table {
+  border-collapse: collapse;
+  /* white-space: nowrap; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+th {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 0.25rem;
+}
+
+td {
+  border: 0.0625rem solid #ccc;
+  padding: 0.25rem;
+  transition: background-color 0.3s, transform 0.2s;
+  position: relative;
+  cursor: pointer;
+}
+
+tr:hover {
+  background-color: #f0f0f0;
+}
+
+td:hover::before {
+  content: attr(data-th);
+  position: absolute;
+  background-color: #007BFF;
+  color: #fff;
+  padding: 0.3125rem;
+  border-radius: 0.3125rem;
+  top: -1.875rem;
+  left: 0;
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: opacity 0.3s, transform 0.2s;
+  z-index: 1;
+}
+
+td:hover {
+  background-color: #ffcc00;
+  transform: scale(1.05);
+}
+
+.data-btn {
+  background-color: #007BFF;
+  color: #fff;
+  font-size: 1.35rem;
+  border: none;
+  cursor: pointer;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  margin: 1rem 2rem;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+.print-btn {
+  background-color: #007BFF;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s;  display: flex;
+}
+.print-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+}
+
+.data-btn:hover, .print-btn:hover {
+  background-color: #0056b3;
+}
+
+.btn-panel {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  background-color: #d0e7ff;
+  border-radius: 0rem 0rem 0.95rem 0.95rem;
+}
+
+#data-load-area-error {
+  text-align: center;
+  line-height: 1.75rem;
+}
+#data-load-area {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+.select-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+}
+
+select, option, label {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  padding: 0.15rem;
+}
+
+select, option {
+  font-size: 1.25rem;
+}
+.main-container {
+  margin: 0.5rem;
+}
