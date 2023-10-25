@@ -69,11 +69,11 @@ function loadData(usersLimit) {
       }, 2000);
   })
 .catch((error) => {
-  document.getElementById("data-load-area-error").innerHTML =  `Sorry an error occured in Loading ${usersLimit} User's Data! Please try again later...<br>Specefically: ${error}<br><br> Report <a href="https://farhateservices.github.io/fesa/contact.html#SendMessage" target="_blank">here</a><br>or<br>Email the issue on: <a href="mailto:imfarhat.dev@gmail.com" target="_blank">imfarhat.dev@gmail.com</a>`;
+  document.getElementById("data-load-area-error").innerHTML =  `Sorry an error occured in Loading ${usersLimit} User's Data! Please try again later...<br>Specifically: ' ${error} '<br> Report <a href="https://farhateservices.github.io/fesa/contact.html#SendMessage" target="_blank">here</a><br>or<br>Email the issue on: <a href="mailto:imfarhat.dev@gmail.com" target="_blank">imfarhat.dev@gmail.com</a>`;
   pleaseWaitReset();
   updateSelect();
 });
 }
 function printData() {
-  window.print();
+  print();
 }
