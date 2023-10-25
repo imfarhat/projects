@@ -47,7 +47,7 @@ function loadData(usersLimit) {
     >
       Print
     </button></div>
-    <h3>${usersLimit} User's Data &#x2713;:<h/3>
+    <h4 style="text-align:center">${usersLimit} User's Data Fetched &#x2713;</h4>
     <table>
       <tr>
         <th>Id</th>
@@ -70,7 +70,7 @@ function loadData(usersLimit) {
       }, 2000);
   })
 .catch((error) => {
-  document.getElementById("data-load-area-error").innerHTML =  `Sorry an error occured in Loading ${usersLimit} User's Data! Please try again later...<br>Specifically: ' ${error} '<br> Report <a href="https://farhateservices.github.io/fesa/contact.html#SendMessage" target="_blank">here</a><br>or<br>Email the issue on: <a href="mailto:imfarhat.dev@gmail.com" target="_blank">imfarhat.dev@gmail.com</a>`;
+  document.getElementById("data-load-area-error").innerHTML =  `Sorry an error occured in Loading ${usersLimit} User's Data! Please try again later...<br>Specifically: '${error}'<br> Report <a href="https://farhateservices.github.io/fesa/contact.html#SendMessage" target="_blank">here</a><br>or<br>Email the issue on: <a href="mailto:imfarhat.dev@gmail.com" target="_blank">imfarhat.dev@gmail.com</a>`;
   pleaseWaitReset();
   updateSelect();
 });
