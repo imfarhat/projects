@@ -22,7 +22,7 @@ function loadData(usersLimit) {
   fetch(updateSelect())
   .then((response) => response.json())
   .then((result) => {
-    let demoElement = document.getElementById("data-load-area");
+    let dataLoadingElement = document.getElementById("data-load-area");
     let dataTable = ``;
     result.forEach(result => {
       dataTable += 
@@ -31,7 +31,7 @@ function loadData(usersLimit) {
         <td> ${result.id}</td>
         <td>${result.name.substring(0, 6)}</td>
         <td>${result.email.substring(4, 30)}</td>
-        <td>${result.phone.substring(0, 10)}</td>
+        <td>${result.phone.substring(0, 9)}</td>
         <!-- <td>${result.website}</td>
         <td>${result.company.name}</td>
         <td>${result.company.catchPhrase}</td>
@@ -41,12 +41,13 @@ function loadData(usersLimit) {
       </tr>
       `;
     });
-    demoElement.innerHTML = `
+    dataLoadingElement.innerHTML = `
     <div class="print-container"><button class="print-btn"
     onclick="printData()"
     >
       Print
     </button></div>
+    <h3>${usersLimit} User's Data &#x2713;:<h/3>
     <table>
       <tr>
         <th>Id</th>
