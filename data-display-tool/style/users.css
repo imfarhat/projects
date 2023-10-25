@@ -67,7 +67,6 @@ td:hover {
   border: none;
   cursor: pointer;
   padding: 0.5rem 1.5rem;
-  margin-bottom: 1rem;
   border-radius: 0.5rem;
   transition: background-color 0.3s;  display: flex;
 }
@@ -100,9 +99,9 @@ td:hover {
   line-height: 1.75rem;
 }
 #data-load-area {
-  text-align: center;
   margin-top: 2rem;
   margin-bottom: 3rem;
+  text-align: center;
 }
 .select-container {
   display: flex;
