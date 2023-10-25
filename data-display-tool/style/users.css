@@ -1,3 +1,6 @@
+* {
+  font-family: 'Times New Roman', Times, serif;
+}
 html,body {
   margin: 0;
   padding: 0;
@@ -50,15 +53,16 @@ td:hover {
 
 .data-btn {
   background-color: #007BFF;
-  color: #fff;
-  font-size: 1.35rem;
+  color: #ffffff;
+  font-size: 1.05rem;
   border: none;
   cursor: pointer;
-  padding: 0.75rem;
+  padding: 0.4rem 1.5rem;
   border-radius: 0.5rem;
-  margin: 1rem 2rem;
+  margin: 1rem;
   transition: background-color 0.3s;
-  width: 100%;
+  border: 2px solid white;
+  font-weight: 600;
 }
 .print-btn {
   background-color: #007BFF;
@@ -85,13 +89,14 @@ td:hover {
 .btn-panel {
   position: sticky;
   top: 0;
+  padding-top: 0.5rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   z-index: 1;
   background-color: #d0e7ff;
-  border-radius: 0rem 0rem 0.95rem 0.95rem;
+  border-radius: 0rem 0rem 1rem 1rem;
 }
 
 #data-load-area-error {
@@ -109,20 +114,29 @@ td:hover {
   align-items: center;
   align-self: center;
   text-align: center;
+  padding: 0rem 1rem 0 1rem;
 }
 
 select, option, label {
-  font-size: 1.5rem;
-  font-weight: 500;
-  margin-top: 1rem;
-  padding: 0.15rem;
+  font-size: 1.3rem;
 }
 
 select, option {
-  font-size: 1.25rem;
+  font-size: 1.05rem;
+  font-weight: 550;
+  padding: 0.25rem;
   cursor: pointer;
+  border-radius: 0.5rem;
+  border: 2px solid white;
+  background-color: #007BFF;
+  color: white;
 }
+label {
+  color: #0056b3;
+  font-weight: 550;
+  font-family: 'Times New Roman', Times, serif;
 
+}
 .main-container {
-  margin: 0.5rem;
+  margin: 0 0.5rem;
 }
