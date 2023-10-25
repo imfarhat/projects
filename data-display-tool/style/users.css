@@ -1,0 +1,142 @@
+* {
+  font-family: 'Times New Roman', Times, serif;
+}
+html,body {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  /* white-space: nowrap; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+th {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 0.25rem;
+}
+
+td {
+  border: 0.0625rem solid #ccc;
+  padding: 0.25rem;
+  transition: background-color 0.3s, transform 0.2s;
+  position: relative;
+  cursor: pointer;
+}
+
+tr:hover {
+  background-color: #f0f0f0;
+}
+
+td:hover::before {
+  content: attr(data-th);
+  position: absolute;
+  background-color: #007BFF;
+  color: #fff;
+  padding: 0.3125rem;
+  border-radius: 0.3125rem;
+  top: -1.875rem;
+  left: 0;
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: opacity 0.3s, transform 0.2s;
+  z-index: 1;
+}
+
+td:hover {
+  background-color: #ffcc00;
+  transform: scale(1.05);
+}
+
+.data-btn {
+  background-color: #007BFF;
+  color: #ffffff;
+  font-size: 1.05rem;
+  border: none;
+  cursor: pointer;
+  padding: 0.4rem 1.5rem;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  transition: background-color 0.3s;
+  border: 2px solid white;
+  font-weight: 600;
+}
+.print-btn {
+  background-color: #007BFF;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s;  display: flex;
+}
+.print-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+}
+
+.data-btn:hover, .print-btn:hover {
+  background-color: #0056b3;
+}
+
+.btn-panel {
+  position: sticky;
+  top: 0;
+  padding-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  background-color: #d0e7ff;
+  border-radius: 0rem 0rem 1rem 1rem;
+}
+
+#data-load-area-error {
+  text-align: center;
+  line-height: 1.75rem;
+}
+#data-load-area {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.select-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+  padding: 0rem 1rem 0 1rem;
+}
+
+select, option, label {
+  font-size: 1.3rem;
+}
+
+select, option {
+  font-size: 1.05rem;
+  font-weight: 550;
+  padding: 0.25rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border: 2px solid white;
+  background-color: #007BFF;
+  color: white;
+}
+label {
+  color: #0056b3;
+  font-weight: 550;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+.main-container {
+  margin: 0 0.5rem;
+}
