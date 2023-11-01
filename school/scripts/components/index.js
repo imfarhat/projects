@@ -1,7 +1,7 @@
-export { loadLargeNav, largeNavInteractor, handleNavBarsClick, loadSocialSmallNav };
+export { loadLargeNav, largeNavInteractor, handleNavBarsClick, loadSocialSmallNav, loadNavLogo, loadNavBarsI };
 
 function loadLargeNav() {
-  let LargeNav = document.querySelector('.js-large-nav');
+  let LargeNav = document.getElementById('js-large-nav');
   LargeNav.innerHTML = `
   <li class="list-none px-2 py-1 bg-white hover:bg-[#EDF2FB] active:scale-95 active:bg-[#EDF2FB] hover:border-t-4 active:border-t-4 border-blue-400 rounded-md cursor-pointer transition-colors ease-in duration-200">
   Home
@@ -168,17 +168,21 @@ function loadLargeNav() {
 };
 
 function handleNavBarsClick() {
-  const navContainer = document.querySelector('.js-large-nav');
+  const navContainer = document.getElementById('js-large-nav');
+  const smallNavBars = document.getElementById('js-small-bars');
+  const bodyElement = document.getElementById('js-body');
+  const sNavSocialMedia = document.getElementById('js-s-nav-social-media');
+  
   navContainer.classList.toggle('hidden');
   navContainer.classList.toggle('flex');
-  const smallNavBars = document.querySelector('.js-small-bars');
+
   smallNavBars.classList.toggle('fa-bars');
   smallNavBars.classList.toggle('fa-x');
-  const bodyElement = document.querySelector('.js-body');
+
   bodyElement.classList.toggle('hidden');
-  const sNavSocialMedia = document.querySelector('.js-s-nav-social-media');
+
   sNavSocialMedia.classList.toggle('hidden');
-}
+};
 
 function largeNavInteractor() {
   // JavaScript for interactive navigation
@@ -221,16 +225,30 @@ function largeNavInteractor() {
 };
 
 function loadSocialSmallNav() {
-  let  sNavSocialDiv = document.querySelector('.js-s-nav-social-media');
+  let  sNavSocialDiv = document.getElementById('js-s-nav-social-media');
   sNavSocialDiv.innerHTML = `
   <a href="#">
-    <i class="fa-brands fa-instagram cursor-pointer p-1.5 transition active:scale-90 text-white bg-gradient-to-tr from-yellow-500 via-red-600 to-purple-500 rounded-lg text-[1.4rem] h-[2.15rem] w-[2.15rem] text-center flex items-center justify-center"></i>
+    <i class="fa-brands fa-instagram cursor-pointer p-1.5 transition ease-in active:scale-90 text-white bg-gradient-to-tr from-yellow-500 via-red-600 to-purple-500 rounded-lg text-[1.4rem] h-[2.15rem] w-[2.15rem] text-center flex items-center justify-center"></i>
   </a>
   <a href="#">
-    <i class="fa-brands fa-whatsapp cursor-pointer p-1.5 transition active:scale-90 text-white bg-gradient-to-b from-green-500 to-green-600 rounded-lg text-[1.4rem] h-[2.15rem] w-[2.15rem] text-center flex items-center justify-center"></i>
+    <i class="fa-brands fa-whatsapp cursor-pointer p-1.5 transition ease-in active:scale-90 text-white bg-gradient-to-b from-green-500 to-green-600 rounded-lg text-[1.4rem] h-[2.15rem] w-[2.15rem] text-center flex items-center justify-center"></i>
   </a>
   <a href="#">
-    <i class="fa-brands fa-x-twitter cursor-pointer p-1.5 transition active:scale-90 text-white bg-gradient-to-b from-black to-black rounded-lg text-[1.4rem] h-[2.15rem] w-[2.15rem] text-center flex items-center justify-center"></i>
+    <i class="fa-brands fa-x-twitter cursor-pointer p-1.5 transition ease-in active:scale-90 text-white bg-gradient-to-b from-black to-black rounded-lg text-[1.4rem] h-[2.15rem] w-[2.15rem] text-center flex items-center justify-center"></i>
   </a>
+  `;
+};
+
+function loadNavLogo() {
+  const navLogoElement = document.getElementById('js-nav-logo');
+  navLogoElement.innerHTML = `
+  <img class="fixed left-[0.1875rem] lg:right-1 xl:left-1 lg:left-auto top-[0.1875rem] lg:top-1 z-[2] w-14 lg:w-16 rounded-full border-b-2 border-blue-500 active:scale-95 border-x-[1px] hover:border-x-2 drop-shadow-md transition" src="images/logo/main-icon-circular.PNG" alt="TIS Logo">
+  `;
+};
+
+function loadNavBarsI() {
+  const navBarsBtn = document.getElementById('js-small-nav-btn');
+  navBarsBtn.innerHTML = `
+  <i id="js-small-bars" class="fa-solid fa-bars text-xl h-9 w-9 flex items-center justify-center hover:bg-white active:bg-white bg-transparent border-2 active:scale-95 border-blue-500 rounded-lg transition-colors ease-in duration-200"></i>
   `;
 };
