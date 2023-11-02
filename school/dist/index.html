@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The International School</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="icon" type="image/png" href="https://farhateservices.github.io/fesa/images/logo/main-icon-circular.PNG">
+  <link rel="stylesheet" href="./output.css">
+  <style>
+    .tap-highlight {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="topNavMarquee" class="select-none tap-highlight"></div>
+  <header class="sticky top-0 z-[3]">
+    <nav class="select-none tap-highlight transition ease-in">
+      <a href="#" id="js-nav-logo">
+        <img class="fixed left-[0.1875rem] lg:right-1 xl:left-1 lg:left-auto top-[0.1875rem] lg:top-1 z-[2] w-14 lg:w-16 rounded-full border-b-2 border-blue-500 active:scale-95 border-x-[1px] hover:border-x-2 drop-shadow-md transition" src="images/logo/main-icon-circular.PNG" alt="TIS Logo">
+      </a>
+      <!-- Mobile Friendly Nav Bar devices screen width lower thn 1280px --> 
+      <div id="js-nav-bars" class="lg:hidden flex sticky top-0 justify-end bg-[#EDF2FB] py-1 px-3 text-2xl transition-colors ease-in border-b-[0.15rem] border-blue-500 h-[3.525rem]"> 
+   
+        <div id="small-nav-btn-centerer" class="flex items-center justify-center">
+          <button id="js-small-nav-btn" class="drop-shadow-lg bg-white h-9 w-9 border-2 active:scale-95 hover:text-blue-600 border-blue-500 hover:border-blue-600 rounded-md text-xl flex items-center justify-center transition-colors ease-in text-blue-500">
+            <i id="js-small-bars" class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+      
+      <!-- Nav Bar  (Div) for All Screens/Devices -->   
+      <div id="js-large-nav" class="hidden lg:flex flex-col lg:flex-row lg:items-center lg:justify-start xl:justify-center justify-start px-10 py-6 lg:px-3 lg:py-4 lg:border-b-2 border-blue-500 gap-y-[0.9375rem] lg:gap-x-4 bg-[#EDF2FB] text-black font-[600] lg:h-[4.25rem] h-[41rem] min-h-screen lg:min-h-0 transition ease-in z-[2]">
+        <li class="list-none px-2 py-1 bg-white hover:bg-[#EDF2FB] active:scale-95 active:bg-[#EDF2FB] hover:border-t-4 active:border-t-4 hover:border-l-2 active:border-l-2 border-blue-400 rounded-md cursor-pointer transition-colors ease-in">
+          Home
+        </li>
+        
+        <li class="list-none">
+          <details>
+            <summary class="lg:flex px-2 py-1 bg-white hover:bg-[#EDF2FB] active:scale-95 active:bg-[#EDF2FB] hover:border-t-4 active:border-t-4 hover:border-l-2 active:border-l-2 border-blue-400 rounded-md cursor-pointer transition-colors ease-in">About</summary>
+            <ul class="absolute left-[11rem] lg:left-auto flex flex-col justify-center items-center bg-[#EDF2FB] rounded-b-lg border-l-2 border-b-2 border-blue-400 text-start drop-shadow-md w-[50vw] lg:w-auto">
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+                TIS Society
+              </li>
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+                Affiliation
+              </li>
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+                Visition & Mission
+              </li>
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer rounded-b-lg">
+                Self Affidavit Fromat
+              </li>
+            </ul>
+          </details>
+        </li>
+        
+        <li class="list-none">
+          <details>
+            <summary class="lg:flex px-2 py-1 bg-white hover:bg-[#EDF2FB] active:scale-95 active:bg-[#EDF2FB] hover:border-t-4 active:border-t-4 hover:border-l-2 active:border-l-2 border-blue-400 rounded-md cursor-pointer transition-colors ease-in">Team</summary>
+            <ul class="absolute left-[11rem] lg:left-auto flex flex-col justify-center items-center bg-[#EDF2FB] rounded-b-lg border-l-2 border-b-2 border-blue-400 text-start drop-shadow-md w-[50vw] lg:w-auto">
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+                Board
+              </li>
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+                Faculty
+              </li>
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+                Administrative
+              </li>
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer rounded-b-lg">
+                Pricipal's Message
+              </li>
+            </ul>
+          </details>
+        </li>
+        
+        <li class="list-none">
+          <details>
+            <summary class="lg:flex px-2 py-1 bg-white hover:bg-[#EDF2FB] active:scale-95 active:bg-[#EDF2FB] hover:border-t-4 active:border-t-4 hover:border-l-2 active:border-l-2 border-blue-400 rounded-md cursor-pointer transition-colors ease-in">Infrastructure</summary>
+            <ul class="absolute left-[11rem] lg:left-auto flex flex-col justify-center items-center bg-[#EDF2FB] rounded-b-lg border-l-2 border-b-2 border-blue-400 text-start drop-shadow-md w-[50vw] lg:w-auto">
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+                Sports
+              </li>
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+                Campus
+              </li>
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+                Library
+              </li>
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+                Classrooms
+              </li>
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer rounded-b-lg">
+                Laboratories
+              </li>
+            </ul>
+          </details>
+        </li>
+        
+        <li class="list-none">
+          <details>
+            <summary class="lg:flex px-2 py-1 bg-white hover:bg-[#EDF2FB] active:scale-95 active:bg-[#EDF2FB] hover:border-t-4 active:border-t-4 hover:border-l-2 active:border-l-2 border-blue-400 rounded-md cursor-pointer transition-colors ease-in">Curriculum</summary>
+            <ul class="absolute left-[11rem] lg:left-auto flex flex-col justify-center items-center bg-[#EDF2FB] rounded-b-lg border-l-2 border-b-2 border-blue-400 text-start drop-shadow-md w-[50vw] lg:w-auto">
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+                Pre Primary
+              </li>
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+                Primary & Secondary
+              </li>
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+                Higher Secondary
+              </li>
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer rounded-b-lg">
+                Booklists
+              </li>
+            </ul>
+          </details>
+        </li>
+        
+        <li class="list-none">
+          <details>
+            <summary class="lg:flex px-2 py-1 bg-white hover:bg-[#EDF2FB] active:scale-95 active:bg-[#EDF2FB] hover:border-t-4 active:border-t-4 hover:border-l-2 active:border-l-2 border-blue-400 rounded-md cursor-pointer transition-colors ease-in">Extra Curricular</summary>
+            <ul class="absolute left-[11rem] lg:left-auto flex flex-col justify-center items-center bg-[#EDF2FB] rounded-b-lg border-l-2 border-b-2 border-blue-400 text-start drop-shadow-md w-[50vw] lg:w-auto">
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+                E Magazine
+              </li>
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+                Indoor Clubs
+              </li>
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+                Outdoor Clubs
+              </li>
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer rounded-b-lg">
+                School Magazine
+              </li>
+            </ul>
+          </details>
+        </li>
+        
+        <li class="list-none">
+          <details>
+            <summary class="lg:flex px-2 py-1 bg-white hover:bg-[#EDF2FB] active:scale-95 active:bg-[#EDF2FB] hover:border-t-4 active:border-t-4 hover:border-l-2 active:border-l-2 border-blue-400 rounded-md cursor-pointer transition-colors ease-in">News & Events</summary>
+            <ul class="absolute left-[11rem] lg:left-auto flex flex-col justify-center items-center bg-[#EDF2FB] rounded-b-lg border-l-2 border-b-2 border-blue-400 text-start drop-shadow-md w-[50vw] lg:w-auto">
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+                News & Media
+              </li>
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+                Excursion
+              </li>
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+                Events
+              </li>
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer rounded-b-lg">
+                Video Gallery
+              </li>
+            </ul>
+          </details>
+        </li>
+        <li class="list-none">
+          <details>
+            <summary class="lg:flex px-2 py-1 bg-white hover:bg-[#EDF2FB] active:scale-95 active:bg-[#EDF2FB] hover:border-t-4 active:border-t-4 hover:border-l-2 active:border-l-2 border-blue-400 rounded-md cursor-pointer transition-colors ease-in">Notices</summary>
+            <ul class="absolute left-[11rem] lg:left-auto flex flex-col justify-center items-center bg-[#EDF2FB] rounded-b-lg border-l-2 border-b-2 border-blue-400 text-start drop-shadow-md w-[50vw] lg:w-auto">
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer rounded-b-lg">
+                Circulars
+              </li>
+            </ul>
+          </details>
+        </li>
+        <li class="list-none">
+          <details>
+            <summary class="lg:flex px-2 py-1 bg-white hover:bg-[#EDF2FB] active:scale-95 active:bg-[#EDF2FB] hover:border-t-4 active:border-t-4 hover:border-l-2 active:border-l-2 border-blue-400 rounded-md cursor-pointer transition-colors ease-in">Admission</summary>
+            <ul class="absolute left-[11rem] lg:left-auto flex flex-col justify-center items-center bg-[#EDF2FB] rounded-b-lg border-l-2 border-b-2 border-blue-400 text-start drop-shadow-md w-[50vw] lg:w-auto">
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+                Information
+              </li>
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+                Criteria
+              </li>
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+                Transport
+              </li>
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+                Fee Structure
+              </li>
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+                Timings & Uniform
+              </li>
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer rounded-b-lg">
+                Subject Combination (XI)
+              </li>
+            </ul>
+          </details>
+        </li>
+      </div>
+    </nav>
+  </header>
+<!-- Social Bar for Mobiles -->
+
+  <div id="js-s-nav-social-media" class="hidden items-center justify-center tap-highlight select-none flex-col p-2 gap-3 bg-[#EDF2FB] fixed right-0 bottom-[1rem] rounded-l-md shadow-md transition ease-in z-[3]">
+    <a href="#">
+      <i class="fa-brands fa-instagram cursor-pointer p-1.5 transition ease-in active:scale-90 text-white bg-gradient-to-tr from-yellow-500 via-red-600 to-purple-500 rounded-lg text-[1.4rem] h-[2.15rem] w-[2.15rem] text-center flex items-center justify-center"></i>
+    </a>
+    <a href="#">
+      <i class="fa-brands fa-whatsapp cursor-pointer p-1.5 transition ease-in active:scale-90 text-white bg-gradient-to-b from-green-500 to-green-600 rounded-lg text-[1.4rem] h-[2.15rem] w-[2.15rem] text-center flex items-center justify-center"></i>
+    </a>
+    <a href="#">
+      <i class="fa-brands fa-x-twitter cursor-pointer p-1.5 transition ease-in active:scale-90 text-white bg-gradient-to-b from-black to-black rounded-lg text-[1.4rem] h-[2.15rem] w-[2.15rem] text-center flex items-center justify-center"></i>
+    </a>
+  </div>
+
+<div id="js-body" class="bg-[#EDF2FB] z-[1] tap-highlight min-h-screen">
+ 
+  <div id="carousel-main-div" class="relative select-none py-1.5 lg:py-3 flex items-center justify-center">
+    <button id="js-top-carousel-prev-btn" class="flex justify-center items-center text-center text-blue-500 hover:text-blue-600 p-0.5 sm:p-1 lg:p-2 rounded-md ml-1 bg-white active:scale-90 transition-all ease-in rounded-r-none z-[1]">
+      <i class="fa-solid fa-chevron-left text-lg sm:text-sm md:text-xl lg:text-2xl ml-1"></i>
+    </button>
+    <div id="top-carousel-img-container" class="flex min-w-[75vw] max-h-[70vh] aspect-video bg-white overflow-hidden rounded-md transition-opacity ease-in duration-500">
+      <img id="js-top-carousel-img-1" class="min-w-full p-1 flex rounded-lg transition-opacity ease-in duration-500" src="./images/logo/main-circular.PNG" alt="TIS Classrooms">
+      <img id="js-top-carousel-img-2" class="min-w-full p-1 flex rounded-lg transition-opacity ease-in duration-500" src="./images/logo/main-icon-circular.PNG" alt="TIS Inftrastructure">
+      <img id="js-top-carousel-img-3" class="min-w-full p-1 flex rounded-lg transition-opacity ease-in duration-500" src="./images/logo/main-icon.png" alt="TIS Students">
+      <img id="js-top-carousel-img-1" class="min-w-full p-1 flex rounded-lg transition-opacity ease-in duration-500" src="./images/logo/main.png" alt="TIS Classrooms">
+    </div>
+    <button id="js-top-carousel-next-btn" class="flex justify-center items-center text-center text-blue-500 hover:text-blue-600 p-0.5 sm:p-1 lg:p-2 rounded-md mr-1 bg-white active:scale-90 transition-all ease-in rounded-l-none z-[1]">
+      <i class="fa-solid fa-chevron-right text-lg sm:text-sm md:text-xl lg:text-2xl mr-1"></i>
+    </button>
+    <div id="js-top-carousel-dots-container"  class="absolute h-fit bg-blue-500 hover:bg-blue-600 -bottom-3.5 lg:-bottom-[0.7rem] rounded-b-lg mx-1.5 flex justify-center items-center gap-2 md:gap-2.5 lg:gap-3 px-2 py-1.5 lg:px-3 lg:py-1 transition-all ease-in w-fit drop-shadow-md">
+      <div id="carousel-dot-1" class="flex h-2 w-3 lg:h-3.5 lg:w-5 rounded-full border-2 lg:border-[3px] border-white active:scale-90 ease-in cursor-pointer"></div>
+      <div id="carousel-dot-2" class="flex h-2 w-3 lg:h-3.5 lg:w-5 rounded-full border-2 lg:border-[3px] border-white active:scale-90 ease-in cursor-pointer"></div>
+      <div id="carousel-dot-3" class="flex h-2 w-3 lg:h-3.5 lg:w-5 rounded-full border-2 lg:border-[3px] border-white active:scale-90 ease-in cursor-pointer"></div>
+      <div id="carousel-dot-4" class="flex h-2 w-3 lg:h-3.5 lg:w-5 rounded-full border-2 lg:border-[3px] border-white active:scale-90 ease-in cursor-pointer"></div>
+    </div>
+  </div> 
+
+  <div id="quick-btns" class="select-none mt-6 md:mt-8 lg:mt-10 p-4 md:p-6 lg:p-8 border-y-2 border-white flex items-center justify-center flex-row gap-3 md:gap-10 lg:gap-16 text-base md:text-lg lg:text-xl bg-blue-500 transition eas">
+    <a href="#">
+      <button class="py-1 px-4 bg-white hover:text-blue-600 text-blue-500 active:scale-90 lg:active:scale-95 transition ease-in rounded-lg font-[500] lg:hover:scale-105 drop-shadow-md">
+        Admission Queries
+      </button>
+    </a>
+
+    <a href="#">
+      <button class="py-1 px-4 bg-white hover:text-blue-600 text-blue-500 active:scale-90 lg:active:scale-95 transition ease-in rounded-lg font-[500] lg:hover:scale-105 drop-shadow-md">
+        Online Admission
+      </button>
+    </a>
+  </div>
+  
+</div>
+
+<script type="module" src="./scripts/imported/index.js"></script>
+<script type="module" src="./scripts/imported/home.js"></script>
+
+</body>
+</html>
