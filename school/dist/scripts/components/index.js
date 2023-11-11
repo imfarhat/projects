@@ -17,6 +17,8 @@ function handleNavBarsClick() {
 
   sNavSocialMedia.classList.toggle('flex');
   sNavSocialMedia.classList.toggle('hidden');
+  document.body.scrollTop = document.documentElement.scrollTop = 0;
+
 }
 
 

@@ -19,38 +19,38 @@
   <header class="sticky top-0 z-[3]">
     <nav class="select-none tap-highlight transition ease-in">
       <a href="#" id="js-nav-logo">
-        <img class="fixed left-[0.1875rem] lg:right-1 xl:left-1 lg:left-auto top-[0.1875rem] lg:top-1 z-[2] w-14 lg:w-16 rounded-full border-b-2 border-blue-500 active:scale-95 border-x-[1px] hover:border-x-2 drop-shadow-md transition" src="images/logo/main-icon-circular.PNG" alt="TIS Logo">
+        <img class="fixed left-[0.1875rem] lg:right-1 xl:left-1 lg:left-auto top-[0.1875rem] lg:top-1 z-[11] w-14 lg:w-16 rounded-full border-b-2 border-blue-400 active:scale-95 border-x-[1px] hover:border-x-2 drop-shadow-md transition-all ease-in" src="images/logo/main-icon-circular.PNG" alt="TIS Logo">
       </a>
       <!-- Mobile Friendly Nav Bar devices screen width lower thn 1280px --> 
-      <div id="js-nav-bars" class="lg:hidden flex sticky top-0 justify-end bg-[#EDF2FB] py-1 px-3 text-2xl transition-colors ease-in border-b-[0.15rem] border-blue-500 h-[3.525rem]"> 
+      <div id="js-nav-bars" class="lg:hidden flex sticky top-0 justify-end bg-[#EDF2FB] py-1 px-3 text-2xl transition-colors ease-in border-b-[0.125rem] border-blue-400 h-[3.525rem] z-[10] drop-shadow-md"> 
    
         <div id="small-nav-btn-centerer" class="flex items-center justify-center">
-          <button id="js-small-nav-btn" class="drop-shadow-lg bg-white h-9 w-9 border-2 active:scale-95 hover:text-blue-600 border-blue-500 hover:border-blue-600 rounded-md text-xl flex items-center justify-center transition-colors ease-in text-blue-500">
+          <button id="js-small-nav-btn" class="drop-shadow-lg bg-white h-9 w-9 border-2 active:scale-95 text-blue-500 hover:text-blue-600 border-blue-400 hover:border-blue-500 rounded-md text-xl flex items-center justify-center transition-colors ease-in">
             <i id="js-small-bars" class="fa-solid fa-bars"></i>
           </button>
         </div>
       </div>
       
       <!-- Nav Bar  (Div) for All Screens/Devices -->   
-      <div id="js-large-nav" class="hidden lg:flex flex-col lg:flex-row lg:items-center lg:justify-start xl:justify-center justify-start px-10 py-6 lg:px-3 lg:py-4 lg:border-b-2 border-blue-500 gap-y-[0.9375rem] lg:gap-x-4 bg-[#EDF2FB] text-black font-[600] lg:h-[4.25rem] h-[41rem] min-h-screen lg:min-h-0 transition ease-in z-[2]">
-        <li class="list-none px-2 py-1 bg-white hover:bg-[#EDF2FB] active:scale-95 active:bg-[#EDF2FB] hover:border-t-4 active:border-t-4 hover:border-l-2 active:border-l-2 border-blue-400 rounded-md cursor-pointer transition-colors ease-in">
+      <div id="js-large-nav" class="hidden lg:flex flex-col lg:flex-row lg:items-center lg:justify-start xl:justify-center justify-start px-10 py-6 lg:px-3 lg:py-4 lg:border-b-2 border-blue-400 gap-y-[0.9375rem] lg:gap-x-4 bg-[#EDF2FB] text-black font-[600] lg:h-fit h-fit min-h-screen lg:min-h-0 transition ease-in z-[10]">
+        <li id="nav-item-home" class="flex p-1.5 px-2.5 bg-white hover:bg-[#EDF2FB] active:scale-95 active:bg-[#EDF2FB] hover:border-t-4 active:border-t-4 hover:border-l-2 active:border-l-2  hover:text-blue-600 font-semibold border-blue-400 rounded-md cursor-pointer transition-all ease-in xl:font-semibold xl:uppercase drop-shadow-md">
           Home
         </li>
         
         <li class="list-none">
           <details>
-            <summary class="lg:flex px-2 py-1 bg-white hover:bg-[#EDF2FB] active:scale-95 active:bg-[#EDF2FB] hover:border-t-4 active:border-t-4 hover:border-l-2 active:border-l-2 border-blue-400 rounded-md cursor-pointer transition-colors ease-in">About</summary>
-            <ul class="absolute left-[11rem] lg:left-auto flex flex-col justify-center items-center bg-[#EDF2FB] rounded-b-lg border-l-2 border-b-2 border-blue-400 text-start drop-shadow-md w-[50vw] lg:w-auto">
-              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+            <summary id="nav-item-about" class="lg:flex p-1.5 px-2.5 bg-white hover:bg-[#EDF2FB] active:scale-95 active:bg-[#EDF2FB] hover:border-t-4 active:border-t-4 hover:border-l-2 active:border-l-2 hover:text-blue-600 font-semibold border-blue-400 rounded-md cursor-pointer transition-all ease-in xl:font-lg xl:uppercase drop-shadow-md">About</summary>
+            <ul class="absolute left-[11rem] lg:left-auto flex flex-col justify-center items-center bg-[#EDF2FB] rounded-b-lg border-l-2 border-b-2 border-blue-400 text-start drop-shadow-md w-[50vw] lg:w-auto z-[9]">
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-all ease-in cursor-pointer hover:text-blue-600 font-semibold">
                 TIS Society
               </li>
-              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-all ease-in cursor-pointer hover:text-blue-600 font-semibold">
                 Affiliation
               </li>
-              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-all ease-in cursor-pointer hover:text-blue-600 font-semibold">
                 Visition & Mission
               </li>
-              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer rounded-b-lg">
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-all ease-in cursor-pointer hover:text-blue-600 font-semibold rounded-b-lg">
                 Self Affidavit Fromat
               </li>
             </ul>
@@ -59,18 +59,18 @@
         
         <li class="list-none">
           <details>
-            <summary class="lg:flex px-2 py-1 bg-white hover:bg-[#EDF2FB] active:scale-95 active:bg-[#EDF2FB] hover:border-t-4 active:border-t-4 hover:border-l-2 active:border-l-2 border-blue-400 rounded-md cursor-pointer transition-colors ease-in">Team</summary>
-            <ul class="absolute left-[11rem] lg:left-auto flex flex-col justify-center items-center bg-[#EDF2FB] rounded-b-lg border-l-2 border-b-2 border-blue-400 text-start drop-shadow-md w-[50vw] lg:w-auto">
-              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+            <summary id="nav-item-team" class="lg:flex p-1.5 px-2.5 bg-white hover:bg-[#EDF2FB] active:scale-95 active:bg-[#EDF2FB] hover:border-t-4 active:border-t-4 hover:border-l-2 active:border-l-2 hover:text-blue-600 font-semibold border-blue-400 rounded-md cursor-pointer transition-all ease-in xl:font-lg xl:uppercase drop-shadow-md">Team</summary>
+            <ul class="absolute left-[11rem] lg:left-auto flex flex-col justify-center items-center bg-[#EDF2FB] rounded-b-lg border-l-2 border-b-2 border-blue-400 text-start drop-shadow-md w-[50vw] lg:w-auto z-[9]">
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-all ease-in cursor-pointer hover:text-blue-600 font-semibold">
                 Board
               </li>
-              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-all ease-in cursor-pointer hover:text-blue-600 font-semibold">
                 Faculty
               </li>
-              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-all ease-in cursor-pointer hover:text-blue-600 font-semibold">
                 Administrative
               </li>
-              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer rounded-b-lg">
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-all ease-in cursor-pointer hover:text-blue-600 font-semibold rounded-b-lg">
                 Pricipal's Message
               </li>
             </ul>
@@ -79,21 +79,21 @@
         
         <li class="list-none">
           <details>
-            <summary class="lg:flex px-2 py-1 bg-white hover:bg-[#EDF2FB] active:scale-95 active:bg-[#EDF2FB] hover:border-t-4 active:border-t-4 hover:border-l-2 active:border-l-2 border-blue-400 rounded-md cursor-pointer transition-colors ease-in">Infrastructure</summary>
-            <ul class="absolute left-[11rem] lg:left-auto flex flex-col justify-center items-center bg-[#EDF2FB] rounded-b-lg border-l-2 border-b-2 border-blue-400 text-start drop-shadow-md w-[50vw] lg:w-auto">
-              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+            <summary id="nav-item-infrastructure" class="lg:flex p-1.5 px-2.5 bg-white hover:bg-[#EDF2FB] active:scale-95 active:bg-[#EDF2FB] hover:border-t-4 active:border-t-4 hover:border-l-2 active:border-l-2 hover:text-blue-600 font-semibold border-blue-400 rounded-md cursor-pointer transition-all ease-in xl:font-lg xl:uppercase drop-shadow-md">Infrastructure</summary>
+            <ul class="absolute left-[11rem] lg:left-auto flex flex-col justify-center items-center bg-[#EDF2FB] rounded-b-lg border-l-2 border-b-2 border-blue-400 text-start drop-shadow-md w-[50vw] lg:w-auto z-[9]">
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-all ease-in cursor-pointer hover:text-blue-600 font-semibold">
                 Sports
               </li>
-              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-all ease-in cursor-pointer hover:text-blue-600 font-semibold">
                 Campus
               </li>
-              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-all ease-in cursor-pointer hover:text-blue-600 font-semibold">
                 Library
               </li>
-              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-all ease-in cursor-pointer hover:text-blue-600 font-semibold">
                 Classrooms
               </li>
-              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer rounded-b-lg">
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-all ease-in cursor-pointer hover:text-blue-600 font-semibold rounded-b-lg">
                 Laboratories
               </li>
             </ul>
@@ -102,18 +102,18 @@
         
         <li class="list-none">
           <details>
-            <summary class="lg:flex px-2 py-1 bg-white hover:bg-[#EDF2FB] active:scale-95 active:bg-[#EDF2FB] hover:border-t-4 active:border-t-4 hover:border-l-2 active:border-l-2 border-blue-400 rounded-md cursor-pointer transition-colors ease-in">Curriculum</summary>
-            <ul class="absolute left-[11rem] lg:left-auto flex flex-col justify-center items-center bg-[#EDF2FB] rounded-b-lg border-l-2 border-b-2 border-blue-400 text-start drop-shadow-md w-[50vw] lg:w-auto">
-              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+            <summary id="nav-item-curriculam" class="lg:flex p-1.5 px-2.5 bg-white hover:bg-[#EDF2FB] active:scale-95 active:bg-[#EDF2FB] hover:border-t-4 active:border-t-4 hover:border-l-2 active:border-l-2 hover:text-blue-600 font-semibold border-blue-400 rounded-md cursor-pointer transition-all ease-in xl:font-lg xl:uppercase drop-shadow-md">Curriculum</summary>
+            <ul class="absolute left-[11rem] lg:left-auto flex flex-col justify-center items-center bg-[#EDF2FB] rounded-b-lg border-l-2 border-b-2 border-blue-400 text-start drop-shadow-md w-[50vw] lg:w-auto z-[9]">
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-all ease-in cursor-pointer hover:text-blue-600 font-semibold">
                 Pre Primary
               </li>
-              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-all ease-in cursor-pointer hover:text-blue-600 font-semibold">
                 Primary & Secondary
               </li>
-              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-all ease-in cursor-pointer hover:text-blue-600 font-semibold">
                 Higher Secondary
               </li>
-              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer rounded-b-lg">
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-all ease-in cursor-pointer hover:text-blue-600 font-semibold rounded-b-lg">
                 Booklists
               </li>
             </ul>
@@ -122,18 +122,18 @@
         
         <li class="list-none">
           <details>
-            <summary class="lg:flex px-2 py-1 bg-white hover:bg-[#EDF2FB] active:scale-95 active:bg-[#EDF2FB] hover:border-t-4 active:border-t-4 hover:border-l-2 active:border-l-2 border-blue-400 rounded-md cursor-pointer transition-colors ease-in">Extra Curricular</summary>
-            <ul class="absolute left-[11rem] lg:left-auto flex flex-col justify-center items-center bg-[#EDF2FB] rounded-b-lg border-l-2 border-b-2 border-blue-400 text-start drop-shadow-md w-[50vw] lg:w-auto">
-              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+            <summary id="nav-item-exra-curricular" class="lg:flex p-1.5 px-2.5 bg-white hover:bg-[#EDF2FB] active:scale-95 active:bg-[#EDF2FB] hover:border-t-4 active:border-t-4 hover:border-l-2 active:border-l-2 hover:text-blue-600 font-semibold border-blue-400 rounded-md cursor-pointer transition-all ease-in xl:font-lg xl:uppercase drop-shadow-md">Extra Curricular</summary>
+            <ul class="absolute left-[11rem] lg:left-auto flex flex-col justify-center items-center bg-[#EDF2FB] rounded-b-lg border-l-2 border-b-2 border-blue-400 text-start drop-shadow-md w-[50vw] lg:w-auto z-[9]">
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-all ease-in cursor-pointer hover:text-blue-600 font-semibold">
                 E Magazine
               </li>
-              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-all ease-in cursor-pointer hover:text-blue-600 font-semibold">
                 Indoor Clubs
               </li>
-              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-all ease-in cursor-pointer hover:text-blue-600 font-semibold">
                 Outdoor Clubs
               </li>
-              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer rounded-b-lg">
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-all ease-in cursor-pointer hover:text-blue-600 font-semibold rounded-b-lg">
                 School Magazine
               </li>
             </ul>
@@ -142,18 +142,18 @@
         
         <li class="list-none">
           <details>
-            <summary class="lg:flex px-2 py-1 bg-white hover:bg-[#EDF2FB] active:scale-95 active:bg-[#EDF2FB] hover:border-t-4 active:border-t-4 hover:border-l-2 active:border-l-2 border-blue-400 rounded-md cursor-pointer transition-colors ease-in">News & Events</summary>
-            <ul class="absolute left-[11rem] lg:left-auto flex flex-col justify-center items-center bg-[#EDF2FB] rounded-b-lg border-l-2 border-b-2 border-blue-400 text-start drop-shadow-md w-[50vw] lg:w-auto">
-              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+            <summary id="nav-item-news-events" class="lg:flex p-1.5 px-2.5 bg-white hover:bg-[#EDF2FB] active:scale-95 active:bg-[#EDF2FB] hover:border-t-4 active:border-t-4 hover:border-l-2 active:border-l-2 hover:text-blue-600 font-semibold border-blue-400 rounded-md cursor-pointer transition-all ease-in xl:font-lg xl:uppercase drop-shadow-md">News & Events</summary>
+            <ul class="absolute left-[11rem] lg:left-auto flex flex-col justify-center items-center bg-[#EDF2FB] rounded-b-lg border-l-2 border-b-2 border-blue-400 text-start drop-shadow-md w-[50vw] lg:w-auto z-[9]">
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-all ease-in cursor-pointer hover:text-blue-600 font-semibold">
                 News & Media
               </li>
-              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-all ease-in cursor-pointer hover:text-blue-600 font-semibold">
                 Excursion
               </li>
-              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-all ease-in cursor-pointer hover:text-blue-600 font-semibold">
                 Events
               </li>
-              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer rounded-b-lg">
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-all ease-in cursor-pointer hover:text-blue-600 font-semibold rounded-b-lg">
                 Video Gallery
               </li>
             </ul>
@@ -161,9 +161,9 @@
         </li>
         <li class="list-none">
           <details>
-            <summary class="lg:flex px-2 py-1 bg-white hover:bg-[#EDF2FB] active:scale-95 active:bg-[#EDF2FB] hover:border-t-4 active:border-t-4 hover:border-l-2 active:border-l-2 border-blue-400 rounded-md cursor-pointer transition-colors ease-in">Notices</summary>
-            <ul class="absolute left-[11rem] lg:left-auto flex flex-col justify-center items-center bg-[#EDF2FB] rounded-b-lg border-l-2 border-b-2 border-blue-400 text-start drop-shadow-md w-[50vw] lg:w-auto">
-              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer rounded-b-lg">
+            <summary id="nav-item-notices" class="lg:flex p-1.5 px-2.5 bg-white hover:bg-[#EDF2FB] active:scale-95 active:bg-[#EDF2FB] hover:border-t-4 active:border-t-4 hover:border-l-2 active:border-l-2 hover:text-blue-600 font-semibold border-blue-400 rounded-md cursor-pointer transition-all ease-in xl:font-lg xl:uppercase drop-shadow-md">Notices</summary>
+            <ul class="absolute left-[11rem] lg:left-auto flex flex-col justify-center items-center bg-[#EDF2FB] rounded-b-lg border-l-2 border-b-2 border-blue-400 text-start drop-shadow-md w-[50vw] lg:w-auto z-[9]">
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-all ease-in cursor-pointer hover:text-blue-600 font-semibold rounded-b-lg">
                 Circulars
               </li>
             </ul>
@@ -171,24 +171,24 @@
         </li>
         <li class="list-none">
           <details>
-            <summary class="lg:flex px-2 py-1 bg-white hover:bg-[#EDF2FB] active:scale-95 active:bg-[#EDF2FB] hover:border-t-4 active:border-t-4 hover:border-l-2 active:border-l-2 border-blue-400 rounded-md cursor-pointer transition-colors ease-in">Admission</summary>
-            <ul class="absolute left-[11rem] lg:left-auto flex flex-col justify-center items-center bg-[#EDF2FB] rounded-b-lg border-l-2 border-b-2 border-blue-400 text-start drop-shadow-md w-[50vw] lg:w-auto">
-              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+            <summary id="nav-item-admission" class="lg:flex p-1.5 px-2.5 bg-white hover:bg-[#EDF2FB] active:scale-95 active:bg-[#EDF2FB] hover:border-t-4 active:border-t-4 hover:border-l-2 active:border-l-2 hover:text-blue-600 font-semibold border-blue-400 rounded-md cursor-pointer transition-all ease-in xl:font-lg xl:uppercase drop-shadow-md">Admission</summary>
+            <ul class="absolute left-[11rem] lg:left-auto flex flex-col justify-center items-center bg-[#EDF2FB] rounded-b-lg border-l-2 border-b-2 border-blue-400 text-start drop-shadow-md w-[50vw] lg:w-auto z-[9]">
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-all ease-in cursor-pointer hover:text-blue-600 font-semibold">
                 Information
               </li>
-              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-all ease-in cursor-pointer hover:text-blue-600 font-semibold">
                 Criteria
               </li>
-              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-all ease-in cursor-pointer hover:text-blue-600 font-semibold">
                 Transport
               </li>
-              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-all ease-in cursor-pointer hover:text-blue-600 font-semibold">
                 Fee Structure
               </li>
-              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer">
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-all ease-in cursor-pointer hover:text-blue-600 font-semibold">
                 Timings & Uniform
               </li>
-              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-colors ease-in cursor-pointer rounded-b-lg">
+              <li class="px-2 py-1 bg-[#EDF2FB] active:bg-white active:border-t-2 hover:bg-white lg:hover:border-r-2 active:border-r-2 border-blue-400 w-full transition-all ease-in cursor-pointer hover:text-blue-600 font-semibold rounded-b-lg">
                 Subject Combination (XI)
               </li>
             </ul>
@@ -199,7 +199,7 @@
   </header>
 <!-- Social Bar for Mobiles -->
 
-  <div id="js-s-nav-social-media" class="hidden items-center justify-center tap-highlight select-none flex-col p-2 gap-3 bg-[#EDF2FB] fixed right-0 bottom-[1rem] rounded-l-md shadow-md transition ease-in z-[3]">
+  <div id="js-s-nav-social-media" class="hidden items-center justify-center tap-highlight select-none flex-col p-2 gap-3 fixed right-0 bottom-[1rem] rounded-l-md drop-shadow-md transition ease-in z-[3]">
     <a href="#">
       <i class="fa-brands fa-instagram cursor-pointer p-1.5 transition ease-in active:scale-90 text-white bg-gradient-to-tr from-yellow-500 via-red-600 to-purple-500 rounded-lg text-[1.4rem] h-[2.15rem] w-[2.15rem] text-center flex items-center justify-center"></i>
     </a>
@@ -211,22 +211,21 @@
     </a>
   </div>
 
-<div id="js-body" class="bg-[#EDF2FB] z-[1] tap-highlight min-h-screen">
- 
+<div id="js-body" class="z-[1] tap-highlight min-h-screen">
   <div id="carousel-main-div" class="relative select-none py-1.5 lg:py-3 flex items-center justify-center">
     <button id="js-top-carousel-prev-btn" class="flex justify-center items-center text-center text-blue-500 hover:text-blue-600 p-0.5 sm:p-1 lg:p-2 rounded-md ml-1 bg-white active:scale-90 transition-all ease-in rounded-r-none z-[1]">
       <i class="fa-solid fa-chevron-left text-lg sm:text-sm md:text-xl lg:text-2xl ml-1"></i>
     </button>
     <div id="top-carousel-img-container" class="flex min-w-[75vw] max-h-[70vh] aspect-video bg-white overflow-hidden rounded-md transition-opacity ease-in duration-500">
-      <img id="js-top-carousel-img-1" class="min-w-full p-1 flex rounded-lg transition-opacity ease-in duration-500" src="./images/logo/main-circular.PNG" alt="TIS Classrooms">
-      <img id="js-top-carousel-img-2" class="min-w-full p-1 flex rounded-lg transition-opacity ease-in duration-500" src="./images/logo/main-icon-circular.PNG" alt="TIS Inftrastructure">
+      <img id="js-top-carousel-img-1" class="min-w-full p-1 flex rounded-lg transition-opacity ease-in duration-500" src="./images/logo/main-icon.png" alt="TIS Classrooms">
+      <img id="js-top-carousel-img-2" class="min-w-full p-1 flex rounded-lg transition-opacity ease-in duration-500" src="./images/logo/main.png" alt="TIS Inftrastructure">
       <img id="js-top-carousel-img-3" class="min-w-full p-1 flex rounded-lg transition-opacity ease-in duration-500" src="./images/logo/main-icon.png" alt="TIS Students">
       <img id="js-top-carousel-img-1" class="min-w-full p-1 flex rounded-lg transition-opacity ease-in duration-500" src="./images/logo/main.png" alt="TIS Classrooms">
     </div>
     <button id="js-top-carousel-next-btn" class="flex justify-center items-center text-center text-blue-500 hover:text-blue-600 p-0.5 sm:p-1 lg:p-2 rounded-md mr-1 bg-white active:scale-90 transition-all ease-in rounded-l-none z-[1]">
       <i class="fa-solid fa-chevron-right text-lg sm:text-sm md:text-xl lg:text-2xl mr-1"></i>
     </button>
-    <div id="js-top-carousel-dots-container"  class="absolute h-fit bg-blue-500 hover:bg-blue-600 -bottom-3.5 lg:-bottom-[0.7rem] rounded-b-lg mx-1.5 flex justify-center items-center gap-2 md:gap-2.5 lg:gap-3 px-2 py-1.5 lg:px-3 lg:py-1 transition-all ease-in w-fit drop-shadow-md">
+    <div id="js-top-carousel-dots-container"  class="absolute h-fit bg-blue-400 -bottom-3.5 lg:-bottom-[0.7rem] rounded-b-lg mx-1.5 flex justify-center items-center gap-2 md:gap-2.5 lg:gap-3 px-2 py-1.5 lg:px-3 lg:py-1 transition-all ease-in w-fit drop-shadow-md">
       <div id="carousel-dot-1" class="flex h-2 w-3 lg:h-3.5 lg:w-5 rounded-full border-2 lg:border-[3px] border-white active:scale-90 ease-in cursor-pointer"></div>
       <div id="carousel-dot-2" class="flex h-2 w-3 lg:h-3.5 lg:w-5 rounded-full border-2 lg:border-[3px] border-white active:scale-90 ease-in cursor-pointer"></div>
       <div id="carousel-dot-3" class="flex h-2 w-3 lg:h-3.5 lg:w-5 rounded-full border-2 lg:border-[3px] border-white active:scale-90 ease-in cursor-pointer"></div>
@@ -234,24 +233,278 @@
     </div>
   </div> 
 
-  <div id="quick-btns" class="select-none mt-6 md:mt-8 lg:mt-10 p-4 md:p-6 lg:p-8 border-y-2 border-white flex items-center justify-center flex-row gap-3 md:gap-10 lg:gap-16 text-base md:text-lg lg:text-xl bg-blue-500 transition eas">
+  <div id="quick-btns" class="select-none mt-10 md:mt-12 lg:mt-14 p-4 md:p-6 lg:p-8 flex items-center justify-center flex-row gap-3 md:gap-10 lg:gap-16 font-semibold md:text-lg lg:text-xl bg-[#EDF2FB]">
     <a href="#">
-      <button class="py-1 px-4 bg-white hover:text-blue-600 text-blue-500 active:scale-90 lg:active:scale-95 transition ease-in rounded-lg font-[500] lg:hover:scale-105 drop-shadow-md">
-        Admission Queries
+      <button class="py-2 px-3.5 lg:px-6 lg:py-4 bg-white hover:text-blue-600 text-blue-500 active:scale-90 transition-all ease-in rounded-lg drop-shadow-md border-y-4 border-y-transparent hover:border-b-blue-400">
+        Online Fee Payment
       </button>
     </a>
 
     <a href="#">
-      <button class="py-1 px-4 bg-white hover:text-blue-600 text-blue-500 active:scale-90 lg:active:scale-95 transition ease-in rounded-lg font-[500] lg:hover:scale-105 drop-shadow-md">
+      <button class="py-2 px-3.5 lg:px-6 lg:py-4 bg-white hover:text-blue-600 text-blue-500 active:scale-90 transition-all ease-in rounded-lg drop-shadow-md border-y-4 border-y-transparent hover:border-b-blue-400">
         Online Admission
       </button>
     </a>
   </div>
-  
-</div>
 
+  <div id="welcome-message" class="mt-8 px-6 flex flex-col items-center justify-center">
+    <div class="p-6 mx-4 rounded-t-xl text-[2rem] md:text-4xl flex flex-row items-center justify-center text-center gap-4 md:font-semibold">
+      <span class="hidden md:flex bg-black h-0.5 w-8"></span>
+      Welcome to TIS Kolkata
+      <span class="hidden md:flex bg-black h-0.5 w-8"></span>
+    </div>
+    <p class="max-w-5xl text-justify flex flex-col items-center">
+      The genesis of a The International School is an event in itself and the The International School Kolkata is no exception. TIS Kolkata bears the vision of inculcating in the students the right moral values so that they grow up to be able citizens of tomorrow. TIS Kolkata, a CBSE affiliated school, will aim to preserve and enhance the highest standards of excellence and prepare generations for the 21st century. It has been providing a nurturing and innovative environment to students to become amiable, confident and productive members of the community. At TIS Kolkata, there is a healthy emphasis on both curricular and co-curricular programmes. To groom students into responsible and gracious citizens of the world, strong emphasis is placed on the development of strength of character, mindset of excellence, commitment to teamwork and leadership potential.
+      <img class="mt-4 w-full md:w-2/3 md:hover:scale-105 transition rounded-lg p-1 drop-shadow-md"
+    src="./images/banner/welcome-msg-award.png" alt="Global Council Award">
+    </p>
+  </div>
+  <div class="flex items-center justify-center">
+    <div id="principal-message" class="w-fit mt-8">
+      <div class="bg-[#EDF2FB] p-6 mx-4 rounded-t-xl text-[2rem] md:text-4xl flex flex-row items-center justify-center text-center gap-4 md:font-semibold">
+        <span class="hidden md:flex bg-black h-0.5 w-8"></span>
+        Principal's Message
+        <span class="hidden md:flex bg-black h-0.5 w-8"></span>
+      </div>
+      <div class="bg-[#EDF2FB] mt-0 m-4 gap-x-4 flex flex-col xl:flex-row items-center justify-center rounded-b-xl border-b-4 md:border-b-[6px] border-blue-400">
+        <div class="group overflow-hidden drop-shadow-lg h-[21.3rem] md:h-[21.83rem] xl:h-[22.3rem] xl:py-4 md:py-2 xl:mb-6 xl:ml-6">
+          <img class="w-[16rem] aspect-[3/4] rounded-md bg-white" src="https://upload.wikimedia.org/wikipedia/commons/1/17/Simpleicons_Interface_business-woman.svg" alt="Mrs. Yashmi Samantha">
+          <span class="-translate-y-[4.25rem] md:translate-y-0 md:group-hover:-translate-y-[4.25rem] p-2 bg-yellow-400/90 flex flex-col justify-center items-start font-semibold text-xl w-full rounded-b-md transition-all ease-in">Mrs. Yashmi Samantha
+            <span class="text-base font-normal">Principal</span>
+          </span>
+        </div>
+        <div class="px-6 py-2 flex flex-col max-w-5xl xl:max-w-4xl text-justify">
+          <span class="text-4xl text-white"><i class="fa-solid fa-quote-left"></i></span>
+          TIS Kolkata has embarked on a clear-cut vision of SACH, i.e. we believe in Scientific enquiry of mind, Agility of mind and body, Creating, nurturing and preserving nature and Humility, Unity and brotherhood.
+          <br><br>
+          Our vision SACH encompasses these important areas for holistic development in students. In this digital age, we aim at providing activity-oriented learning enabling digital natives, i.e. our students use both dexterity of hand and agility of mind empowering global citizens. Equal importance is given to inculcating the most important virtue in today’s time, that is humility. As education along with humility is a mark of well-balanced and cultured individual. I hope our vision of SACH will enable our students to withstand and deal deftly with the rigors of life experiences encountered daily.
+          <span class="text-4xl text-white"><i class="fa-solid fa-quote-right"></i></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="events" class="mt-8">
+    <div class="p-6 mx-4 rounded-t-xl text-[2rem] md:text-4xl flex flex-row items-center justify-center text-center gap-4 md:font-semibold">
+      <span class="hidden md:flex bg-black h-0.5 w-8"></span>
+      Events
+      <span class="hidden md:flex bg-black h-0.5 w-8"></span>
+    </div>
+    <div id="events-container" class="relative bg-cover bg-[url('./images/banner/bg-events-75o.png')] bg-fixed p-6 flex flex-wrap items-center justify-evenly gap-6 pb-[6rem]">
+
+      <div class="group h-80 aspect-square drop-shadow-lg cursor-pointer overflow-hidden">
+        <img class="rounded-md w-full" src="./images/logo/main.png" alt="">
+        <span class="-translate-y-[4.25rem] md:translate-y-0 md:group-hover:-translate-y-[4.25rem] p-2 bg-blue-500/90 text-white flex flex-col justify-center items-start font-semibold text-xl w-full rounded-b-md transition-all ease-in">
+          Umang
+          <span class="text-base font-normal">2023</span>
+        </span>
+      </div>
+
+      <div class="group h-80 aspect-square drop-shadow-lg cursor-pointer overflow-hidden">
+        <img class="rounded-md w-full" src="./images/logo/main.png" alt="">
+        <span class="-translate-y-[4.25rem] md:translate-y-0 md:group-hover:-translate-y-[4.25rem] p-2 bg-blue-500/90 text-white flex flex-col justify-center items-start font-semibold text-xl w-full rounded-b-md transition-all ease-in">
+          Umang
+          <span class="text-base font-normal">2022</span>
+        </span>
+      </div>
+
+      <div class="group h-80 aspect-square drop-shadow-lg cursor-pointer overflow-hidden">
+        <img class="rounded-md w-full" src="./images/logo/main.png" alt="">
+        <span class="-translate-y-[4.25rem] md:translate-y-0 md:group-hover:-translate-y-[4.25rem] p-2 bg-blue-500/90 text-white flex flex-col justify-center items-start font-semibold text-xl w-full rounded-b-md transition-all ease-in">
+          Umang
+          <span class="text-base font-normal">2021</span>
+        </span>
+      </div>
+
+      <div class="group h-80 aspect-square drop-shadow-lg cursor-pointer overflow-hidden">
+        <img class="rounded-md w-full" src="./images/logo/main.png" alt="">
+        <span class="-translate-y-[4.25rem] md:translate-y-0 md:group-hover:-translate-y-[4.25rem] p-2 bg-blue-500/90 text-white flex flex-col justify-center items-start font-semibold text-xl w-full rounded-b-md transition-all ease-in">
+          Umang
+          <span class="text-base font-normal">2020</span>
+        </span>
+      </div>
+      <span class="absolute bottom-4">
+        <button class="flex items-center justify-center md:text-lg lg:text-xl text-blue-500 hover:text-blue-600 font-semibold bg-white py-2 px-6 lg:px-8 lg:py-2.5 border-y-4 border-b-blue-400 border-t-white md:border-white md:hover:border-b-blue-400 active:scale-95 rounded-lg drop-shadow-md transition-all ease-in">
+          View All Events
+        </button>
+      </span>
+    </div>
+  </div>
+
+  <div id="circular" class="mt-8 p-4 flex items-center justify-center">
+    <div id="circulars-container" class="bg-[#EDF2FB] w-fit rounded-lg border-b-4 md:border-b-6 border-blue-400 drop-shadow-lg">
+      <div class="p-4 mx-4 rounded-t-xl text-[2rem] md:text-4xl flex flex-row items-center justify-center text-center gap-4 md:font-semibold mt-2">
+        <span class="hidden md:flex bg-black h-0.5 w-8"></span>
+        Circulars
+        <span class="hidden md:flex bg-black h-0.5 w-8"></span>
+      </div>
+      <div class="p-4 relative pb-[6rem] flex items-center justify-center">
+        <ul class="relative text-lg font-[500] flex flex-col gap-4 md:grid md:grid-cols-2 md:gap-4">
+          <li class="group flex items-center justify-between gap-4 bg-white p-2 rounded-md drop-shadow-md text-blue-500 hover:text-blue-600">
+            1. Test this is a notice
+            <span id="download-span" class="hidden md:flex md:opacity-0 bg-blue-500 text-white p-1.5 rounded-t-lg md:group-hover:opacity-100 text-sm font-normal transition-all ease-in">
+            12.05.2023
+          </span>
+            <button class="text-3xl p-1.5 rounded-md flex items-center justify-center bg-blue-500 hover:bg-blue-600 text-white active:scale-90 drop-shadow-md transition-all ease-in">
+              <i class="fa-solid fa-circle-arrow-down"></i>
+            </button>
+          </li>      
+          <li class="group flex items-center justify-between gap-4 bg-white p-2 rounded-md drop-shadow-md text-blue-500 hover:text-blue-600">
+            2. Test this is a notice
+            <span id="download-span" class="hidden md:flex md:opacity-0 bg-blue-500 text-white p-1.5 rounded-t-lg md:group-hover:opacity-100 text-sm font-normal transition-all ease-in">
+            12.05.2023
+          </span>
+            <button class="text-3xl p-1.5 rounded-md flex items-center justify-center bg-blue-500 hover:bg-blue-600 text-white active:scale-90 drop-shadow-md transition-all ease-in">
+              <i class="fa-solid fa-circle-arrow-down"></i>
+            </button>
+          </li>      
+          <li class="group flex items-center justify-between gap-4 bg-white p-2 rounded-md drop-shadow-md text-blue-500 hover:text-blue-600">
+            3. Test this is a notice
+            <span id="download-span" class="hidden md:flex md:opacity-0 bg-blue-500 text-white p-1.5 rounded-t-lg md:group-hover:opacity-100 text-sm font-normal transition-all ease-in">
+            12.05.2023
+          </span>
+            <button class="text-3xl p-1.5 rounded-md flex items-center justify-center bg-blue-500 hover:bg-blue-600 text-white active:scale-90 drop-shadow-md transition-all ease-in">
+              <i class="fa-solid fa-circle-arrow-down"></i>
+            </button>
+          </li>      
+          <li class="group flex items-center justify-between gap-4 bg-white p-2 rounded-md drop-shadow-md text-blue-500 hover:text-blue-600">
+            4. Test this is a notice
+            <span id="download-span" class="hidden md:flex md:opacity-0 bg-blue-500 text-white p-1.5 rounded-t-lg md:group-hover:opacity-100 text-sm font-normal transition-all ease-in">
+            12.03.2023
+          </span>
+            <button class="text-3xl p-1.5 rounded-md flex items-center justify-center bg-blue-500 hover:bg-blue-600 text-white active:scale-90 drop-shadow-md transition-all ease-in">
+              <i class="fa-solid fa-circle-arrow-down"></i>
+            </button>
+          </li>      
+          <li class="group flex items-center justify-between gap-4 bg-white p-2 rounded-md drop-shadow-md text-blue-500 hover:text-blue-600">
+            5. Test this is a notice
+            <span id="download-span" class="hidden md:flex md:opacity-0 bg-blue-500 text-white p-1.5 rounded-t-lg md:group-hover:opacity-100 text-sm font-normal transition-all ease-in">
+            12.04.2023
+          </span>
+            <button class="text-3xl p-1.5 rounded-md flex items-center justify-center bg-blue-500 hover:bg-blue-600 text-white active:scale-90 drop-shadow-md transition-all ease-in">
+              <i class="fa-solid fa-circle-arrow-down"></i>
+            </button>
+          </li>      
+          <li class="group flex items-center justify-between gap-4 bg-white p-2 rounded-md drop-shadow-md text-blue-500 hover:text-blue-600">
+            6. Test this is a notice of secondary section of TIS
+            <span id="download-span" class="hidden md:flex md:opacity-0 bg-blue-500 text-white p-1.5 rounded-t-lg md:group-hover:opacity-100 text-sm font-normal transition-all ease-in">
+            12.05.2023
+          </span>
+            <button class="text-3xl p-1.5 rounded-md flex items-center justify-center bg-blue-500 hover:bg-blue-600 text-white active:scale-90 drop-shadow-md transition-all ease-in">
+              <i class="fa-solid fa-circle-arrow-down"></i>
+            </button>
+          </li>      
+        </ul>
+        <span class="absolute bottom-4 drop-shadow-lg">
+          <button class="flex items-center justify-center md:text-lg lg:text-xl text-blue-500 hover:text-blue-600 font-semibold bg-white py-2 px-6 lg:px-8 lg:py-2.5 border-y-4 border-b-blue-400 border-t-white md:border-white md:hover:border-b-blue-400 active:scale-95 rounded-lg drop-shadow-md transition-all ease-in">
+            View All Circulars
+          </button>
+        </span>
+      </div>
+    </div>
+  </div>
+<br>
+<footer>
+  <div class="bg-[#EDF2FB] p-4 flex flex-wrap justify-evenly gap-6 select-none tap-highlight">
+  <div class="bg-white p-4 rounded-md drop-shadow-md hover:drop-shadow-lg h-fit">
+    <a class="flex items-center justify-center" href="#">
+      <img class="h-28 border-4 border-x-2 hover:border-4 border-t-0 hover:border-t-0 rounded-full border-blue-400 transition-all ease-in" src="./images/logo/main-icon-circular.PNG" alt="TIS Logo">
+    </a>
+    <p class="text-center">
+      The International School
+      <span class="uppercase block text-center mb-4">Kolkata</span>
+    </p>
+    <p class="mt-auto flex justify-start items-end">
+      CBSE Affiliation No. xx99999 <br>
+      UDISE Code xxxxx999999
+    </p>
+  </div>
+
+  <div class="bg-white p-4 rounded-md drop-shadow-md hover:drop-shadow-lg h-fit">
+    <p class="text-center uppercase mb-4">
+      <span class="underline underline-offset-4">Useful</span> Links
+    </p>
+    <ul class="text-blue-500">
+        <li class="hover:text-blue-600 cursor-pointer underline-offset-2 hover:underline transition-all ease-in">Awards & Accolades</li>
+        <li class="hover:text-blue-600 cursor-pointer underline-offset-2 hover:underline transition-all ease-in">Annual Report</li>
+        <li class="hover:text-blue-600 cursor-pointer underline-offset-2 hover:underline transition-all ease-in">Contact</li>
+        <li class="hover:text-blue-600 cursor-pointer underline-offset-2 hover:underline transition-all ease-in">Year Planner</li>
+        <li class="hover:text-blue-600 cursor-pointer underline-offset-2 hover:underline transition-all ease-in">Management Committee</li>
+        <li class="hover:text-blue-600 cursor-pointer underline-offset-2 hover:underline transition-all ease-in">Admission Information</li>
+        <li class="hover:text-blue-600 cursor-pointer underline-offset-2 hover:underline transition-all ease-in">Career</li>
+        <li class="hover:text-blue-600 cursor-pointer underline-offset-2 hover:underline transition-all ease-in">Board Results</li>
+        <li class="hover:text-blue-600 cursor-pointer underline-offset-2 hover:underline transition-all ease-in">Parents Teachers Association</li>
+        <li class="hover:text-blue-600 cursor-pointer underline-offset-2 hover:underline transition-all ease-in">CBSE Mandatory Disclosures</li>
+    </ul>
+  </div>
+</div>
+<div class="bg-[#EDF2FB] p-4 flex flex-wrap justify-evenly gap-6 select-none tap-highlight">
+  <div class="bg-white flex flex-col p-4 rounded-md drop-shadow-md hover:drop-shadow-lg h-fit">
+    <p class="text-center uppercase">
+      <span class="underline underline-offset-4">Connect</span> with us
+    </p>
+    <p class="mt-4">
+      <span class="flex items-center justify-start text-base"><i class="fa-solid fa-phone">&nbsp;&nbsp;</i>
+        <span class="flex">
+          <a class="flex" href="tel:+91 99999 99999">+91 99999 99999</a> &nbsp;,&nbsp;&nbsp;
+          <a class="flex" href="tel:+91 99999 99999">+91 99999 99999</a>
+        </span>
+      </span>
+      <span class="inline-flex items-center mt-2 text-lg"><i class="fa-solid fa-envelope flex">&nbsp;&nbsp;</i>
+        <a href="mailto:imfarhat.dev@gmail.com">imfarhat.dev@gmail.com</a>
+      </span>  <br>
+      <span class="inline-flex items-center mt-2 text-lg"><i class="fa-solid fa-location-dot">&nbsp;&nbsp;</i>
+        The International School, 12 Developer Road, Kolkata, Post Office: Barabazar H.O., Kolkata - 700 007
+      </span> 
+    </p>
+    <span class="flex items-center justify-center text-center">
+      <iframe
+      class="rounded-md md:h-[28.125rem] md:w-[37.5rem] mt-4 md:hover:drop-shadow-lg transition ease-in"
+      loading="lazy"
+      allowfullscreen
+      referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235850.27103422952!2d88.18220021629772!3d22.53566022659685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1699542224116!5m2!1sen!2sin">
+    </iframe>
+    </span>
+    <p class="text-center text-sm uppercase mt-6">
+      <span class="underline underline-offset-4">Social</span> Media
+    </p>
+    <div class="items-center justify-center tap-highlight select-none flex p-2 gap-4 transition ease-in mt-2 z-[3]">
+      <a href="#">
+        <i class="fa-brands fa-instagram cursor-pointer p-1.5 transition ease-in active:scale-90 text-white bg-gradient-to-tr from-yellow-500 via-red-600 to-purple-500 rounded-lg text-[1.4rem] h-[2.15rem] w-[2.15rem] text-center flex items-center justify-center drop-shadow-md"></i>
+      </a>
+      <a href="#">
+        <i class="fa-brands fa-whatsapp cursor-pointer p-1.5 transition ease-in active:scale-90 text-white bg-gradient-to-b from-green-500 to-green-600 rounded-lg text-[1.4rem] h-[2.15rem] w-[2.15rem] text-center flex items-center justify-center drop-shadow-md"></i>
+      </a>
+      <a href="#">
+        <i class="fa-brands fa-x-twitter cursor-pointer p-1.5 transition ease-in active:scale-90 text-white bg-gradient-to-b from-black to-black rounded-lg text-[1.4rem] h-[2.15rem] w-[2.15rem] text-center flex items-center justify-center drop-shadow-md"></i>
+      </a>
+    </div>
+  </div>
+</div>
+<div id="copyright" class="flex items-center flex-col justify-center md:flex-row md:justify-between p-2 px-4 gap-x-4 bg-blue-100 text-sm">
+  <span class="flex">
+    &copy; 2023 TIS Kolkata . All rights reseved.
+  </span>
+  <a href="https://farhateservices.github.io/fesa/">
+    <span class="flex flex-row gap-1 items-center justify-center">
+      Powered by <img class="h-5 filter bg-blend-multiply" src="https://farhateservices.github.io/fesa/logo-head-black.png" alt="Farhat e Services & Assistance">Farhat e Services & Assistance 
+    </span>
+  </a>
+</div>
+</footer>
+</div>
+<div id="page-id" class="hidden">home</div>
 <script type="module" src="./scripts/imported/index.js"></script>
 <script type="module" src="./scripts/imported/home.js"></script>
+<script>
+  let currentTab = document.getElementById('page-id').innerHTML;
+  function setTabState(tabId) {
+    const navTab = document.getElementById(`nav-item-${tabId}`);
+    navTab.classList.add('border-t-4','border-l-2', 'text-blue-500', 'bg-transparent');
+  };
+  setTabState(currentTab);
+</script>
 
 </body>
 </html>
