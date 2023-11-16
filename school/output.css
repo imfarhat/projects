@@ -786,10 +786,6 @@ video {
   height: fit-content;
 }
 
-.h-auto {
-  height: auto;
-}
-
 .max-h-\[70vh\] {
   max-height: 70vh;
 }
@@ -849,14 +845,6 @@ video {
 
 .min-w-full {
   min-width: 100%;
-}
-
-.min-w-\[100\] {
-  min-width: 100;
-}
-
-.min-w-\[100vw\] {
-  min-width: 100vw;
 }
 
 .max-w-5xl {
