@@ -1,6 +1,6 @@
 export { loadNavMarquee, loadHomeNotice, loadAllFacultyData, loadAdministrativeTeamData, loadSportsDivData, loadCampusDivData, loadAllClassroomData, loadAllLaboratoriesData, loadAllOtherInrastructureData };
 
-function loadNavMarquee() {
+async function loadNavMarquee() {
   const jsonURL = './contents/fetch-page-jsons/home/nav-marquee.json';
   const displayDiv = document.getElementById('topNavMarquee');
 
@@ -24,7 +24,7 @@ function loadNavMarquee() {
     });
 };
 
-function loadHomeNotice() {
+async function loadHomeNotice() {
   const jsonURL = './contents/fetch-page-jsons/home/notice.json';
   const displayDiv = document.getElementById('home-notice');
 
@@ -56,7 +56,7 @@ function loadHomeNotice() {
 };
 
 
-function loadFacultyData(jsonURL, displayDivId, imageFolder) {
+async function loadFacultyData(jsonURL, displayDivId, imageFolder) {
   const displayDiv = document.getElementById(displayDivId);
   fetch(jsonURL)
     .then(response => {
@@ -84,30 +84,30 @@ function loadFacultyData(jsonURL, displayDivId, imageFolder) {
     });
 };
 
-function loadAllFacultyData() {
+async function loadAllFacultyData() {
   try {
-    loadFacultyData('./contents/fetch-page-jsons/faculty/principal.json', 'principal-div', 'faculty/principal');
-    loadFacultyData('./contents/fetch-page-jsons/faculty/headmistresses.json', 'headmistresses-div', 'faculty/headmistresses');
-    loadFacultyData('./contents/fetch-page-jsons/faculty/coordinators.json', 'coordinators-div', 'faculty/coordinators');
-    loadFacultyData('./contents/fetch-page-jsons/faculty/extra-curricular-activity-coordinators.json', 'extra-curricular-activity-coordinators-div', 'faculty/extra-curricular-activity-coordinators');
-    loadFacultyData('./contents/fetch-page-jsons/faculty/hod.json', 'hod-div', 'faculty/hod');
-    loadFacultyData('./contents/fetch-page-jsons/faculty/pre-primary-faculty.json', 'pre-primary-faculty-div', 'faculty/pre-primary-faculty');
-    loadFacultyData('./contents/fetch-page-jsons/faculty/middle-school-faculty.json', 'middle-school-faculty-div', 'faculty/middle-school-faculty');
-    loadFacultyData('./contents/fetch-page-jsons/faculty/senior-school-faculty.json', 'senior-school-faculty-div', 'faculty/senior-school-faculty');
+    await loadFacultyData('./contents/fetch-page-jsons/faculty/principal.json', 'principal-div', 'faculty/principal');
+    await loadFacultyData('./contents/fetch-page-jsons/faculty/headmistresses.json', 'headmistresses-div', 'faculty/headmistresses');
+    await loadFacultyData('./contents/fetch-page-jsons/faculty/coordinators.json', 'coordinators-div', 'faculty/coordinators');
+    await loadFacultyData('./contents/fetch-page-jsons/faculty/extra-curricular-activity-coordinators.json', 'extra-curricular-activity-coordinators-div', 'faculty/extra-curricular-activity-coordinators');
+    await loadFacultyData('./contents/fetch-page-jsons/faculty/hod.json', 'hod-div', 'faculty/hod');
+    await loadFacultyData('./contents/fetch-page-jsons/faculty/pre-primary-faculty.json', 'pre-primary-faculty-div', 'faculty/pre-primary-faculty');
+    await loadFacultyData('./contents/fetch-page-jsons/faculty/middle-school-faculty.json', 'middle-school-faculty-div', 'faculty/middle-school-faculty');
+    await loadFacultyData('./contents/fetch-page-jsons/faculty/senior-school-faculty.json', 'senior-school-faculty-div', 'faculty/senior-school-faculty');
   } catch (error) {
     console.error('An error occurred while fetching All Faculty Page Data:', error);
   }
 };
 
-function loadAdministrativeTeamData() {
+async function loadAdministrativeTeamData() {
   try {
-    loadFacultyData('./contents/fetch-page-jsons/administrative-team.json', 'administrative-team-div', 'administrative');
+    await loadFacultyData('./contents/fetch-page-jsons/administrative-team.json', 'administrative-team-div', 'administrative');
   } catch (error) {
     console.error('An error occurred while fetching Administrative Team Data:', error);
   }
 };
 
-function loadImglandscapeTextData(jsonURL, displayDivId, imageFolder) {
+async function loadImglandscapeTextData(jsonURL, displayDivId, imageFolder) {
   const displayDiv = document.getElementById(displayDivId);
   fetch(jsonURL)
     .then(response => {
@@ -134,61 +134,61 @@ function loadImglandscapeTextData(jsonURL, displayDivId, imageFolder) {
     });
 };
 
-function loadSportsDivData() {
+async function loadSportsDivData() {
   try {
-    loadImglandscapeTextData('./contents/fetch-page-jsons/sports.json', 'sports-div', 'sports');
+    await loadImglandscapeTextData('./contents/fetch-page-jsons/sports.json', 'sports-div', 'sports');
 
   } catch (error) {
     console.error('An error occurred while loading Sports Data:', error);
   }
 };
 
-function loadCampusDivData() {
+async function loadCampusDivData() {
   try {
-    loadImglandscapeTextData('./contents/fetch-page-jsons/campus.json', 'campus-div', 'campus');
+    await loadImglandscapeTextData('./contents/fetch-page-jsons/campus.json', 'campus-div', 'campus');
 
   } catch (error) {
     console.error('An error occurred while loading Campus Data:', error);
   }
 };
 
-function loadAllClassroomData() {
+async function loadAllClassroomData() {
   try {
-    loadImglandscapeTextData('./contents/fetch-page-jsons/classroom/art-craft-room.json', 'art-craft-room-div', 'classroom/art-craft-room');
-    loadImglandscapeTextData('./contents/fetch-page-jsons/classroom/classroom.json', 'classroom-div', 'classroom/classroom');
-    loadImglandscapeTextData('./contents/fetch-page-jsons/classroom/computer-robotics.json', 'computer-robotics-div', 'classroom/computer-robotics');
-    loadImglandscapeTextData('./contents/fetch-page-jsons/classroom/dance-room.json', 'dance-room-div', 'classroom/dance-room');
-    loadImglandscapeTextData('./contents/fetch-page-jsons/classroom/library-room.json', 'library-room-div', 'classroom/library-room');
-    loadImglandscapeTextData('./contents/fetch-page-jsons/classroom/music.json', 'music-div', 'classroom/music');
-    loadImglandscapeTextData('./contents/fetch-page-jsons/classroom/theme-room.json', 'theme-room-div', 'classroom/theme-room');
+    await loadImglandscapeTextData('./contents/fetch-page-jsons/classroom/art-craft-room.json', 'art-craft-room-div', 'classroom/art-craft-room');
+    await loadImglandscapeTextData('./contents/fetch-page-jsons/classroom/classroom.json', 'classroom-div', 'classroom/classroom');
+    await loadImglandscapeTextData('./contents/fetch-page-jsons/classroom/computer-robotics.json', 'computer-robotics-div', 'classroom/computer-robotics');
+    await loadImglandscapeTextData('./contents/fetch-page-jsons/classroom/dance-room.json', 'dance-room-div', 'classroom/dance-room');
+    await loadImglandscapeTextData('./contents/fetch-page-jsons/classroom/library-room.json', 'library-room-div', 'classroom/library-room');
+    await loadImglandscapeTextData('./contents/fetch-page-jsons/classroom/music.json', 'music-div', 'classroom/music');
+    await loadImglandscapeTextData('./contents/fetch-page-jsons/classroom/theme-room.json', 'theme-room-div', 'classroom/theme-room');
   } catch (error) {
     console.error('An error occurred while loaing All Classroom Page Data:', error);
   }
 };
 
-function loadAllLaboratoriesData() {
+async function loadAllLaboratoriesData() {
   try {
-    loadImglandscapeTextData('./contents/fetch-page-jsons/laboratories/audio-visual-room.json', 'audio-visual-room-div', 'laboratories/audio-visual-room');
-    loadImglandscapeTextData('./contents/fetch-page-jsons/laboratories/bio-lab.json', 'bio-lab-div', 'laboratories/bio-lab');
-    loadImglandscapeTextData('./contents/fetch-page-jsons/laboratories/chemistry-lab.json', 'chemistry-lab-div', 'laboratories/chemistry-lab');
-    loadImglandscapeTextData('./contents/fetch-page-jsons/laboratories/exploration-lab.json', 'exploration-lab-div', 'laboratories/exploration-lab');
-    loadImglandscapeTextData('./contents/fetch-page-jsons/laboratories/math-lab.json', 'math-lab-div', 'laboratories/math-lab');
-    loadImglandscapeTextData('./contents/fetch-page-jsons/laboratories/physics-lab.json', 'physics-lab-div', 'laboratories/physics-lab');
-    loadImglandscapeTextData('./contents/fetch-page-jsons/laboratories/3d-printing.json', '3d-printing-div', 'laboratories/3d-printing');
+    await loadImglandscapeTextData('./contents/fetch-page-jsons/laboratories/audio-visual-room.json', 'audio-visual-room-div', 'laboratories/audio-visual-room');
+    await loadImglandscapeTextData('./contents/fetch-page-jsons/laboratories/bio-lab.json', 'bio-lab-div', 'laboratories/bio-lab');
+    await loadImglandscapeTextData('./contents/fetch-page-jsons/laboratories/chemistry-lab.json', 'chemistry-lab-div', 'laboratories/chemistry-lab');
+    await loadImglandscapeTextData('./contents/fetch-page-jsons/laboratories/exploration-lab.json', 'exploration-lab-div', 'laboratories/exploration-lab');
+    await loadImglandscapeTextData('./contents/fetch-page-jsons/laboratories/math-lab.json', 'math-lab-div', 'laboratories/math-lab');
+    await loadImglandscapeTextData('./contents/fetch-page-jsons/laboratories/physics-lab.json', 'physics-lab-div', 'laboratories/physics-lab');
+    await loadImglandscapeTextData('./contents/fetch-page-jsons/laboratories/3d-printing.json', '3d-printing-div', 'laboratories/3d-printing');
   } catch (error) {
     console.error('An error occurred while loaing All Laboratories Page Data:', error);
   }
 };
 
-function loadAllOtherInrastructureData() {
+async function loadAllOtherInrastructureData() {
   try {
-    loadImglandscapeTextData('./contents/fetch-page-jsons/other-infrastructure/children-park.json', 'children-park-div', 'other-infrastructure/children-park');
-    loadImglandscapeTextData('./contents/fetch-page-jsons/other-infrastructure/infirmary.json', 'infirmary-div', 'other-infrastructure/infirmary');
-    loadImglandscapeTextData('./contents/fetch-page-jsons/other-infrastructure/library.json', 'library-div', 'other-infrastructure/library');
-    loadImglandscapeTextData('./contents/fetch-page-jsons/other-infrastructure/prayer.json', 'prayer-div', 'other-infrastructure/prayer');
-    loadImglandscapeTextData('./contents/fetch-page-jsons/other-infrastructure/reception.json', 'reception-div', 'other-infrastructure/reception');
-    loadImglandscapeTextData('./contents/fetch-page-jsons/other-infrastructure/break-time.json', 'break-time-div', 'other-infrastructure/break-time');
-    loadImglandscapeTextData('./contents/fetch-page-jsons/other-infrastructure/yoga.json', 'yoga-div', 'other-infrastructure/yoga');
+    await loadImglandscapeTextData('./contents/fetch-page-jsons/other-infrastructure/children-park.json', 'children-park-div', 'other-infrastructure/children-park');
+    await loadImglandscapeTextData('./contents/fetch-page-jsons/other-infrastructure/infirmary.json', 'infirmary-div', 'other-infrastructure/infirmary');
+    await loadImglandscapeTextData('./contents/fetch-page-jsons/other-infrastructure/library.json', 'library-div', 'other-infrastructure/library');
+    await loadImglandscapeTextData('./contents/fetch-page-jsons/other-infrastructure/prayer.json', 'prayer-div', 'other-infrastructure/prayer');
+    await loadImglandscapeTextData('./contents/fetch-page-jsons/other-infrastructure/reception.json', 'reception-div', 'other-infrastructure/reception');
+    await loadImglandscapeTextData('./contents/fetch-page-jsons/other-infrastructure/break-time.json', 'break-time-div', 'other-infrastructure/break-time');
+    await loadImglandscapeTextData('./contents/fetch-page-jsons/other-infrastructure/yoga.json', 'yoga-div', 'other-infrastructure/yoga');
   } catch (error) {
     console.error('An error occurred while loaing All Laboratories Page Data:', error);
   }
