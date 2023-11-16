@@ -24,7 +24,7 @@ async function loadNavMarquee() {
     });
 };
 
-async function loadHomeNotice() {
+async function loadHomeNotice(applySlice = true) {
   const jsonURL = './contents/fetch-page-jsons/home/notice.json';
   const displayDiv = document.getElementById('home-notice');
 
@@ -36,7 +36,9 @@ async function loadHomeNotice() {
       return response.json();
     })
     .then(data => {
-      displayDiv.innerHTML = data.slice(0, 10).map(item => `
+      //if stament to check if the slice is true/false and slice should be applied or not
+      applySlice && (data = data.slice(0, 10));
+      displayDiv.innerHTML = data.map(item => `
         <li class="group flex items-center justify-between gap-2 bg-white p-2 rounded-md shadow text-blue-500 hover:text-blue-600">
           ${item.noticeTitle}
           <span id="download-span" class="hidden xl:flex xl:opacity-0 bg-blue-500 text-white p-1.5 rounded-t-lg xl:group-hover:opacity-100 text-sm font-normal transition-all ease-in">
