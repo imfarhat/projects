@@ -1,5 +1,6 @@
-let currentTab = document.getElementById('page-id').innerHTML;
+const currentTab = document.getElementById('page-id').innerHTML;
 function setTabState(tabId) {
   const navTab = document.getElementById(`nav-item-${tabId}`);
-  navTab.classList.add('border-t-4','border-l-2', 'text-blue-500', 'bg-transparent');
+  navTab.classList.add('border-t-4', 'text-blue-600', 'bg-white/50');
 };
+setTabState(currentTab);

@@ -5,7 +5,6 @@ function handleNavBarsClick() {
   const navContainer = document.getElementById('js-large-nav');
   const smallNavBars = document.getElementById('js-small-bars');
   const bodyElement = document.getElementById('js-body');
-  const sNavSocialMedia = document.getElementById('js-s-nav-social-media');
   
   navContainer.classList.toggle('hidden');
   navContainer.classList.toggle('flex');
@@ -15,10 +14,7 @@ function handleNavBarsClick() {
 
   bodyElement.classList.toggle('hidden');
 
-  sNavSocialMedia.classList.toggle('flex');
-  sNavSocialMedia.classList.toggle('hidden');
   document.body.scrollTop = document.documentElement.scrollTop = 0;
-
 }
 
 
