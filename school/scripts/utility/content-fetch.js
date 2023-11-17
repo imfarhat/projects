@@ -4,7 +4,7 @@ async function loadNavMarquee() {
   const jsonURL = './contents/fetch-page-jsons/home/nav-marquee.json';
   const displayDiv = document.getElementById('topNavMarquee');
 
-  fetch(jsonURL)
+  await fetch(jsonURL)
     .then(response => {
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
@@ -28,7 +28,7 @@ async function loadHomeNotice(applySlice = true) {
   const jsonURL = './contents/fetch-page-jsons/home/notice.json';
   const displayDiv = document.getElementById('home-notice');
 
-  fetch(jsonURL)
+  await fetch(jsonURL)
     .then(response => {
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
@@ -41,11 +41,11 @@ async function loadHomeNotice(applySlice = true) {
       displayDiv.innerHTML = data.map(item => `
         <li class="group flex items-center justify-between gap-2 bg-white p-2 rounded-md shadow text-blue-500 hover:text-blue-600">
           ${item.noticeTitle}
-          <span id="download-span" class="hidden xl:flex xl:opacity-0 bg-blue-500 text-white p-1.5 rounded-t-lg xl:group-hover:opacity-100 text-sm font-normal transition-all ease-in">
+          <span id="download-span" class="hidden xl:flex xl:opacity-0 bg-blue-500 text-white px-1.5 py-0.5 rounded-t-lg xl:group-hover:opacity-100 text-sm font-normal transition-all ease-in">
             ${item.uploadDate}
           </span>
           <a href="./contents/docs/notice/${item.fileName}" download="${item.noticeTitle} ${item.fileName}">
-            <button class="text-2xl p-1.5 rounded-md flex items-center justify-center bg-blue-500 hover:bg-blue-600 text-white active:scale-90 shadow-md transition-all ease-in">
+            <button class="text-2xl p-1.5 md:p-2 rounded-md flex items-center justify-center bg-blue-500 hover:bg-blue-600 text-white active:scale-90 shadow-md transition-all ease-in">
               <i class="fa-solid fa-cloud-arrow-down"></i>
             </button>
           </a>
@@ -58,9 +58,9 @@ async function loadHomeNotice(applySlice = true) {
 };
 
 
-async function loadFacultyData(jsonURL, displayDivId, imageFolder) {
+async function loadFacultyAdministrativeData(jsonURL, displayDivId, imageFolder) {
   const displayDiv = document.getElementById(displayDivId);
-  fetch(jsonURL)
+  await fetch(jsonURL)
     .then(response => {
       if (!response.ok) {
         throw new Error('Network response was not ok');
@@ -71,7 +71,7 @@ async function loadFacultyData(jsonURL, displayDivId, imageFolder) {
       data.forEach(item => {
         displayDiv.innerHTML += `
           <div class="relative group overflow-hidden rounded-md uppercase">
-            <img src="./contents/images/fetch-page-imgs/${imageFolder}/${item.imgFileName}" alt="${item.facultyName}" class="aspect-[3/4] h-[22rem] rounded-md">
+            <img src="./contents/images/fetch-page-imgs/${imageFolder}/${item.imgFileName}" alt="${item.facultyName}" class="aspect-[3/4] h-[22rem] rounded-md" loading="lazy">
             <span class="absolute bottom-0 md:translate-y-20 md:group-hover:translate-y-0 w-full bg-gray-500/50 flex flex-col p-2 text-white drop-shadow transition-all ease-in">
               <span class="font-semibold text-base flex">${item.facultyName}</span>
               <span class="text-xs flex">${item.position || item.class}</span>
@@ -88,14 +88,14 @@ async function loadFacultyData(jsonURL, displayDivId, imageFolder) {
 
 async function loadAllFacultyData() {
   try {
-    await loadFacultyData('./contents/fetch-page-jsons/faculty/principal.json', 'principal-div', 'faculty/principal');
-    await loadFacultyData('./contents/fetch-page-jsons/faculty/headmistresses.json', 'headmistresses-div', 'faculty/headmistresses');
-    await loadFacultyData('./contents/fetch-page-jsons/faculty/coordinators.json', 'coordinators-div', 'faculty/coordinators');
-    await loadFacultyData('./contents/fetch-page-jsons/faculty/extra-curricular-activity-coordinators.json', 'extra-curricular-activity-coordinators-div', 'faculty/extra-curricular-activity-coordinators');
-    await loadFacultyData('./contents/fetch-page-jsons/faculty/hod.json', 'hod-div', 'faculty/hod');
-    await loadFacultyData('./contents/fetch-page-jsons/faculty/pre-primary-faculty.json', 'pre-primary-faculty-div', 'faculty/pre-primary-faculty');
-    await loadFacultyData('./contents/fetch-page-jsons/faculty/middle-school-faculty.json', 'middle-school-faculty-div', 'faculty/middle-school-faculty');
-    await loadFacultyData('./contents/fetch-page-jsons/faculty/senior-school-faculty.json', 'senior-school-faculty-div', 'faculty/senior-school-faculty');
+    await loadFacultyAdministrativeData('./contents/fetch-page-jsons/faculty/principal.json', 'principal-div', 'faculty/principal');
+    await loadFacultyAdministrativeData('./contents/fetch-page-jsons/faculty/headmistresses.json', 'headmistresses-div', 'faculty/headmistresses');
+    await loadFacultyAdministrativeData('./contents/fetch-page-jsons/faculty/coordinators.json', 'coordinators-div', 'faculty/coordinators');
+    await loadFacultyAdministrativeData('./contents/fetch-page-jsons/faculty/extra-curricular-activity-coordinators.json', 'extra-curricular-activity-coordinators-div', 'faculty/extra-curricular-activity-coordinators');
+    await loadFacultyAdministrativeData('./contents/fetch-page-jsons/faculty/hod.json', 'hod-div', 'faculty/hod');
+    await loadFacultyAdministrativeData('./contents/fetch-page-jsons/faculty/pre-primary-faculty.json', 'pre-primary-faculty-div', 'faculty/pre-primary-faculty');
+    await loadFacultyAdministrativeData('./contents/fetch-page-jsons/faculty/middle-school-faculty.json', 'middle-school-faculty-div', 'faculty/middle-school-faculty');
+    await loadFacultyAdministrativeData('./contents/fetch-page-jsons/faculty/senior-school-faculty.json', 'senior-school-faculty-div', 'faculty/senior-school-faculty');
   } catch (error) {
     console.error('An error occurred while fetching All Faculty Page Data:', error);
   }
@@ -103,7 +103,7 @@ async function loadAllFacultyData() {
 
 async function loadAdministrativeTeamData() {
   try {
-    await loadFacultyData('./contents/fetch-page-jsons/administrative-team.json', 'administrative-team-div', 'administrative');
+    await loadFacultyAdministrativeData('./contents/fetch-page-jsons/administrative-team.json', 'administrative-team-div', 'administrative');
   } catch (error) {
     console.error('An error occurred while fetching Administrative Team Data:', error);
   }
@@ -111,7 +111,7 @@ async function loadAdministrativeTeamData() {
 
 async function loadImglandscapeTextData(jsonURL, displayDivId, imageFolder) {
   const displayDiv = document.getElementById(displayDivId);
-  fetch(jsonURL)
+  await fetch(jsonURL)
     .then(response => {
       if (!response.ok) {
         throw new Error('Network response was not ok');
@@ -119,10 +119,10 @@ async function loadImglandscapeTextData(jsonURL, displayDivId, imageFolder) {
       return response.json();
     })
     .then(data => {
-      data.forEach(item => {
+      data.forEach( item => {
         displayDiv.innerHTML += `
           <div class="relative group overflow-hidden rounded-md">
-            <img src="./contents/images/fetch-page-imgs/${imageFolder}/${item.imgFileName}" alt="${item.eventName || item.imgLocation}" class="aspect-[4/3] w-[22rem] rounded-md">
+            <img src="./contents/images/fetch-page-imgs/${imageFolder}/${item.imgFileName}" alt="${item.eventName || item.imgLocation}" class="aspect-[4/3] w-[22rem] rounded-md" loading="lazy">
             <span class="absolute bottom-0 md:translate-y-16 md:group-hover:translate-y-0 w-full bg-[#EDF2FB]/25 flex flex-col p-2 text-white drop-shadow-md transition-all ease-in">
               <span class="font-semibold flex">${item.eventName || item.imgLocation}</span>
               <span class="text-sm flex">${item.eventYear || item.imgComment}</span>
