@@ -6,7 +6,7 @@ function firstCarouselInteractor () {
   
   let autoSlideInterval;
   const autoSlideDuration = 5000;
-  const fadeDuration = 500;
+  //const fadeDuration = 500;
   
   function plusSlides(n) {
     showSlides((slideIndex += n));

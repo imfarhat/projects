@@ -19,13 +19,13 @@ function handleNavBarsClick() {
 
 
 function largeNavInteractor() {
-  // JavaScript for interactive navigation
+
   const detailsElements = document.querySelectorAll('details');
   const summaryElements = document.querySelectorAll('summary');
   
   detailsElements.forEach(details => {
     details.addEventListener('mouseleave', () => {
-      details.removeAttribute('open'); // Remove the delay for immediate closing
+      details.removeAttribute('open');
     });
   });
   
@@ -57,3 +57,8 @@ function largeNavInteractor() {
     }
   });
 };
+
+
+
+
+
