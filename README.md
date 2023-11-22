@@ -5,13 +5,13 @@
 
 <!--<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=imfarhat" alt="imfarhat" /></a> </p>-->
 
-- Currently working on **JavaScript Projects**
+- Currently implementing **JavaScript Concepts**
 
-- Learning **Advanced JavaScript** 
+- Implementing **Advanced JavaScript** 
 
 - All Projects available [here](https://farhateservices.github.io/fesa/projects.html)
 
-- Reach me at **ifarhat.dev@gmail.com**
+- Reach me at **imfarhat.dev@gmail.com**
 
 - Request resume ( or CV ) [here](https://farhateservices.github.io/fesa/contact.html#SendMessage)
 
