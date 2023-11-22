@@ -1,10 +1,1 @@
-import { loadTeachersTrainingData } from "../utility/content-fetch.js";
-
-document.addEventListener("DOMContentLoaded", () => {
-  try {
-    loadTeachersTrainingData();
-  }
-  catch (error) {
-    console.error("An error occurred:", error);
-  }
-});
+import{loadTeachersTrainingData}from"../utility/content-fetch.js";document.addEventListener("DOMContentLoaded",()=>{try{loadTeachersTrainingData()}catch(e){console.error("An error occurred:",e)}});
