@@ -1,20 +1,20 @@
 [
   {
-    "imgFileName": "ms-natalya-stepanovna.png",
-    "facultyName": "Ms. Natalya Stepanovna",
+    "imgFileName": "mrs-isbella-hawthorne.png",
+    "facultyName": "Mrs. Isabella Hawthorne",
     "position": "Headmistress: Senior School",
     "qualifications": "M.Sc., B.Ed."
   },
   {
-    "imgFileName": "ms-natalya-stepanovna.png",
-    "facultyName": "Ms. Natalya Stepanovna",
-    "position": "Headmistress: Middle School",
-    "qualifications": "M.A., B.Ed."
-  },
-  {
-    "imgFileName": "ms-natalya-stepanovna.png",
-    "facultyName": "Ms. Natalya Stepanovna",
+    "imgFileName": "ms-miranda-sinchlair.png",
+    "facultyName": "Ms. Miranda Sinclair",
     "position": "Headmistress: Pre Primary Dept",
     "qualifications": "B.Sc., B.Ed., Montessori Trained"
+  },
+  {
+    "imgFileName": "ms-victoria-winslow.png",
+    "facultyName": "Ms. Victoria Winslow",
+    "position": "Headmistress: Middle School",
+    "qualifications": "M.A., B.Ed."
   }
 ]

@@ -1,0 +1,350 @@
+[
+  {
+    "imgFileName": "mr-salex-samant.png",
+    "facultyName": "Mr. Salex Samant",
+    "class": "Nursery – II",
+    "subjectDepartment": "English"
+  },
+  {
+    "imgFileName": "mr-david-miller.png",
+    "facultyName": "Mr. David Miller",
+    "class": "Nursery – II",
+    "subjectDepartment": "Mathematics"
+  },
+  {
+    "imgFileName": "ms-sarah-jones.png",
+    "facultyName": "Ms. Sarah Jones",
+    "class": "Nursery – II",
+    "subjectDepartment": "E.V.S"
+  },
+  {
+    "imgFileName": "mr-chris-williams.png",
+    "facultyName": "Mr. Chris Williams",
+    "class": "K.G. II – II",
+    "subjectDepartment": "Computer"
+  },
+  {
+    "imgFileName": "mr-alex-smith.png",
+    "facultyName": "Mr. Alex Smith",
+    "class": "K.G. II – II",
+    "subjectDepartment": "Hindi"
+  },
+  {
+    "imgFileName": "ms-olivia-brown.png",
+    "facultyName": "Ms. Olivia Brown",
+    "class": "K.G. II – II",
+    "subjectDepartment": "Bengali"
+  },
+  {
+    "imgFileName": "mr-john-doe.png",
+    "facultyName": "Mr. John Doe",
+    "class": "Classes III – V",
+    "subjectDepartment": "English"
+  },
+  {
+    "imgFileName": "ms-emily-white.png",
+    "facultyName": "Ms. Emily White",
+    "class": "Classes III – V",
+    "subjectDepartment": "EVS"
+  },
+  {
+    "imgFileName": "mr-michael-thomas.png",
+    "facultyName": "Mr. Michael Thomas",
+    "class": "Classes III – V",
+    "subjectDepartment": "Maths"
+  },
+  {
+    "imgFileName": "ms-jessica-lee.png",
+    "facultyName": "Ms. Jessica Lee",
+    "class": "Classes III – V",
+    "subjectDepartment": "Social Science"
+  },
+  {
+    "imgFileName": "mr-brian-martin.png",
+    "facultyName": "Mr. Brian Martin",
+    "class": "Classes III – V",
+    "subjectDepartment": "2nd Lang (Hindi)"
+  },
+  {
+    "imgFileName": "ms-anna-cooper.png",
+    "facultyName": "Ms. Anna Cooper",
+    "class": "Classes III – V",
+    "subjectDepartment": "2nd Lang (Bengali)"
+  },
+  {
+    "imgFileName": "mr-kevin-jackson.png",
+    "facultyName": "Mr. Kevin Jackson",
+    "class": "Classes III – V",
+    "subjectDepartment": "Computer"
+  },
+  {
+    "imgFileName": "ms-rachel-hill.png",
+    "facultyName": "Ms. Rachel Hill",
+    "class": "Classes VI - VII",
+    "subjectDepartment": "English"
+  },
+  {
+    "imgFileName": "mr-nathan-moore.png",
+    "facultyName": "Mr. Nathan Moore",
+    "class": "Classes VI - VII",
+    "subjectDepartment": "Maths"
+  },
+  {
+    "imgFileName": "ms-emma-baker.png",
+    "facultyName": "Ms. Emma Baker",
+    "class": "Classes VI - VII",
+    "subjectDepartment": "2nd Lang (Hindi)"
+  },
+  {
+    "imgFileName": "mr-ryan-cox.png",
+    "facultyName": "Mr. Ryan Cox",
+    "class": "Classes VI - VII",
+    "subjectDepartment": "2nd Lang (Bengali)"
+  },
+  {
+    "imgFileName": "mr-eric-murphy.png",
+    "facultyName": "Mr. Eric Murphy",
+    "class": "Classes VI - VII",
+    "subjectDepartment": "Computer"
+  },
+  {
+    "imgFileName": "ms-lily-hall.png",
+    "facultyName": "Ms. Lily Hall",
+    "class": "Classes VI - VII",
+    "subjectDepartment": "Physics"
+  },
+  {
+    "imgFileName": "mr-ian-wilson.png",
+    "facultyName": "Mr. Ian Wilson",
+    "class": "Classes VI - VII",
+    "subjectDepartment": "Chemistry"
+  },
+  {
+    "imgFileName": "ms-ava-morris.png",
+    "facultyName": "Ms. Ava Morris",
+    "class": "Classes VI - VII",
+    "subjectDepartment": "Biology"
+  },
+  {
+    "imgFileName": "mr-owen-gomez.png",
+    "facultyName": "Mr. Owen Gomez",
+    "class": "Classes VI - VII",
+    "subjectDepartment": "Geography"
+  },
+  {
+    "imgFileName": "ms-victoria-clark.png",
+    "facultyName": "Ms. Victoria Clark",
+    "class": "Classes VI - VII",
+    "subjectDepartment": "History/Civics"
+  },
+  {
+    "imgFileName": "mr-james-brown.png",
+    "facultyName": "Mr. James Brown",
+    "class": "Class VIII",
+    "subjectDepartment": "English"
+  },
+  {
+    "imgFileName": "mr-andrew-wang.png",
+    "facultyName": "Mr. Andrew Wang",
+    "class": "Class VIII",
+    "subjectDepartment": "2nd Language Hindi"
+  },
+  {
+    "imgFileName": "ms-natalie-gupta.png",
+    "facultyName": "Ms. Natalie Gupta",
+    "class": "Class VIII",
+    "subjectDepartment": "2nd Language Bengali"
+  },
+  {
+    "imgFileName": "mr-dylan-singh.png",
+    "facultyName": "Mr. Dylan Singh",
+    "class": "Class VIII",
+    "subjectDepartment": "Mathematics"
+  },
+  {
+    "imgFileName": "ms-zara-kumar.png",
+    "facultyName": "Ms. Zara Kumar",
+    "class": "Class VIII",
+    "subjectDepartment": "Physics"
+  },
+  {
+    "imgFileName": "mr-oliver-fernandes.png",
+    "facultyName": "Mr. Oliver Fernandes",
+    "class": "Class VIII",
+    "subjectDepartment": "Chemistry"
+  },
+  {
+    "imgFileName": "ms-mia-das.png",
+    "facultyName": "Ms. Mia Das",
+    "class": "Class VIII",
+    "subjectDepartment": "Biology"
+  },
+  {
+    "imgFileName": "mr-ethan-roy.png",
+    "facultyName": "Mr. Ethan Roy",
+    "class": "Class VIII",
+    "subjectDepartment": "Social Science"
+  },
+  {
+    "imgFileName": "ms-grace-sharma.png",
+    "facultyName": "Ms. Grace Sharma",
+    "class": "Class IX – X",
+    "subjectDepartment": "English"
+  },
+  {
+    "imgFileName": "mr-aiden-verma.png",
+    "facultyName": "Mr. Aiden Verma",
+    "class": "Class IX – X",
+    "subjectDepartment": "2nd Language Hindi"
+  },
+  {
+    "imgFileName": "ms-isabella-ghosh.png",
+    "facultyName": "Ms. Isabella Ghosh",
+    "class": "Class IX – X",
+    "subjectDepartment": "2nd Language Bengali"
+  },
+  {
+    "imgFileName": "mr-jackson-patel.png",
+    "facultyName": "Mr. Jackson Patel",
+    "class": "Class IX – X",
+    "subjectDepartment": "Mathematics"
+  },
+  {
+    "imgFileName": "ms-chloe-singh.png",
+    "facultyName": "Ms. Chloe Singh",
+    "class": "Class IX – X",
+    "subjectDepartment": "Physics"
+  },
+  {
+    "imgFileName": "mr-ethan-fernandes.png",
+    "facultyName": "Mr. Ethan Fernandes",
+    "class": "Class IX – X",
+    "subjectDepartment": "Chemistry"
+  },
+  {
+    "imgFileName": "ms-lily-rai.png",
+    "facultyName": "Ms. Lily Rai",
+    "class": "Class IX – X",
+    "subjectDepartment": "Biology"
+  },
+  {
+    "imgFileName": "mr-jacob-kumar.png",
+    "facultyName": "Mr. Jacob Kumar",
+    "class": "Class IX – X",
+    "subjectDepartment": "Social Science"
+  },
+  {
+    "imgFileName": "ms-nora-mukherjee.png",
+    "facultyName": "Ms. Nora Mukherjee",
+    "class": "Class IX – X",
+    "subjectDepartment": "Computer Science"
+  },
+  {
+    "imgFileName": "mr-owen-roy.png",
+    "facultyName": "Mr. Owen Roy",
+    "class": "Class IX – X",
+    "subjectDepartment": "Economics"
+  },
+  {
+    "imgFileName": "ms-emma-bose.png",
+    "facultyName": "Ms. Emma Bose",
+    "class": "Class IX – X",
+    "subjectDepartment": "Business Studies and Accounts"
+  },
+  {
+    "imgFileName": "mr-ryan-das.png",
+    "facultyName": "Mr. Ryan Das",
+    "class": "Class XI-XII",
+    "subjectDepartment": "English"
+  },
+  {
+    "imgFileName": "ms-mia-ghosh.png",
+    "facultyName": "Ms. Mia Ghosh",
+    "class": "Class XI-XII",
+    "subjectDepartment": "Mathematics"
+  },
+  {
+    "imgFileName": "mr-ian-verma.png",
+    "facultyName": "Mr. Ian Verma",
+    "class": "Class XI-XII",
+    "subjectDepartment": "Applied Mathematics"
+  },
+  {
+    "imgFileName": "ms-zara-fernandes.png",
+    "facultyName": "Ms. Zara Fernandes",
+    "class": "Class XI-XII",
+    "subjectDepartment": "Physics"
+  },
+  {
+    "imgFileName": "mr-oliver-patel.png",
+    "facultyName": "Mr. Oliver Patel",
+    "class": "Class XI-XII",
+    "subjectDepartment": "Chemistry"
+  },
+  {
+    "imgFileName": "ms-lily-brown.png",
+    "facultyName": "Ms. Lily Brown",
+    "class": "Class XI-XII",
+    "subjectDepartment": "Biology"
+  },
+  {
+    "imgFileName": "mr-jackson-pollock.png",
+    "facultyName": "Mr. Jackson Pollock",
+    "class": "Class XI-XII",
+    "subjectDepartment": "Legal Studies, Political Science"
+  },
+  {
+    "imgFileName": "ms-olivia-clark.png",
+    "facultyName": "Ms. Olivia Clark",
+    "class": "Class XI-XII",
+    "subjectDepartment": "Geography"
+  },
+  {
+    "imgFileName": "mr-nathan-hill.png",
+    "facultyName": "Mr. Nathan Hill",
+    "class": "Class XI-XII",
+    "subjectDepartment": "History"
+  },
+  {
+    "imgFileName": "ms-emma-cox.png",
+    "facultyName": "Ms. Emma Cox",
+    "class": "Class XI-XII",
+    "subjectDepartment": "Computer Science"
+  },
+  {
+    "imgFileName": "mr-ryan-murphy.png",
+    "facultyName": "Mr. Ryan Murphy",
+    "class": "Class XI-XII",
+    "subjectDepartment": "Economics"
+  },
+  {
+    "imgFileName": "ms-sophia-verma.png",
+    "facultyName": "Ms. Sophia Verma",
+    "class": "Class XI-XII",
+    "subjectDepartment": "Business Studies and Accounts"
+  },
+  {
+    "imgFileName": "mr-ian-marketing.png",
+    "facultyName": "Mr. Ian Marketing",
+    "class": "Class XI-XII",
+    "subjectDepartment": "Financial Marketing Management"
+  },
+  {
+    "imgFileName": "ms-lily-psychology.png",
+    "facultyName": "Ms. Lily Psychology",
+    "class": "Class XI-XII",
+    "subjectDepartment": "Mass Media, Psychology"
+  },
+  {
+    "imgFileName": "mr-ethan-education.png",
+    "facultyName": "Mr. Ethan Education",
+    "class": "Class XI-XII",
+    "subjectDepartment": "Physical Education, HPE"
+  },
+  {
+    "imgFileName": "ms-grace-ecce.png",
+    "facultyName": "Ms. Grace ECCE",
+    "class": "Class XI-XII",
+    "subjectDepartment": "ECCE"
+  }
+]
