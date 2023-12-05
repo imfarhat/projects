@@ -1,13 +1,3 @@
-   /*let todoList = [{
-  name: 'Type the event/goal name',
-  dueDate: 'Select the due date'
-},
-{
-  name: 'Go to college',
-  dueDate: '15-10-2023'
-}
-];*/
-
 let todoList = JSON.parse(localStorage.getItem('todoList')) || [];
 
 renderTodoList();
@@ -122,50 +112,12 @@ function handleKeydown(event) {
   }
 }
 
-function getCurrentISTDateTime() {
-  const options = {
-    timeZone: 'Asia/Kolkata',
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-    hour: 'numeric',
-    minute: 'numeric',
-    second: 'numeric',
-  };
-
-  const istDateTime = new Date().toLocaleString('en-US', options);
-  const istDate = new Date().toLocaleDateString('en-US', options);
-  return istDateTime, istDate;
-}
 
 function updateISTDateTime() {
-  const currentISTDateTime = getCurrentISTDateTime();
   //console.log(`Current IST Date and Time:' ${currentISTDateTime}`);
   let dateTimeElement = document.querySelector('.date-time');
-  dateTimeElement.innerHTML = `${currentISTDateTime}`;
+  dateTimeElement.innerHTML ="It's "+ new Date();
 }
 
 // Call the updateISTDateTime function every second
 setInterval(updateISTDateTime, 1000); // 1000 milliseconds = 1 second
-
-/*Putting date as per IST in input value for user's convinience*/ /*
-function updateISTDate() {
-  const dateInput = document.getElementById('dateInput');
-  
-  // Create a new Date object for the current IST time
-  const currentDate = new Date();
-  const istOffset = 5.5 * 60 * 60 * 1000; // IST offset in milliseconds (5 hours 30 minutes)
-  const istTime = new Date(currentDate.getTime() + istOffset);
-
-  // Format the IST date to a string compatible with date input
-  const formattedISTDate = istTime.toISOString().split('T')[0]; // "yyyy-mm-dd"
-
-  // Set the value of the date input element to the current IST date
-  dateInput.value = formattedISTDate;
-}
-
-// Call the updateISTDate function every second
-setInterval(updateISTDate, 60000); // 60000 milliseconds = 60 second
-
-// Initialize the date input with the current IST date when the page loads
-updateISTDate();*/
