@@ -45,13 +45,21 @@
       <textarea rows="8" name="input-base64" id="input-base64" placeholder="Paste base64 code of image file here...&#10;Base64 code without URI prefix: 'data:image/png;base64'" class="w-full rounded-b-md bg-blue-50 -mt-4 p-4 focus:outline-none focus:bg-white focus:border-t-2 overflow-x-hidden transition"></textarea>
     </div>
 
+    <a id="output-d-file" href="#" download="#" class="flex flex-col items-center justify-center gap-2 font-semibold bg-white rounded-md p-4 hidden w-full group">
+      <div class="flex flex-col items-center justify-center p-2 rounded-md transition w-full select-none">
+        <h1 class="p-0.5 pb-2 text-sm md:text-base w-full text-center">Regenerated Image File</h1>
+        <img id="output-f-src" src="" alt="Regenerated Image from Base64" class="max-w-96 w-full rounded">  
+      </div>
+    </a> 
+    <!-- 
     <a id="output-d-file" href="" download class="flex flex-col items-center justify-center gap-2 font-semibold bg-white rounded-md p-6 hidden w-full group">
       <img id="output-f-src" src="" alt="Regenerated Image from Base64" class="max-w-96 pb-2 w-full rounded">
       <div class="flex flex-wrap items-center justify-center p-2 rounded-md group-hover:bg-blue-200 group-active:bg-blue-300 transition w-full select-none">
         <img src="https://cdn-icons-png.flaticon.com/128/7268/7268609.png" alt="Download" class="h-6 md:h-7 p-1.5">
         <h1 class="p-0.5 text-sm md:text-base">Regenerated File</h1>
       </div>
-    </a> 
+    </a>  
+    -->
     <details id="log-history" class="relative rounded-md bg-white p-4">
     <summary class="font-semibold transition-all rounded-md pb-2 text-sm md:text-base cursor-pointer select-none">Detailed Log History</summary>
     <button onclick="clearLogs();" id="clear-logs-btn" class="absolute top-2 right-2 bg-red-500 text-white py-1 px-2 md:px-3 z-10 text-sm md:text-balance rounded">Clear <span class="hidden md:inline-block">logs</span>

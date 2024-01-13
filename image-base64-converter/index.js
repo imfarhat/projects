@@ -92,20 +92,20 @@ outputB64CopyDiv.addEventListener("click", () => {
     outputB64Message.innerHTML = `Copy Base64 Code <i class="fa-solid fa-clipboard text-xl pl-2"></i>`;
   }, 5000);
 });
-
+/*
 // Event listener for clicking the "Download" link
 outputDFile.addEventListener("click", () => {
   logEvent(
     '<span class="text-green-600">Image (generated from Base64) downloaded successfully</span>'
   );
 });
-
+*/
 //Function to check if any code in textarea to generate image file
 genImgDiv.addEventListener("click", () => {
   if (inputBase64.value.length) {
     logEvent('<span class="">Base64 code reading started</span>');
-    outputDFile.href = "data:image/png;base64," + inputBase64.value;
-    outputImg.src = "data:image/png;base64," + inputBase64.value;
+    outputImg.src = "data:image/png;base64, " + inputBase64.value;
+    outputDFile.href = outputImg.src;
     outputDFile.download = `Image Generated from Base64`;
     intialMessage.classList.remove("hidden");
     logHistoryBox.classList.remove("hidden");
