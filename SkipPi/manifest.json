@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "SkipPi π",
+  "name": "SkipPi",
   "version": "0.0.1",
   "description": "Auto Skip YouTube Ads in less than 0.1 second (ads which are skippable skip after 5 seconds gets auto skipped in less than 0.1 second).",
   "author": "imfarhat.dev@gmail.com",
@@ -26,6 +26,6 @@
       "128": "icon.png"
     },
     "default_popup": "index.html",
-    "default_title": "SkipPi π"
+    "default_title": "SkipPi"
   }
 }
