@@ -25,10 +25,10 @@ document.addEventListener("DOMContentLoaded", () => {
       runningStatus.classList.remove("hidden");
       adCountSection.classList.remove("invisible");
       savingsSevtion.classList.remove("invisible");
-      let adCount = message.adCount;
+      let adCount = message.adCount || 0;
 
       // Update popup HTML i.e. index.html
-      adCountSpan.innerHTML = adCount || 0;
+      adCountSpan.innerHTML = adCount;
       adCountInS.innerHTML = adCount * 5;
       if (adCount >= 12 && adCount < 720) {
         adCountInM.innerHTML = Math.round((adCount * 100) / 12) / 100;
