@@ -18,7 +18,7 @@ try {
     adSkipButton.click();
     localStorage.setItem("adCount", ++adCount);
   }
-  setInterval(clickAdSkipButton, 99);
+  setInterval(clickAdSkipButton, 100);
 } catch (error) {
   console.log(`An error occured while running Auto Skip YouTube Ads!`);
   console.log(error);

@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "SkipPi",
   "version": "0.0.1",
-  "description": "Auto Skip YouTube Ads in less than 0.1 second (ads which are skippable skip after 5 seconds gets auto skipped in less than 0.1 second).",
+  "description": "Auto Skip YouTube Ads in less than 0.1 second (ads which are skippable after 5 seconds gets auto skipped in less than 0.1 second).",
   "author": "imfarhat.dev@gmail.com",
   "permissions": ["tabs", "storage"],
   "content_scripts": [
