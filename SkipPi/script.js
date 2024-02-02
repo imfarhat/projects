@@ -20,6 +20,6 @@ try {
   }
   setInterval(clickAdSkipButton, 100);
 } catch (error) {
-  console.log(`An error occured while running Auto Skip YouTube Ads!`);
+  console.log(`An error occured while running SkipPi!`);
   console.log(error);
 }

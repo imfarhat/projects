@@ -4,20 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SkipPi</title>
-    <link rel="icon" type="image/png" href="icon.PNG" />
+    <link rel="icon" type="image/png" href="./icon.PNG" />
     <link rel="stylesheet" href="./output.css" />
   </head>
   <body class="">
     <div id="/container" class="p-3 w-96 flex flex-col gap-3">
-      <main
-        id="/title"
-        class="relative text-xl text-center flex flex-row gap-2 items-center justify-center"
-      >
-        <span class="text-blue-600 -ml-7 font-semibold">SkipPi</span>
-        <span
-          class="absolute -top-2 right-36 -rotate-[35deg] text-[#EF3E3E] font-semibold text-3xl"
-          >&pi;</span
-        >
+      <main id="/title" class="flex items-center justify-center">
+        <img
+          src="./icon-wide.png"
+          alt="SkipPi"
+          loading="eager"
+          class="aspect-video h-[4.5rem] -ml-3 -mt-7 -mb-4 bg-blend-multiply select-none"
+        />
       </main>
       <section
         id="/status"
@@ -93,5 +91,5 @@
       </footer>
     </div>
   </body>
-  <script src="index.js"></script>
+  <script src="./index.js"></script>
 </html>
