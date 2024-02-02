@@ -1,18 +1,20 @@
-# SkipPi <img src="https://raw.githubusercontent.com/imfarhat/projects/main/SkipPi/icon-wide-c-nobg.png" alt="SkipPi Logo" height="100">
+# <div align="center"><img src="https://raw.githubusercontent.com/imfarhat/projects/main/SkipPi/icon-wide-c-nobg.png" alt="SkipPi Logo" height="35" style="filter: brightness(0.6) contrast(1.2) saturate(1.5) opacity(0.8); mix-blend-mode: multiply;"></div>
+
+# SkipPi skip ads
 
 SkipPi is a browser extension crafted to enhance your YouTube experience by swiftly skipping skippable ads in under 0.1 seconds. SkipPi is compatible with both Chrome and Firefox browsers, providing users with flexibility and seamless ad-skipping capabilities.
 
 ## Installation
 
 1. **Chrome Users:**
-   - Download the SkipPi <a href="https://imfarhat.pages.dev/SkipPi/SkipPi-extractable.zip" download target="_blank">zip file here</a>.
-   - Extract the downloaded file to your preferred location.
-   - After extracting, watch the installation guide video on <a href="https://www.youtube.com/watch?v=Y3oMNGAAdao&t=0s" target="_blank">YouTube</a>.
+   - Download the SkipPi <a href="https://imfarhat.pages.dev/SkipPi/SkipPi-extractable.zip" download target="_blank">zip file here</a>
+   - Extract the downloaded file to your preferred location
+   - After extracting, watch the installation guide video on <a href="https://www.youtube.com/watch?v=Y3oMNGAAdao&t=0s" target="_blank">YouTube</a>
 
 2. **Firefox Users:**
-   - Download the SkipPi <a href="https://imfarhat.pages.dev/SkipPi/SkipPi-extractable.zip" download target="_blank">zip file here</a>.
-   - Extract the downloaded file to your preferred location.
-   - After extracting, watch the installation guide video on <a href="https://www.youtube.com/watch?v=Y3oMNGAAdao&t=68s" target="_blank">YouTube</a>.
+   - Download the SkipPi <a href="https://imfarhat.pages.dev/SkipPi/SkipPi-extractable.zip" download target="_blank">zip file here</a>
+   - Extract the downloaded file to your preferred location
+   - After extracting, watch the installation guide video on <a href="https://www.youtube.com/watch?v=Y3oMNGAAdao&t=68s" target="_blank">YouTube</a>
 
 ## Functionality
 
@@ -43,6 +45,6 @@ By choosing to use SkipPi, users are expected to adhere to ethical standards and
 
 ## Contact
 
-For inquiries and support, please email us at <a href="mailto:imfarhat.dev@gmail.com" target="_blank">imfarhat.dev@gmail.com</a>.
+For inquiries and support, please email us at <a href="mailto:imfarhat.dev@gmail.com" target="_blank">imfarhat.dev@gmail.com</a>
 
 Feel free to explore and contribute to SkipPi!
