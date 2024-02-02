@@ -7,14 +7,14 @@ SkipPi is a browser extension crafted to enhance your YouTube experience by swif
 ## Installation
 
 1. **Chrome Users:**
-   - Download the SkipPi <a href="https://imfarhat.pages.dev/SkipPi/SkipPi-extractable.zip" download rel="noopener noreferrer">zip file here</a>
+   - Download the SkipPi <a href="https://imfarhat.pages.dev/SkipPi/SkipPi-extractable.zip" download target="_blank" rel="noopener noreferrer">zip file here</a>
    - Extract the downloaded file to your preferred location
-   - After extracting, watch the installation guide video on <a href="https://www.youtube.com/watch?v=Y3oMNGAAdao&t=0s" rel="noopener noreferrer">YouTube</a>
+   - After extracting, watch the installation guide video on <a href="https://www.youtube.com/watch?v=Y3oMNGAAdao&t=0s" target="_blank" rel="noopener noreferrer">YouTube</a>
 
 2. **Firefox Users:**
-   - Download the SkipPi <a href="https://imfarhat.pages.dev/SkipPi/SkipPi-extractable.zip" download rel="noopener noreferrer">zip file here</a>
+   - Download the SkipPi <a href="https://imfarhat.pages.dev/SkipPi/SkipPi-extractable.zip" download target="_blank" rel="noopener noreferrer">zip file here</a>
    - Extract the downloaded file to your preferred location
-   - After extracting, watch the installation guide video on <a href="https://www.youtube.com/watch?v=Y3oMNGAAdao&t=68s" rel="noopener noreferrer">YouTube</a>
+   - After extracting, watch the installation guide video on <a href="https://www.youtube.com/watch?v=Y3oMNGAAdao&t=68s" target="_blank" rel="noopener noreferrer">YouTube</a>
 
 ## Functionality
 
@@ -45,6 +45,6 @@ By choosing to use SkipPi, users are expected to adhere to ethical standards and
 
 ## Contact
 
-For inquiries and support, please email us at <a href="mailto:imfarhat.dev@gmail.com" rel="noopener noreferrer">imfarhat.dev@gmail.com</a>
+For inquiries and support, please email us at <a href="mailto:imfarhat.dev@gmail.com" target="_blank" rel="noopener noreferrer">imfarhat.dev@gmail.com</a>
 
 Feel free to explore and contribute to SkipPi!
