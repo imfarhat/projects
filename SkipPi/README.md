@@ -1,4 +1,4 @@
-# <div align="center"><img src="https://raw.githubusercontent.com/imfarhat/projects/main/SkipPi/icon-wide-c-nobg.png" alt="SkipPi Logo" height="35" style="filter: brightness(0.6) contrast(1.2) saturate(1.5) opacity(0.8); mix-blend-mode: multiply;"></div>
+# <div align="center"><img src="https://raw.githubusercontent.com/imfarhat/projects/main/SkipPi/icon-wide-c-nobg.png" alt="SkipPi Logo" height="35"></div>
 
 # SkipPi skip ads
 
