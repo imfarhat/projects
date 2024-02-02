@@ -1,16 +1,16 @@
-# SkipPi <img src="https://raw.githubusercontent.com/imfarhat/projects/main/SkipPi/icon-wide.png" alt="SkipPi Logo" height="25"/>
+# SkipPi <img src="https://raw.githubusercontent.com/imfarhat/projects/main/SkipPi/icon-wide-c-nobg.png" alt="SkipPi Logo" height="100">
 
 SkipPi is a browser extension crafted to enhance your YouTube experience by swiftly skipping skippable ads in under 0.1 seconds. SkipPi is compatible with both Chrome and Firefox browsers, providing users with flexibility and seamless ad-skipping capabilities.
 
 ## Installation
 
 1. **Chrome Users:**
-   - Download the SkipPi <a href="https://imfarhat.pages.dev/SkipPi/SkipPi.zip" download target="_blank">zip file here</a>.
+   - Download the SkipPi <a href="https://imfarhat.pages.dev/SkipPi/SkipPi-extractable.zip" download target="_blank">zip file here</a>.
    - Extract the downloaded file to your preferred location.
    - After extracting, watch the installation guide video on <a href="https://www.youtube.com/watch?v=Y3oMNGAAdao&t=0s" target="_blank">YouTube</a>.
 
 2. **Firefox Users:**
-   - Download the SkipPi <a href="https://imfarhat.pages.dev/SkipPi/SkipPi.zip" download target="_blank">zip file here</a>.
+   - Download the SkipPi <a href="https://imfarhat.pages.dev/SkipPi/SkipPi-extractable.zip" download target="_blank">zip file here</a>.
    - Extract the downloaded file to your preferred location.
    - After extracting, watch the installation guide video on <a href="https://www.youtube.com/watch?v=Y3oMNGAAdao&t=68s" target="_blank">YouTube</a>.
 
