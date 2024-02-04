@@ -1,7 +1,5 @@
 # <div align="center"><img src="https://raw.githubusercontent.com/imfarhat/projects/main/SkipPi/icon-wide-c-nobg.png" alt="SkipPi Logo" height="35"></div>
-
-# SkipPi skip ads
-
+<!-- # SkipPi skip ads -->
 SkipPi is a browser extension crafted to enhance your YouTube experience by swiftly skipping skippable ads in under 0.1 seconds. SkipPi is compatible with both Chrome and Firefox browsers, providing users with flexibility and seamless ad-skipping capabilities.
 
 ## Installation
