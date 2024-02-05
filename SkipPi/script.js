@@ -16,7 +16,7 @@ try {
       document.querySelector(".ytp-ad-skip-button");
     if (!adSkipButton) return;
     adSkipButton.click();
-    localStorage.setItem("adCount", ++adCount);
+    localStorage.setItem("adCount", ++parseInt(localStorage.getItem("adCount")));
   }
   setInterval(clickAdSkipButton, 100);
 } catch (error) {
