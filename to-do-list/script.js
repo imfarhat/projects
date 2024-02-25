@@ -11,7 +11,7 @@ function renderTodoList() {
     //const dueDate = todoObject.dueDate;
     const { name, dueDate } = todoObject;
     const html = `
-    <div>${name}</div>
+    <div class="task-flex">${name}</div>
     <div>${dueDate}</div>
     <button class= "delete-todo-btn" 
     title="Click to remove correspoing task from the list"
@@ -66,13 +66,11 @@ function validateInput() {
       ".js-error-message"
     ).innerHTML = `Please enter the task to do <i class="fa-solid fa-circle-exclamation fa-shake"></i>`;
     success.classList.remove("js-success-message");
-  } else if (dateInputElement.value === "") {
+  } else if (todoInputElement.value.length > 25) {
     document.querySelector(
       ".js-error-message"
-    ).innerHTML = `Please select a due date <i class="fa-solid fa-circle-exclamation fa-shake"></i>`;
+    ).innerHTML = `Please enter task within 25 characters <i class="fa-solid fa-circle-exclamation fa-shake"></i>`;
     success.classList.remove("js-success-message");
-    addTodo();
-    successMessage();
   } else {
     addTodo();
     successMessage();

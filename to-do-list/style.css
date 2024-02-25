@@ -4,16 +4,28 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
-  background-image: linear-gradient(rgb(72, 170, 255), aliceblue, white, white, white, white, white, white);
+  background-image: linear-gradient(
+    rgb(72, 170, 255),
+    aliceblue,
+    white,
+    white,
+    white,
+    white,
+    white,
+    white
+  );
   min-height: 100vh;
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
 }
 h2 {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
-  font-style: italic;
-  font-weight: 450;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", "Geneva", Verdana, sans-serif;
+  font-weight: bolder;
   font-size: 1.5rem;
   text-align: center;
   color: #ffffff;
@@ -40,7 +52,7 @@ h2 {
 .add-todo-btn {
   background-color: rgb(0, 175, 0);
   color: white;
-  padding: 0.4rem 0.35rem ;
+  padding: 0.4rem 0.35rem;
   cursor: pointer;
   /*border: 2px solid rgb(0, 150, 0);*/
   border: 2px solid white;
@@ -57,18 +69,22 @@ h2 {
   margin-right: 0.5rem;
   border: 2px solid white;
 }
-button,input {
+button,
+input {
   font-size: 1rem;
   border-radius: 0 0.4rem 0 0.4rem;
   transition: all 200ms ease-in-out;
 
   outline: none;
 }
-input:active,input:hover{
+input:active,
+input:hover {
   border: 2px solid rgb(72, 170, 255);
   font-style: bold;
 }
-.js-error-message,.js-error-date, .error-message {
+.js-error-message,
+.js-error-date,
+.error-message {
   color: red;
   margin-bottom: 0.25rem;
 }
@@ -76,14 +92,15 @@ input:active,input:hover{
   color: green;
   margin-bottom: 0.25rem;
 }
-input, button {
+input,
+button {
   -webkit-tap-highlight-color: transparent;
   transition: all 200ms ease-in-out;
   user-select: none;
   outline: none;
 }
 button:active {
-  scale: 0.90;
+  scale: 0.9;
 }
 button {
   font-weight: 425;
@@ -92,7 +109,7 @@ button {
   position: relative;
   padding: 0.4rem;
   box-shadow: 0rem 0rem 0.45rem red;
-  font-size:0.9rem;
+  font-size: 0.9rem;
   font-weight: 450;
   background-color: rgb(225, 0, 0);
   border: 2px solid white;
@@ -111,10 +128,14 @@ button {
   text-shadow: 0rem 0rem 0.2rem rgb(0, 0, 0, 0.15);
   font-weight: 450;
 }
-.top-time-reset-btn-container {
-display: inline-block;
+.task-flex {
+  display: flex;
+  max-width: 150%;
 }
-@media screen and (max-width:538px) {
+.top-time-reset-btn-container {
+  display: inline-block;
+}
+@media screen and (max-width: 538px) {
   .todo-grid,
   .todo-input-grid {
     display: grid;
@@ -124,5 +145,5 @@ display: inline-block;
   }
   .due-date-input {
     max-width: 5.05rem;
-  }      
+  }
 }
