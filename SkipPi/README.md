@@ -5,12 +5,12 @@ SkipPi is a browser extension crafted to enhance your YouTube experience by swif
 ## Installation
 
 1. **Chrome Users:**
-   - Download the SkipPi <a href="https://imfarhat.pages.dev/SkipPi/SkipPi-extractable.zip" download target="_blank" rel="noopener noreferrer">zip file here</a>
+   - Download the SkipPi <a href="https://imfarhat.pages.dev/SkipPi/SkipPi.zip" download target="_blank" rel="noopener noreferrer">zip file here</a>
    - Extract the downloaded file to your preferred location
    - After extracting, watch the installation guide video on <a href="https://www.youtube.com/watch?v=Y3oMNGAAdao&t=0s" target="_blank" rel="noopener noreferrer">YouTube</a>
 
 2. **Firefox Users:**
-   - Download the SkipPi <a href="https://imfarhat.pages.dev/SkipPi/SkipPi-extractable.zip" download target="_blank" rel="noopener noreferrer">zip file here</a>
+   - Download the SkipPi <a href="https://imfarhat.pages.dev/SkipPi/SkipPi.zip" download target="_blank" rel="noopener noreferrer">zip file here</a>
    - Extract the downloaded file to your preferred location
    - After extracting, watch the installation guide video on <a href="https://www.youtube.com/watch?v=Y3oMNGAAdao&t=68s" target="_blank" rel="noopener noreferrer">YouTube</a>
 
