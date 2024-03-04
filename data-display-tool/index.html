@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Display Tool</title>
+  <link rel="stylesheet" href="style/users.css">
+  <link rel="icon" type="image/png" href="https://imfarhat.github.io/projects/to-do-list/WEb%20Dev%20png.png">
+</head>
+<body>
+   <div class="btn-panel">
+    <div class="select-container">
+      <label for="user-l-option">Choose user limit: &nbsp;</label>
+      <select name="user-l-option" id="user-l-option" onchange="updateSelect()">
+       <option value="10">10</option>
+       <option value="20">20</option>
+       <option value="50">50</option>
+      </select>
+    </div>
+    <button class="data-btn"
+  id="js-data-btn"
+  onclick="
+  loadData(
+    document.getElementById('user-l-option').value
+  );
+  ">
+    Load 10 User's Data
+  </button>
+  </div>
+<div class="main-container">
+  <p id="data-load-area-error"></p>
+  <p id="data-load-area">
+    <p class="tool-info" style="text-align: center;"><strong>Welcome to our Data Display Tool!</strong></p>
+<p>Select the data set size, load data into a table format and save.</p>
+<details>
+  <summary style="cursor: pointer;"><strong>Steps:</strong></summary>
+  <ol>
+    <li><strong>Choose Data Set:</strong> Select from 10, 20, or 50 users.</li>
+    <li><strong>Load Data:</strong> Click the "Load User's Data" button to display the selected data in a table.</li>
+    <li><strong>Save / Print Doc:</strong> Click the "Print" button (which generates after the data) to print or save the document.</li>
+  </ol>
+
+</details>
+<p style="margin-top: 2rem; text-align: justify;"><strong>Disclaimer:</strong> Please note that the data is randomly generated and has no real-world meaning. We are not responsible for its accuracy or legal use.</p>
+
+<footer>
+  <p style="text-align: center; line-height: 1.5rem;">
+    Visit my business portfolio website <a href="https://farhateservices.github.io/fesa/" target="_blank">here</a> <br>
+    Some of my other projects <a href="https://farhateservices.github.io/fesa/projects.html" target="_blank">here</a> <br>
+    &copy; I. Farhat |
+    <a href="mailto:imfarhat.dev@gmail.com" target="_blank">imfarhat.dev@gmail.com</a> <br>
+  </p>
+</footer>
+  </p>
+</div>
+</body>
+<script src="script/users.js">
+</script>
+</html>

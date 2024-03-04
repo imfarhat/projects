@@ -1,0 +1,48 @@
+/*Write a program in C to print grade of students*/
+//Switch case => grading, if/else => validations, round() => round off
+
+#include<stdio.h>
+#include<math.h>
+int main ()
+{
+	int result;
+	float m1, m2, m3, resultFloat;
+	printf ("\nEnter the marks of three subjects: ");
+	scanf ("%f%f%f", &m1, &m2, &m3); 
+	if ((m1>100 || m2>100 ||m3>100) || (m1<0 || m2<0 || m3<0)) //validates inputs
+		printf ("\nEneter valid marks of each subject (out of 100)");
+	else {
+		resultFloat = (m1+m2+m3)/3;
+		printf("\nThe average of marks entered is %f",resultFloat);
+		result = round((m1+m2+m3)/3);
+		printf("\nRounding off avg. marks...\nNew avg. marks: %d",result);
+		
+		switch (result)
+		{
+			case 91 ... 100:
+				printf ("\nGrade 'O'");
+				break;
+			case 81 ... 90:
+				printf ("\nGrade 'E'");
+				break;
+			case 71 ... 80:
+				printf ("\nGrade 'A'");
+				break;
+			case 61 ... 70:
+				printf ("\nGrade 'B'");
+				break;
+			case 51 ... 60:
+				printf ("\nGrade 'C'");
+				break;
+			case 40 ... 50:
+				printf ("\nGrade 'D'");
+				break;
+			case 0 ... 39:
+				printf ("\nGrade 'F' (Fail)");
+				break;
+			default:
+				printf ("\nAn error occured while caculation");
+		}
+	}		
+	return 0;
+}

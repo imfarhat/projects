@@ -1,0 +1,1612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C Programming | I. Farhat</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="icon" type="image/png" href="https://imfarhat.github.io/projects/to-do-list/WEb%20Dev%20png.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <link rel="stylesheet" href="style/index.css">
+</head>
+<body>
+<h1>&nbsp;C Programming :</h1>
+<div class="theme-container">
+  <button
+class="js-theme-btn theme-btn"
+onclick="
+updateTheme();">
+   <i class="fa-solid fa-moon"></i>
+</button>
+</div>
+<!-- Section 1 -->
+<div class="control-panel">
+  <button
+  class="js-output-btn1"
+  onclick="
+  updateOutputBtnIcon('.js-output-img1','.js-output-btn1 i');">
+    Output <i class="fa-solid fa-eye-slash"></i>
+  </button>
+  <a href="images/dark/1 (1).png" download="Hello, World!">
+    <button>
+      Download <i class="fa-solid fa-image"></i>
+    </button>
+  </a>
+  <a href="codes/(1).txt" download="Hello, World!">
+    <button>
+      Download <i class="fa-solid fa-code"></i>
+    </button>
+  </a>
+  <button
+  class="js-copy-btn1"
+  onclick="
+  copyCodeToClipboard('codeTextarea1');
+  updateCopyBtnIcon('.js-copy-btn1 i');">
+    Copy <i class="fa-solid fa-copy"></i>
+  </button>
+</div>
+<div class="code-img">
+  <img class="js-dark-code" src="images/dark/1 (1).png" alt="Code">
+  <img class="js-code js-code-hide" src="images/light/1 (1).png" alt="Code">
+</div>
+<div class="output-img js-output-img1 js-output-img-hide">
+  <img src="images/output/1 (1).png" alt="Output">
+</div>
+<!-- Section 2 -->
+<div class="control-panel">
+  <button
+  class="js-output-btn2"
+  onclick="
+  updateOutputBtnIcon('.js-output-img2','.js-output-btn2 i');">
+    Output <i class="fa-solid fa-eye-slash"></i>
+  </button>
+
+  <a href="images/dark/1 (2).png" download="Addition of two integers">
+    <button>
+      Download <i class="fa-solid fa-image"></i>
+    </button>
+  </a>
+  <a href="codes/(2).txt" download="Addition of two inegers">
+    <button>
+      Download <i class="fa-solid fa-code"></i>
+    </button>
+  </a>
+  <button
+  class="js-copy-btn2"
+  onclick="
+  copyCodeToClipboard('codeTextarea2');
+  updateCopyBtnIcon('.js-copy-btn2 i');">
+    Copy <i class="fa-solid fa-copy"></i>
+  </button>
+</div>
+<div class="code-img">
+  <img class="js-dark-code" src="images/dark/1 (2).png" alt="Code">
+  <img class="js-code js-code-hide" src="images/light/1 (2).png" alt="Code">
+</div>
+<div class="output-img js-output-img2 js-output-img-hide">
+  <img src="images/output/1 (10).png" alt="Output">
+</div>
+<!-- Section 3 -->
+<div class="control-panel">
+  <button
+  class="js-output-btn3"
+  onclick="
+  updateOutputBtnIcon('.js-output-img3','.js-output-btn3 i');">
+    Output <i class="fa-solid fa-eye-slash"></i>
+  </button>
+
+  <a href="images/dark/1 (3).png" download="Odd even checking">
+    <button>
+      Download <i class="fa-solid fa-image"></i>
+    </button>
+  </a>
+  <a href="codes/(3).txt" download="Odd even checking">
+    <button>
+      Download <i class="fa-solid fa-code"></i>
+    </button>
+  </a>
+  <button
+  class="js-copy-btn3"
+  onclick="
+  copyCodeToClipboard('codeTextarea3');
+  updateCopyBtnIcon('.js-copy-btn3 i');">
+    Copy <i class="fa-solid fa-copy"></i>
+  </button>
+</div>
+<div class="code-img">
+  <img class="js-dark-code" src="images/dark/1 (3).png" alt="Code">
+  <img class="js-code js-code-hide" src="images/light/1 (3).png" alt="Code">
+</div>
+<div class="output-img js-output-img3 js-output-img-hide">
+  <img src="images/output/1 (3).png" alt="Output">
+</div>
+
+<!-- Section 4 -->
+<div class="control-panel">
+<button
+  class="js-output-btn4"
+  onclick="
+  updateOutputBtnIcon('.js-output-img4','.js-output-btn4 i');">
+  Output <i class="fa-solid fa-eye-slash"></i>
+</button>
+
+<a href="images/dark/1 (4).png" download="Max of three integers using a fourth variable">
+  <button>
+    Download <i class="fa-solid fa-image"></i>
+  </button>
+</a>
+<a href="codes/(4).txt" download="Max of three integers using a fourth variable">
+  <button>
+    Download <i class="fa-solid fa-code"></i>
+  </button>
+</a>
+<button
+  class="js-copy-btn4"
+  onclick="
+  copyCodeToClipboard('codeTextarea4');
+  updateCopyBtnIcon('.js-copy-btn4 i');">
+  Copy <i class="fa-solid fa-copy"></i>
+</button>
+</div>
+<div class="code-img">
+<img class="js-dark-code" src="images/dark/1 (4).png" alt="Code">
+<img class="js-code js-code-hide" src="images/light/1 (4).png" alt="Code">
+</div>
+<div class="output-img js-output-img4 js-output-img-hide">
+<img src="images/output/1 (4).png" alt="Output">
+</div>
+
+<!-- Section 5 -->
+<div class="control-panel">
+<button
+  class="js-output-btn5"
+  onclick="
+  updateOutputBtnIcon('.js-output-img5','.js-output-btn5 i');">
+  Output <i class="fa-solid fa-eye-slash"></i>
+</button>
+
+<a href="images/dark/1 (5).png" download="Max of three integers Without using a fourth variable">
+  <button>
+    Download <i class="fa-solid fa-image"></i>
+  </button>
+</a>
+<a href="codes/(5).txt" download="Max of three integers without using a fourth variable">
+  <button>
+    Download <i class="fa-solid fa-code"></i>
+  </button>
+</a>
+<button
+  class="js-copy-btn5"
+  onclick="
+  copyCodeToClipboard('codeTextarea5');
+  updateCopyBtnIcon('.js-copy-btn5 i');">
+  Copy <i class="fa-solid fa-copy"></i>
+</button>
+</div>
+<div class="code-img">
+<img class="js-dark-code" src="images/dark/1 (5).png" alt="Code">
+<img class="js-code js-code-hide" src="images/light/1 (5).png" alt="Code">
+</div>
+<div class="output-img js-output-img5 js-output-img-hide">
+<img src="images/output/1 (5).png" alt="Output">
+</div>
+
+<!-- Section 6 -->
+<div class="control-panel">
+<button
+  class="js-output-btn6"
+  onclick="
+  updateOutputBtnIcon('.js-output-img6','.js-output-btn6 i');">
+  Output <i class="fa-solid fa-eye-slash"></i>
+</button>
+
+<a href="images/dark/1 (6).png" download="Print 1 to 1">
+  <button>
+    Download <i class="fa-solid fa-image"></i>
+  </button>
+</a>
+<a href="codes/(6).txt" download="Print 1 to n">
+  <button>
+    Download <i class="fa-solid fa-code"></i>
+  </button>
+</a>
+<button
+  class="js-copy-btn6"
+  onclick="
+  copyCodeToClipboard('codeTextarea6');
+  updateCopyBtnIcon('.js-copy-btn6 i');">
+  Copy <i class="fa-solid fa-copy"></i>
+</button>
+</div>
+<div class="code-img">
+<img class="js-dark-code" src="images/dark/1 (6).png" alt="Code">
+<img class="js-code js-code-hide" src="images/light/1 (6).png" alt="Code">
+</div>
+<div class="output-img js-output-img6 js-output-img-hide">
+<img src="images/output/1 (6).png" alt="Output">
+</div>
+<!-- Section 7 -->
+<div class="control-panel">
+<button
+  class="js-output-btn7"
+  onclick="
+  updateOutputBtnIcon('.js-output-img7','.js-output-btn7 i');">
+  Output <i class="fa-solid fa-eye-slash"></i>
+</button>
+
+<a href="images/dark/1 (7).png" download="Grade printing using switch case">
+  <button>
+    Download <i class="fa-solid fa-image"></i>
+  </button>
+</a>
+<a href="codes/(7).txt" download="Grade printing using switch case">
+  <button>
+    Download <i class="fa-solid fa-code"></i>
+  </button>
+</a>
+<button
+  class="js-copy-btn7"
+  onclick="
+  copyCodeToClipboard('codeTextarea7');
+  updateCopyBtnIcon('.js-copy-btn7 i');">
+  Copy <i class="fa-solid fa-copy"></i>
+</button>
+</div>
+<div class="code-img">
+<img class="js-dark-code" src="images/dark/1 (7).png" alt="Code">
+<img class="js-code js-code-hide" src="images/light/1 (7).png" alt="Code">
+</div>
+<div class="output-img js-output-img7 js-output-img-hide">
+<img src="images/output/1 (7).png" alt="Output">
+</div>
+
+<!-- Section 8 -->
+<div class="control-panel">
+<button
+  class="js-output-btn8"
+  onclick="
+  updateOutputBtnIcon('.js-output-img8','.js-output-btn8 i');">
+  Output <i class="fa-solid fa-eye-slash"></i>
+</button>
+
+<a href="images/dark/1 (8).png" download="Grade printing using if else if case">
+  <button>
+    Download <i class="fa-solid fa-image"></i>
+  </button>
+</a>
+<a href="codes/(8).txt" download="Grade printing using if else if case">
+  <button>
+    Download <i class="fa-solid fa-code"></i>
+  </button>
+</a>
+<button
+  class="js-copy-btn8"
+  onclick="
+  copyCodeToClipboard('codeTextarea8');
+  updateCopyBtnIcon('.js-copy-btn8 i');">
+  Copy <i class="fa-solid fa-copy"></i>
+</button>
+</div>
+<div class="code-img">
+<img class="js-dark-code" src="images/dark/1 (8).png" alt="Code">
+<img class="js-code js-code-hide" src="images/light/1 (8).png" alt="Code">
+</div>
+<div class="output-img js-output-img8 js-output-img-hide">
+<img src="images/output/1 (8).png" alt="Output">
+</div>
+
+<!-- Section 9 -->
+<div class="control-panel">
+<button
+  class="js-output-btn9"
+  onclick="
+  updateOutputBtnIcon('.js-output-img9','.js-output-btn9 i');">
+  Output <i class="fa-solid fa-eye-slash"></i>
+</button>
+
+<a href="images/dark/1 (9).png" download="Palindrome or madam number checking">
+  <button>
+    Download <i class="fa-solid fa-image"></i>
+  </button>
+</a>
+<a href="codes/(9).txt" download="Palindrome or madam number checking">
+  <button>
+    Download <i class="fa-solid fa-code"></i>
+  </button>
+</a>
+<button
+  class="js-copy-btn9"
+  onclick="
+  copyCodeToClipboard('codeTextarea9');
+  updateCopyBtnIcon('.js-copy-btn9 i');">
+  Copy <i class="fa-solid fa-copy"></i>
+</button>
+</div>
+<div class="code-img">
+<img class="js-dark-code" src="images/dark/1 (9).png" alt="Code">
+<img class="js-code js-code-hide" src="images/light/1 (9).png" alt="Code">
+</div>
+<div class="output-img js-output-img9 js-output-img-hide">
+<img src="images/output/1 (9).png" alt="Output">
+</div>
+
+
+<!-- Section 10 -->
+<div class="control-panel">
+<button
+  class="js-output-btn10"
+  onclick="
+  updateOutputBtnIcon('.js-output-img10','.js-output-btn10 i');">
+  Output <i class="fa-solid fa-eye-slash"></i>
+</button>
+
+<a href="images/dark/1 (10).png" download="Factorial of a number">
+  <button>
+    Download <i class="fa-solid fa-image"></i>
+  </button>
+</a>
+<a href="codes/(10).txt" download="Factorial of a number">
+  <button>
+    Download <i class="fa-solid fa-code"></i>
+  </button>
+</a>
+<button
+  class="js-copy-btn10"
+  onclick="
+  copyCodeToClipboard('codeTextarea10');
+  updateCopyBtnIcon('.js-copy-btn10 i');">
+  Copy <i class="fa-solid fa-copy"></i>
+</button>
+</div>
+<div class="code-img">
+<img class="js-dark-code" src="images/dark/1 (10).png" alt="Code">
+<img class="js-code js-code-hide" src="images/light/1 (10).png" alt="Code">
+</div>
+<div class="output-img js-output-img10 js-output-img-hide">
+<img src="images/output/1 (10).png" alt="Output">
+</div>
+
+<!-- Section 11 -->
+<div class="control-panel">
+<button
+  class="js-output-btn11"
+  onclick="
+  updateOutputBtnIcon('.js-output-img11','.js-output-btn11 i');">
+  Output <i class="fa-solid fa-eye-slash"></i>
+</button>
+
+<a href="images/dark/1 (11).png" download="Calculate Sum of Series: 1+2+3+4+5+....n = sum">
+  <button>
+    Download <i class="fa-solid fa-image"></i>
+  </button>
+</a>
+<a href="codes/(11).txt" download="Calculate Sum of Series: 1+2+3+4+5+....n = sum">
+  <button>
+    Download <i class="fa-solid fa-code"></i>
+  </button>
+</a>
+<button
+  class="js-copy-btn11"
+  onclick="
+  copyCodeToClipboard('codeTextarea11');
+  updateCopyBtnIcon('.js-copy-btn11 i');">
+  Copy <i class="fa-solid fa-copy"></i>
+</button>
+</div>
+<div class="code-img">
+<img class="js-dark-code" src="images/dark/1 (11).png" alt="Code">
+<img class="js-code js-code-hide" src="images/light/1 (11).png" alt="Code">
+</div>
+<div class="output-img js-output-img11 js-output-img-hide">
+<img src="images/output/1 (11).png" alt="Output">
+</div>
+
+<!-- Section 12 -->
+<div class="control-panel">
+<button
+  class="js-output-btn12"
+  onclick="
+  updateOutputBtnIcon('.js-output-img12','.js-output-btn12 i');">
+  Output <i class="fa-solid fa-eye-slash"></i>
+</button>
+
+<a href="images/dark/1 (12).png" download="Print Series & Sum: 1+2+3+4+5+....n = sum">
+  <button>
+    Download <i class="fa-solid fa-image"></i>
+  </button>
+</a>
+<a href="codes/(12).txt" download="Print Series & Sum: 1+2+3+4+5+....n = sum">
+  <button>
+    Download <i class="fa-solid fa-code"></i>
+  </button>
+</a>
+<button
+  class="js-copy-btn12"
+  onclick="
+  copyCodeToClipboard('codeTextarea12');
+  updateCopyBtnIcon('.js-copy-btn12 i');">
+  Copy <i class="fa-solid fa-copy"></i>
+</button>
+</div>
+<div class="code-img">
+<img class="js-dark-code" src="images/dark/1 (12).png" alt="Code">
+<img class="js-code js-code-hide" src="images/light/1 (12).png" alt="Code">
+</div>
+<div class="output-img js-output-img12 js-output-img-hide">
+<img src="images/output/1 (12).png" alt="Output">
+</div>
+
+<!-- Section 13 -->
+<div class="control-panel">
+<button
+  class="js-output-btn13"
+  onclick="
+  updateOutputBtnIcon('.js-output-img13','.js-output-btn13 i');">
+  Output <i class="fa-solid fa-eye-slash"></i>
+</button>
+
+<a href="images/dark/1 (13).png" download="Print Series & Sum: 1+3+5+7+....n = sum">
+  <button>
+    Download <i class="fa-solid fa-image"></i>
+  </button>
+</a>
+<a href="codes/(13).txt" download="Print Series & Sum: 1+3+5+7+....n = sum">
+  <button>
+    Download <i class="fa-solid fa-code"></i>
+  </button>
+</a>
+<button
+  class="js-copy-btn13"
+  onclick="
+  copyCodeToClipboard('codeTextarea13');
+  updateCopyBtnIcon('.js-copy-btn13 i');">
+  Copy <i class="fa-solid fa-copy"></i>
+</button>
+</div>
+<div class="code-img">
+<img class="js-dark-code" src="images/dark/1 (13).png" alt="Code">
+<img class="js-code js-code-hide" src="images/light/1 (13).png" alt="Code">
+</div>
+<div class="output-img js-output-img13 js-output-img-hide">
+<img src="images/output/1 (13).png" alt="Output">
+</div>
+
+<!-- Section 14 -->
+<div class="control-panel">
+<button
+  class="js-output-btn14"
+  onclick="
+  updateOutputBtnIcon('.js-output-img14','.js-output-btn14 i');">
+  Output <i class="fa-solid fa-eye-slash"></i>
+</button>
+
+<a href="images/dark/1 (14).png" download="Print Series & Sum: 1+2+4+7+11+....n = sum">
+  <button>
+    Download <i class="fa-solid fa-image"></i>
+  </button>
+</a>
+<a href="codes/(14).txt" download="Print Series & Sum: 1+2+4+7+11+....n = sum">
+  <button>
+    Download <i class="fa-solid fa-code"></i>
+  </button>
+</a>
+<button
+  class="js-copy-btn14"
+  onclick="
+  copyCodeToClipboard('codeTextarea14');
+  updateCopyBtnIcon('.js-copy-btn14 i');">
+  Copy <i class="fa-solid fa-copy"></i>
+</button>
+</div>
+<div class="code-img">
+<img class="js-dark-code" src="images/dark/1 (14).png" alt="Code">
+<img class="js-code js-code-hide" src="images/light/1 (14).png" alt="Code">
+</div>
+<div class="output-img js-output-img14 js-output-img-hide">
+<img src="images/output/1 (14).png" alt="Output">
+</div>
+
+<!-- Section 15 -->
+<div class="control-panel">
+<button
+  class="js-output-btn15"
+  onclick="
+  updateOutputBtnIcon('.js-output-img15','.js-output-btn15 i');">
+  Output <i class="fa-solid fa-eye-slash"></i>
+</button>
+
+<a href="images/dark/1 (15).png" download="Pattern 1">
+  <button>
+    Download <i class="fa-solid fa-image"></i>
+  </button>
+</a>
+<a href="codes/(15).txt" download="Pattern 1">
+  <button>
+    Download <i class="fa-solid fa-code"></i>
+  </button>
+</a>
+<button
+  class="js-copy-btn15"
+  onclick="
+  copyCodeToClipboard('codeTextarea15');
+  updateCopyBtnIcon('.js-copy-btn15 i');">
+  Copy <i class="fa-solid fa-copy"></i>
+</button>
+</div>
+<div class="code-img">
+<img class="js-dark-code" src="images/dark/1 (15).png" alt="Code">
+<img class="js-code js-code-hide" src="images/light/1 (15).png" alt="Code">
+</div>
+<div class="output-img js-output-img15 js-output-img-hide">
+<img src="images/output/1 (15).png" alt="Output">
+</div>
+
+<!-- Section 16 -->
+<div class="control-panel">
+<button
+  class="js-output-btn16"
+  onclick="
+  updateOutputBtnIcon('.js-output-img16','.js-output-btn16 i');">
+  Output <i class="fa-solid fa-eye-slash"></i>
+</button>
+
+<a href="images/dark/1 (16).png" download="Pattern 2">
+  <button>
+    Download <i class="fa-solid fa-image"></i>
+  </button>
+</a>
+<a href="codes/(16).txt" download="Pattern 2">
+  <button>
+    Download <i class="fa-solid fa-code"></i>
+  </button>
+</a>
+<button
+  class="js-copy-btn16"
+  onclick="
+  copyCodeToClipboard('codeTextarea16');
+  updateCopyBtnIcon('.js-copy-btn16 i');">
+  Copy <i class="fa-solid fa-copy"></i>
+</button>
+</div>
+<div class="code-img">
+<img class="js-dark-code" src="images/dark/1 (16).png" alt="Code">
+<img class="js-code js-code-hide" src="images/light/1 (16).png" alt="Code">
+</div>
+<div class="output-img js-output-img16 js-output-img-hide">
+<img src="images/output/1 (16).png" alt="Output">
+</div>
+
+<!-- Section 17 -->
+<div class="control-panel">
+<button
+  class="js-output-btn17"
+  onclick="
+  updateOutputBtnIcon('.js-output-img17','.js-output-btn17 i');">
+  Output <i class="fa-solid fa-eye-slash"></i>
+</button>
+
+<a href="images/dark/1 (17).png" download="Pattern 3">
+  <button>
+    Download <i class="fa-solid fa-image"></i>
+  </button>
+</a>
+<a href="codes/(17).txt" download="Pattern 3">
+  <button>
+    Download <i class="fa-solid fa-code"></i>
+  </button>
+</a>
+<button
+  class="js-copy-btn17"
+  onclick="
+  copyCodeToClipboard('codeTextarea17');
+  updateCopyBtnIcon('.js-copy-btn17 i');">
+  Copy <i class="fa-solid fa-copy"></i>
+</button>
+</div>
+<div class="code-img">
+<img class="js-dark-code" src="images/dark/1 (17).png" alt="Code">
+<img class="js-code js-code-hide" src="images/light/1 (17).png" alt="Code">
+</div>
+<div class="output-img js-output-img17 js-output-img-hide">
+<img src="images/output/1 (17).png" alt="Output">
+</div>
+
+<!-- Section 18 -->
+<div class="control-panel">
+<button
+  class="js-output-btn18"
+  onclick="
+  updateOutputBtnIcon('.js-output-img18','.js-output-btn18 i');">
+  Output <i class="fa-solid fa-eye-slash"></i>
+</button>
+
+<a href="images/dark/1 (18).png" download="Pattern 4">
+  <button>
+    Download <i class="fa-solid fa-image"></i>
+  </button>
+</a>
+<a href="codes/(18).txt" download="Pattern 4">
+  <button>
+    Download <i class="fa-solid fa-code"></i>
+  </button>
+</a>
+<button
+  class="js-copy-btn18"
+  onclick="
+  copyCodeToClipboard('codeTextarea18');
+  updateCopyBtnIcon('.js-copy-btn18 i');">
+  Copy <i class="fa-solid fa-copy"></i>
+</button>
+</div>
+<div class="code-img">
+<img class="js-dark-code" src="images/dark/1 (18).png" alt="Code">
+<img class="js-code js-code-hide" src="images/light/1 (18).png" alt="Code">
+</div>
+<div class="output-img js-output-img18 js-output-img-hide">
+<img src="images/output/1 (18).png" alt="Output">
+</div>
+
+<!-- Section 19 -->
+<div class="control-panel">
+<button
+  class="js-output-btn19"
+  onclick="
+  updateOutputBtnIcon('.js-output-img19','.js-output-btn19 i');">
+  Output <i class="fa-solid fa-eye-slash"></i>
+</button>
+
+<a href="images/dark/1 (19).png" download="Pattern 5">
+  <button>
+    Download <i class="fa-solid fa-image"></i>
+  </button>
+</a>
+<a href="codes/(19).txt" download="Pattern 5">
+  <button>
+    Download <i class="fa-solid fa-code"></i>
+  </button>
+</a>
+<button
+  class="js-copy-btn19"
+  onclick="
+  copyCodeToClipboard('codeTextarea19');
+  updateCopyBtnIcon('.js-copy-btn19 i');">
+  Copy <i class="fa-solid fa-copy"></i>
+</button>
+</div>
+<div class="code-img">
+<img class="js-dark-code" src="images/dark/1 (19).png" alt="Code">
+<img class="js-code js-code-hide" src="images/light/1 (19).png" alt="Code">
+</div>
+<div class="output-img js-output-img19 js-output-img-hide">
+<img src="images/output/1 (19).png" alt="Output">
+</div>
+
+<!-- Section 20 -->
+<div class="control-panel">
+<button
+  class="js-output-btn20"
+  onclick="
+  updateOutputBtnIcon('.js-output-img20','.js-output-btn20 i');">
+  Output <i class="fa-solid fa-eye-slash"></i>
+</button>
+
+<a href="images/dark/1 (20).png" download="Raise one number to the power of another">
+  <button>
+    Download <i class="fa-solid fa-image"></i>
+  </button>
+</a>
+<a href="codes/(20).txt" download="Raise one number to the power of another">
+  <button>
+    Download <i class="fa-solid fa-code"></i>
+  </button>
+</a>
+<button
+  class="js-copy-btn20"
+  onclick="
+  copyCodeToClipboard('codeTextarea20');
+  updateCopyBtnIcon('.js-copy-btn20 i');">
+  Copy <i class="fa-solid fa-copy"></i>
+</button>
+</div>
+<div class="code-img">
+<img class="js-dark-code" src="images/dark/1 (20).png" alt="Code">
+<img class="js-code js-code-hide" src="images/light/1 (20).png" alt="Code">
+</div>
+<div class="output-img js-output-img20 js-output-img-hide">
+<img src="images/output/1 (20).png" alt="Output">
+</div>
+
+<!-- Section 21 -->
+<div class="control-panel">
+<button
+  class="js-output-btn21"
+  onclick="
+  updateOutputBtnIcon('.js-output-img21','.js-output-btn21 i');">
+  Output <i class="fa-solid fa-eye-slash"></i>
+</button>
+
+<a href="images/dark/1 (21).png" download="Series: 1+2^2+3^3+4^4+5^5+_ _ _ _n^n = sum">
+  <button>
+    Download <i class="fa-solid fa-image"></i>
+  </button>
+</a>
+<a href="codes/(21).txt" download="Series: 1+2^2+3^3+4^4+5^5+_ _ _ _n^n = sum">
+  <button>
+    Download <i class="fa-solid fa-code"></i>
+  </button>
+</a>
+<button
+  class="js-copy-btn21"
+  onclick="
+  copyCodeToClipboard('codeTextarea21');
+  updateCopyBtnIcon('.js-copy-btn21 i');">
+  Copy <i class="fa-solid fa-copy"></i>
+</button>
+</div>
+<div class="code-img">
+<img class="js-dark-code" src="images/dark/1 (21).png" alt="Code">
+<img class="js-code js-code-hide" src="images/light/1 (21).png" alt="Code">
+</div>
+<div class="output-img js-output-img21 js-output-img-hide">
+<img src="images/output/1 (21).png" alt="Output">
+</div>
+
+<!-- Section 22 -->
+<div class="control-panel">
+<button
+  class="js-output-btn22"
+  onclick="
+  updateOutputBtnIcon('.js-output-img22','.js-output-btn22 i');">
+  Output <i class="fa-solid fa-eye-slash"></i>
+</button>
+
+<a href="images/dark/1 (22).png" download="Series: 1+2^2+3^3+4^4+5^5+_ _ _ _n^n = sum">
+  <button>
+    Download <i class="fa-solid fa-image"></i>
+  </button>
+</a>
+<a href="codes/(22).txt" download="Series: 1+2^2+3^3+4^4+5^5+_ _ _ _n^n = sum">
+  <button>
+    Download <i class="fa-solid fa-code"></i>
+  </button>
+</a>
+<button
+  class="js-copy-btn22"
+  onclick="
+  copyCodeToClipboard('codeTextarea22');
+  updateCopyBtnIcon('.js-copy-btn22 i');">
+  Copy <i class="fa-solid fa-copy"></i>
+</button>
+</div>
+<div class="code-img">
+<img class="js-dark-code" src="images/dark/1 (22).png" alt="Code">
+<img class="js-code js-code-hide" src="images/light/1 (22).png" alt="Code">
+</div>
+<div class="output-img js-output-img22 js-output-img-hide">
+<img src="images/output/1 (22).png" alt="Output">
+</div>
+
+<!-- Section 23 -->
+<div class="control-panel">
+<button
+  class="js-output-btn23"
+  onclick="
+  updateOutputBtnIcon('.js-output-img23','.js-output-btn23 i');">
+  Output <i class="fa-solid fa-eye-slash"></i>
+</button>
+
+<a href="images/dark/1 (23).png" download="Series: 1+2+3^2+4^3+5^4+_ _ _ _n^n-1 = sum">
+  <button>
+    Download <i class="fa-solid fa-image"></i>
+  </button>
+</a>
+<a href="codes/(23).txt" download="Series: 1+2+3^2+4^3+5^4+_ _ _ _n^n-1 = sum">
+  <button>
+    Download <i class="fa-solid fa-code"></i>
+  </button>
+</a>
+<button
+  class="js-copy-btn23"
+  onclick="
+  copyCodeToClipboard('codeTextarea23');
+  updateCopyBtnIcon('.js-copy-btn23 i');">
+  Copy <i class="fa-solid fa-copy"></i>
+</button>
+</div>
+<div class="code-img">
+<img class="js-dark-code" src="images/dark/1 (23).png" alt="Code">
+<img class="js-code js-code-hide" src="images/light/1 (23).png" alt="Code">
+</div>
+<div class="output-img js-output-img23 js-output-img-hide">
+<img src="images/output/1 (23).png" alt="Output">
+</div>
+
+<!-- Section 24 -->
+<div class="control-panel">
+<button
+  class="js-output-btn24"
+  onclick="
+  updateOutputBtnIcon('.js-output-img24','.js-output-btn24 i');">
+  Output <i class="fa-solid fa-eye-slash"></i>
+</button>
+
+<a href="images/dark/1 (24).png" download="Prime number checking using if/else ternary operator">
+  <button>
+    Download <i class="fa-solid fa-image"></i>
+  </button>
+</a>
+<a href="codes/(24).txt" download="Prime number checking using if/else ternary operator">
+  <button>
+    Download <i class="fa-solid fa-code"></i>
+  </button>
+</a>
+<button
+  class="js-copy-btn24"
+  onclick="
+  copyCodeToClipboard('codeTextarea24');
+  updateCopyBtnIcon('.js-copy-btn24 i');">
+  Copy <i class="fa-solid fa-copy"></i>
+</button>
+</div>
+<div class="code-img">
+<img class="js-dark-code" src="images/dark/1 (24).png" alt="Code">
+<img class="js-code js-code-hide" src="images/light/1 (24).png" alt="Code">
+</div>
+<div class="output-img js-output-img24 js-output-img-hide">
+<img src="images/output/1 (24).png" alt="Output">
+</div>
+
+<!-- Section 25 -->
+<div class="control-panel">
+<button
+  class="js-output-btn25"
+  onclick="
+  updateOutputBtnIcon('.js-output-img25','.js-output-btn25 i');">
+  Output <i class="fa-solid fa-eye-slash"></i>
+</button>
+
+<a href="images/dark/1 (25).png" download="Series (sum only): 1+(2/1!)+(3/2!)+(4/3!)+_ _ _ _(n/n-1!)=sum">
+  <button>
+    Download <i class="fa-solid fa-image"></i>
+  </button>
+</a>
+<a href="codes/(25).txt" download="Series (sum only): 1+(2/1!)+(3/2!)+(4/3!)+_ _ _ _(n/n-1!)=sum">
+  <button>
+    Download <i class="fa-solid fa-code"></i>
+  </button>
+</a>
+<button
+  class="js-copy-btn25"
+  onclick="
+  copyCodeToClipboard('codeTextarea25');
+  updateCopyBtnIcon('.js-copy-btn25 i');">
+  Copy <i class="fa-solid fa-copy"></i>
+</button>
+</div>
+<div class="code-img">
+<img class="js-dark-code" src="images/dark/1 (25).png" alt="Code">
+<img class="js-code js-code-hide" src="images/light/1 (25).png" alt="Code">
+</div>
+<div class="output-img js-output-img25 js-output-img-hide">
+<img src="images/output/1 (25).png" alt="Output">
+</div>
+
+<!-- Section 26 -->
+<div class="control-panel">
+<button
+  class="js-output-btn26"
+  onclick="
+  updateOutputBtnIcon('.js-output-img26','.js-output-btn26 i');">
+  Output <i class="fa-solid fa-eye-slash"></i>
+</button>
+
+<a href="images/dark/1 (26).png" download="Add two integers using user-defined Add() function">
+  <button>
+    Download <i class="fa-solid fa-image"></i>
+  </button>
+</a>
+<a href="codes/(26).txt" download="Add two integers using user-defined Add() function">
+  <button>
+    Download <i class="fa-solid fa-code"></i>
+  </button>
+</a>
+<button
+  class="js-copy-btn26"
+  onclick="
+  copyCodeToClipboard('codeTextarea26');
+  updateCopyBtnIcon('.js-copy-btn26 i');">
+  Copy <i class="fa-solid fa-copy"></i>
+</button>
+</div>
+<div class="code-img">
+<img class="js-dark-code" src="images/dark/1 (26).png" alt="Code">
+<img class="js-code js-code-hide" src="images/light/1 (26).png" alt="Code">
+</div>
+<div class="output-img js-output-img26 js-output-img-hide">
+<img src="images/output/1 (26).png" alt="Output">
+</div>
+
+
+<p>
+  <br>
+  <h3 style="text-align: center;">Checkout all my projects <a href="https://farhateservices.github.io/fesa/projects.html" target="_blank">here</a></h3>
+  <h3 style="text-align: center;">Visit our business portfolio website <a href="https://farhateservices.github.io/fesa" target="_blank">here</a></h3>
+</p>
+<!--
+  <div id="included-sections-c-codes">
+    <div class="loader" style="display: flex; align-items: center; justify-content: center;">
+      <p style="margin-top: 35vh; font-size: 2rem; font-weight: 550;">
+        Please Wait . . .  <i style="font-size: 2rem;" class="fa-solid fa-hourglass-half fa-spin"></i>
+       
+      </p>
+    </div>
+    
+  </div>
+  <div id="included-control-panels">
+   
+  </div>-->
+  <div class="scroll-to-top" id="scrollToTopButton" title="Scroll to Top">
+    <button><i class="fa-solid fa-arrow-up"></i></button>
+  </div>
+<footer>
+  <div class="foot-panel-1">
+    <div class="disclaimer">
+      Disclaimer: Content for educational purposes only; we are not liable for any losses arising from its use.
+    </div>
+  </div>
+  <hr class="logo-end-hr">
+  <div class="foot-panel3">
+    <a href="mailto:farhateservices.in@gmail.com">
+    <i class="fa-regular fa-envelope fa-beat"></i>
+  </a>
+    <a href="https://farhateservices.github.io/fesa/contact.html#SendMessage">
+      <i class="fa-regular fa-comment-dots fa-beat"></i>
+    </a>
+  <a href="https://farhateservices.github.io/fesa/" target="_blank"><div class="logo-end"></div></a>
+<a href="https://wa.me/+919830836212?text=Hi%20Farhat%20e%20Services%20%26%20Assistance!" target="_blank">
+  <i class="fa-brands fa-whatsapp fa-beat"></i>
+</a>
+<a href="https://www.instagram.com/farhatesrevices/" target="_blank">
+  <i class="fa-brands fa-instagram fa-beat"></i>
+</a> 
+  </div><hr class="logo-end-hr">
+  <p class="copyright">
+    <a href="https://farhateservices.github.io/fesa" target="_blank">
+      <i class="fa-regular fa-copyright"></i> &nbsp; I. Farhat |&nbsp;<img style="height: 1.25rem; width: auto;" src="https://farhateservices.github.io/fesa/logo-head-black.png" alt=""> &nbsp; Farhat e Services & Assistance
+    </a>
+  </p>
+</footer>
+<!--Code for C codes to let user copy-->
+<textarea class="text-code-hide" id="codeTextarea1">
+/*Write a program in C to print 'Hello, World!'*/
+
+#include<stdio.h>
+int main ()
+{
+  printf ("\nHello, World!");
+  return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea2">
+/*WAP in C to perfrom addition of two integers*/
+
+#include<stdio.h>
+int main ()
+{
+  int a, b, s;
+  printf ("\nEnter the first integer: ");
+  scanf ("%d", &a);
+  printf ("\nEnter the second integer: ");
+  scanf ("%d", &b);
+  s = a + b;
+  printf ("\nThe result of %d + %d = %d",a,b,s);
+  return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea3">
+/*WAP in C to check a (whole) number is even or odd*/
+
+#include<stdio.h>
+int main ()
+{
+  int n;
+  printf ("\nEnter the number: ");
+  scanf ("%d", &n);
+  if (n%2==0)
+    printf("\n%d is an even number", n);
+  else
+    printf("\n%d is a odd number", n);
+  return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea4">
+/*Write a program in C to find the maximum of three integers*/
+//Using a fourth variable => Preffered
+
+#include<stdio.h>
+int main ()
+{
+  int a, b, c, max=0;
+  printf ("\nEnter the three numbers: ");
+  scanf ("%d %d %d", &a, &b, &c); 
+  if (a>max)  
+    max=a; //stores the highest value in max
+  if (b>max) //do not use else if, reason: next comment
+    max=b; 
+  if (c>max) //else if => wouldn't check further cond. if satisfied
+    max=c;	
+  printf("\n%d is the largest number", max);
+  return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea5">
+/*Write a program  in C to find the maximum of three integers*/
+//Without using a fourth variable => Not preffered
+
+#include<stdio.h>
+int main ()
+{
+  int a, b, c;
+  printf ("\nEnter the first number: ");
+  scanf ("%d", &a);
+  printf ("\nEnter the second number: ");
+  scanf ("%d", &b);
+  printf ("\nEnter the third number: ");
+  scanf ("%d", &c);
+  if (a>b)
+  {   
+    if (a>c)
+      printf("\n%d is the largest number", a);
+    else
+      printf("\n%d is the largest number", c);
+  }
+  else
+  {   
+    if (b>c)
+      printf("\n%d is the largest number", b);
+    else
+      printf("\n%d is the largest number", c);
+  }
+  return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea6">
+/*Write a program in C to print from 1 to n*/
+//Using a while (condition) loop
+
+#include<stdio.h>
+int main ()
+{
+  int n, i=1;
+  printf ("\nEnter the limit: ");
+  scanf ("%d", &n); 
+  while (i <= n)
+  {
+    printf("\n%d", i);
+    i++; //incrementing value of i by 1
+  }	
+  return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea7">
+/*Write a program in C to print grade of students*/
+//Switch case => grading, if/else => validations, round() => round off
+
+#include<stdio.h>
+#include<math.h>
+int main ()
+{
+  int result;
+  float m1, m2, m3, resultFloat;
+  printf ("\nEnter the marks of three subjects: ");
+  scanf ("%f%f%f", &m1, &m2, &m3); 
+  if ((m1>100 || m2>100 ||m3>100) || (m1<0 || m2<0 || m3<0)) //validates inputs
+    printf ("\nEneter valid marks of each subject (out of 100)");
+  else {
+    resultFloat = (m1+m2+m3)/3;
+    printf("\nThe average of marks entered is %f",resultFloat);
+    result = round((m1+m2+m3)/3);
+    printf("\nRounding off avg. marks...\nNew avg. marks: %d",result);
+    
+    switch (result)
+    {
+      case 91 ... 100:
+        printf ("\nGrade 'O'");
+        break;
+      case 81 ... 90:
+        printf ("\nGrade 'E'");
+        break;
+      case 71 ... 80:
+        printf ("\nGrade 'A'");
+        break;
+      case 61 ... 70:
+        printf ("\nGrade 'B'");
+        break;
+      case 51 ... 60:
+        printf ("\nGrade 'C'");
+        break;
+      case 40 ... 50:
+        printf ("\nGrade 'D'");
+        break;
+      case 0 ... 39:
+        printf ("\nGrade 'F' (Fail)");
+        break;
+      default:
+        printf ("\nAn error occured while caculation");
+    }
+  }		
+  return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea8">
+/*Write a program in C to print grade of students*/
+//if/else if => grading, if/else => validations, round() => round off
+
+#include<stdio.h>
+#include<math.h>
+int main ()
+{
+  int result;
+  float m1, m2, m3, resultFloat;
+  printf ("\nEnter the marks of three subjects: ");
+  scanf ("%f%f%f", &m1, &m2, &m3); 
+  if ((m1>100 || m2>100 ||m3>100) || (m1<0 || m2<0 || m3<0)) //validates inputs
+    printf ("\nEneter valid marks of each subject (out of 100)");
+  else {
+    resultFloat = (m1+m2+m3)/3;
+    printf("\nThe average of marks entered is %f",resultFloat);
+    result = round((m1+m2+m3)/3);
+    printf("\nRounding off avg. marks...\nNew avg. marks: %d",result);
+    if (result >= 91 && result <=100)
+      printf ("\nGrade 'O'");
+    else if (result >= 81 && result <=90)
+      printf ("\nGrade 'E'");
+    else if (result >= 71 && result <=80)
+      printf ("\nGrade 'A'");
+    else if (result >= 61 && result <=70)
+      printf ("\nGrade 'B'");
+    else if (result >= 51 && result <=60)
+      printf ("\nGrade 'C'");
+    else if (result >= 40 && result <=50)
+      printf ("\nGrade 'D'");
+    else if (result >= 0 && result <40)
+      printf ("\nGrade 'F' (Fail)");
+    else
+      printf ("\nAn error occured while caculation");	
+    }
+  return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea9">
+/*WAP in C to check a number is palindrome(madam) or not*/
+//125 != 521 => not palindrome, 121=121 => palindrome
+
+#include<stdio.h>
+int main ()
+{
+  int n, m, r, d=0;
+  printf ("\nEnter the number: ");
+  scanf ("%d", &n); 
+  m = n; //duplicating the value of n in m
+  while (n!=0)
+  {
+//these operations inter-change(swap) the positions e.g. 125 as 521.
+    r = n % 10;
+    d = d * 10 + r;
+    n = n / 10;
+  }
+  if (m == d)
+    printf ("\nAs %d = %d. Therefore %d is a palindrome no.", m ,d, m);
+  else
+    printf ("As %d != %d. Therefore %d is not palindrom no.", m ,d, m);
+  return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea10">
+/*WAP in C to calculate the factorial of a number*/
+
+#include<stdio.h>
+int main ()
+{
+  int n, i, f=1;
+  printf ("\nEnter the number to its calculate factorial: ");
+  scanf ("%d", &n); 
+  for (i=1; i<=n; i++) //increments loop by i++ i.e. i=i+1
+  {
+    f = f * i;
+  }
+  printf ("\nFactorial of %d is %d", n, f);
+  return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea11">
+/*WAP in C to print the sum of folwoing series*/
+//Calculate Sum of Series: 1+2+3+4+5+....n = sum
+
+#include<stdio.h>
+int main ()
+{
+  int n, i, sum=0;
+  printf ("\nEnter the limit of the series to calculate its sum: ");
+  scanf ("%d", &n); 
+  for (i=1; i<=n; i++) //increment done after updating sum
+  {
+    sum = sum +i;
+  }
+  printf ("\nSum of the series: %d", sum);
+  return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea12">
+/*WAP in C to print the following series and its sum*/
+//Print Series & Sum: '1+2+3+4+5+....n = sum'
+
+#include<stdio.h>
+int main ()
+{
+  int n, i, sum=0;
+  printf ("\nEnter the limit of the series: ");
+  scanf ("%d", &n); 
+  for (i=1; i<=n; i++) //for calculating sum;
+  {
+    sum = sum +i;
+  }
+  for (i=1; i<n; i++) // for printing '1+2+3+_ _ _ _(n-1) +'
+  {
+    printf ("%d + ", i);
+  }
+  printf ("%d = %d", n, sum); // for printing 'n = sum'
+  return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea13">
+/*WAP in C to print the following series and its sum*/
+//Print Series & Sum: '1+3+5+7+....n = sum'
+
+#include<stdio.h>
+int main ()
+{
+  int n, i, sum=0;
+  printf ("\nEnter the limit of the series: ");
+  scanf ("%d", &n); 
+  for (i=1; i<n; i+=2) //for calculating sum till last second digit
+  {
+    sum = sum +i; // sum = '1+3+5+7+_ _ _ _+ last second digit'
+  }
+  sum = sum + n; //now sum = '1+3+5+7+_ _ _ _last second digit + n'
+  for (i=1; i<n; i+=2) //printing '+1+3+5+7+_ _ _ _last second digit +'
+  {
+    printf ("%d + ", i);
+  }
+  printf ("%d = %d", n, sum); //printing 'n = sum', n is last digit
+  return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea14">
+/*WAP in C to print the following series and its sum*/
+//Print Series & Sum: '1+2+4+7+11+....n = sum'
+
+#include<stdio.h>
+int main ()
+{
+  int n, i, k=0, sum=0;
+  printf ("\nEnter the limit of the series: ");
+  scanf ("%d", &n); 
+  for (i=1; i<n; i+=k) //calculates sum till last second digit
+  {
+    sum = sum +i; //sum = '1+2+4+7+11+_ _ _ _+ last second digit'
+    k++;
+  }
+  sum = sum + n; //now sum = '1+2+4+7+11+_ _ _ _+ last second digit + n'
+  k = 0; //resets value of k to 0 to again use in upcoming for loop
+  for (i=1; i<n; i+=k) //printing '+1+3+5+7+_ _ _ _last second digit +'
+  {
+    printf ("%d + ", i);
+    k++;
+  }
+  printf ("%d = %d", n, sum); //prints 'n = sum', n is last digit
+  return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea15">
+/*Write a program in C to print the following pattern:
+1
+2  3
+4  5  6
+7  8  9  10
+*/
+
+#include<stdio.h>
+int main ()
+{
+  int n, i, j, k;
+  printf ("\nEnter the total number of lines: ");
+  scanf ("%d", &n);
+  k = 1;
+  for (i=1; i<=n; i++) //outer loop i => maintains line no.
+  {
+    printf ("\n");
+    for (j=1; j<=i; j++) //nested loop j => nos. in each line
+    {
+      printf ("%d ",k);
+      k++;
+    }
+  }
+  return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea16">
+/*Write a program in C to print the following pattern:
+1
+2  3
+3  4  5 
+4  5  6  7
+5  6  7  8  9
+*/
+
+#include<stdio.h>
+int main ()
+{
+  int n, i, j, k;
+  printf ("\nEnter the total number of lines: ");
+  scanf ("%d", &n);
+  for (i=1; i<=n; i++) //outer loop i => maintains line no.
+  {
+    k = i; /*starts line with value = current line no.,
+                starting of line (k) = line no. (i)*/
+    printf ("\n");
+    for (j=1; j<=i; j++) //nested loop j => nos. in each line
+    {
+      printf (" %d ",k); //placed 1 bar space after each no.
+      k++;
+    }
+  }
+  return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea17">
+/*Write a program in C to print the following pattern:
+1
+1  2
+1  2  3
+1  2  3  4
+1  2  3  4  5
+*/
+
+#include<stdio.h>
+int main ()
+{
+  int n, i, j;
+  printf ("\nEnter the total number of lines: ");
+  scanf ("%d", &n);
+  for (i=1; i<=n; i++) //outer loop i => maintains line no.
+  {
+    printf ("\n");
+    for (j=1; j<=i; j++) //inner loop j => nos. in each line
+    {
+      printf (" %d ",j); //1 bar space
+    }
+  }
+  return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea18">
+/*Write a program in C to print the following pattern:
+            1
+          1  2
+      1  2  3
+    1  2  3  4
+1  2  3  4  5
+*/
+
+#include<stdio.h>
+int main ()
+{
+int n, i, j, k;
+printf ("\nEnter the total number of lines: ");
+scanf ("%d", &n);
+for (i=1; i<=n; i++) //outer for loop i => maintains line no.
+{
+printf ("\n");
+for (j=1; j<=n-i; j++) //inner for loop j => nos. in each line
+{
+  printf ("  "); //placed 2 bar space after each no.
+}
+for (k=1; k<=i; k++)
+printf ("%d ", k);//
+}
+return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea19">
+  /*Write a program in C to print the following pattern:
+            1
+          1  2  1
+      1  2  3  2  1
+    1  2  3  4  3  2  1
+1  2  3  4  5  4  3  2  1
+*/
+
+#include<stdio.h>
+int main ()
+{
+int n, i, j, k, l;
+printf ("\nEnter the total number of lines: ");
+scanf ("%d", &n);
+for (i=1; i<=n; i++) //outer loop i => maintains line no.
+{
+printf ("\n");
+for (j=1; j<=n-i; j++) //inner loop j => nos. in each line
+{
+printf ("  "); //placed 2 bar space after each no.
+}
+for (k=1; k<=i; k++)
+printf ("%d ", k);
+/*Till here left side of the pattern will be printed*/
+for (l=i-1; l>=1;l--) //prints the right half of the pattern
+printf ("%d ", l); 
+}
+return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea20">
+/*WAP in C to raise one number to the power of another*/
+
+#include<stdio.h>
+#include<math.h>
+int main ()
+{
+  int b, p ,r;
+  printf ("\nEnter the base value: ");
+  scanf ("%d", &b);
+  printf ("\nEnter the power value: ");
+  scanf ("%d", &p);
+  r = pow (b, p); //must include math.h header file
+  printf("\nThe result of %d ^ %d = %d", b, p, r);
+  return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea21">
+/*WAP in C to print the following series and its sum*/
+//Series: 1+2^2+3^3+4^4+5^5+_ _ _ _n^n = sum
+
+#include<stdio.h>
+#include<math.h>
+int main ()
+{
+  int n, i;
+  unsigned long long int sum = 0; //larger data type than int
+  printf ("\nEnter the limit or last digit (only base) of series: ");
+  scanf ("%d", &n);
+  for (i=1; i<=n; i++)
+  {
+    sum = sum + (unsigned long long int) pow(i, i);
+  }
+  printf ("\n1");
+  for (i=2; i<=n; i++) //for continuing series after '1 + 2'
+  {
+    printf (" + %d ^ %d", i, i);
+  }
+  printf(" = %llu", sum);
+  return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea22">
+/*Write a program in C to print the following series's sum*/
+//Series: 1+2^2+3^3+4^4+5^5+_ _ _ _n^n = sum
+
+#include<stdio.h>
+#include<math.h>
+int main ()
+{
+  int n, i;
+  unsigned long long int sum = 0; //larger data type than int
+  printf ("\nEnter the limit or last digit (only base) of series: ");
+  scanf ("%d", &n);
+  for (i=1; i<=n; i++)
+  {
+    sum = sum + (unsigned long long int) pow(i, i);
+  }
+  printf("\nThe sum of the series = %llu", sum);
+  return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea23">
+/*WAP in C to print the following series and its sum*/
+//Series: 1+2+3^2+4^3+5^4+_ _ _ _n^n-1 = sum
+
+#include<stdio.h>
+#include<math.h>
+int main ()
+{
+  int n, i;
+  unsigned long long int sum = 0; // use a larger data type than int
+  printf ("\nEnter the limit or last digit (only base) of series: ");
+  scanf ("%d", &n);
+  for (i=1; i<=n; i++)
+  {
+    sum = sum + (unsigned long long int) pow(i, i-1); 
+  }
+  printf ("\n1 + 2");
+  for (i=3; i<=n; i++) //for continuing series after '1 + 2'
+  {
+    printf (" + %d ^ %d", i, i-1);
+  }
+  printf(" = %llu", sum);
+  return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea24">
+/*Write a program in C to check a number is prime or not*/
+//Used tenary conditional operator in C for if else
+
+#include<stdio.h>
+int main ()
+{
+  int n, i, q=0; //q is used as a flag
+  printf ("\nEnter the number: ");
+  scanf ("%d", &n);
+  for (i=2; i<n; i++)
+  if (n%i==0) //prime no. is !divisble by any other than 1 and itself
+  {
+    q = 1;
+    break; //once condition true, break will act to come oyt of loop
+  }
+  q == 0 ? printf ("\n%d is prime number", n) :
+    printf ("\n%d not a is prime number", n);
+    /*syntax for tenary: condition ? if (if condition true) :
+        else (if condition is false)*/
+  return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea25">
+/*Write a program in C to print the following series's sum*/
+// Series: 1+(2/1!)+(3/2!)+(4/3!)+_ _ _ _(n/n-1!)=sum
+
+#include<stdio.h>
+int main ()
+{
+	int n, i, j, fact;
+	float term, sum=1.0;
+	printf ("\nEnter the limit or last digit (only numberator's') of series: ");
+	scanf ("%d", &n);
+	for (i=2; i<=n; i++)
+	{
+		fact = 1; //intialising fact here gives correct output
+		for (j=1; j<i; j++)
+		{
+			fact = fact * j;
+		}
+		term = (float) i / fact; //if we put (i / fact) it gives wrong output
+		sum = sum + term;
+	}
+	printf ("The sum of the series: %f", sum);
+	return 0;
+}
+</textarea>
+<textarea class="text-code-hide" id="codeTextarea26">
+/*WAP in C to add two integers using a user defined function*/
+
+#include<stdio.h>
+int Add(int, int); //prtotype declration
+int main ()
+{
+  int a, b, c; //q is used as a flag
+  printf ("\nEnter two numbers to add: ");
+  scanf ("%d %d", &a, &b);
+  c = Add(a, b); //function calling
+  printf ("\nThe result of %d + %d = %d", a, b, c);
+  return 0;
+}
+int Add(int x, int y) //function with parameters, a => x, b => y
+{
+  int z;
+  z = x + y;
+  return printf ("\nUsing Add() function"), z;
+}
+</textarea>
+ 
+<script src="script/index.js"></script>
+</body>
+</html>

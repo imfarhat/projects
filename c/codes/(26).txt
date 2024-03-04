@@ -1,0 +1,19 @@
+/*WAP in C to add two integers using a user defined function*/
+
+#include<stdio.h>
+int Add(int, int); //prtotype declration
+int main ()
+{
+  int a, b, c; //q is used as a flag
+  printf ("\nEnter two numbers to add: ");
+  scanf ("%d %d", &a, &b);
+  c = Add(a, b); //function calling
+  printf ("\nThe result of %d + %d = %d", a, b, c);
+  return 0;
+}
+int Add(int x, int y) //function with parameters, a => x, b => y
+{
+  int z;
+  z = x + y;
+  return printf ("\nUsing Add() function"), z;
+}

@@ -1,0 +1,21 @@
+/*WAP in C to print the following series and its sum*/
+//Print Series & Sum: '1+3+5+7+....n = sum'
+
+#include<stdio.h>
+int main ()
+{
+	int n, i, sum=0;
+	printf ("\nEnter the limit of the series: ");
+	scanf ("%d", &n); 
+	for (i=1; i<n; i+=2) //for calculating sum till last second digit
+	{
+		sum = sum +i; // sum = '1+3+5+7+.....+ last second digit'
+	}
+	sum = sum + n; //now sum = '1+3+5+7+.....last second digit + n'
+	for (i=1; i<n; i+=2) //printing '+1+3+5+7+.......last second digit +'
+	{
+		printf ("%d + ", i);
+	}
+	printf ("%d = %d", n, sum); //printing 'n = sum', n is last digit
+	return 0;
+}

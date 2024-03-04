@@ -1,0 +1,230 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Sofia", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+}
+body {
+  background: linear-gradient(to right bottom, #bfdbf7, #00a6fb);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+.control-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+.control-panel a {
+  text-decoration: none;
+}
+button {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0 0.5rem;
+  cursor: pointer;
+  background: linear-gradient(90deg,#bfdbf7,white);
+  border: 0.125rem solid;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+  transition: scale 0.3s ease-in-out;
+}
+button:hover {
+  background: linear-gradient(90deg,#00a6fb80,#bfdbf780);
+}
+button:active {
+  scale: 0.95;
+  background: linear-gradient(90deg,#00a6fb80,#bfdbf780);
+}
+.theme-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: sticky;
+  position: -webkit-sticky; /* Safari */
+  margin: 0.25rem 0.25rem -1.5rem 0;
+}
+.theme-btn {
+  border-radius: 50%;
+  padding: 0.5rem;
+  height: 2.75rem;
+  width: 2.75rem;
+  border-color: white;
+  box-shadow: 0.15rem 0.15rem 0.15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0.35rem;
+  right: 0.35rem;
+}
+.theme-btn i {
+  font-size: 1.6rem;
+}
+.scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 0.35rem;
+  right: 0.35rem;
+  border-radius: 50%;
+  transition: background-color 0.3s ease-in-out;
+}
+.scroll-to-top button {
+  padding: 0.35rem 0.5rem 0.35rem 0.5rem;
+  border-radius: 0.5rem 0;
+  border-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0.15rem 0.15rem 0.15rem;
+}
+.scroll-to-top button i {
+  font-size: 1.5rem;
+}
+.code-img img, .output-img img {
+  max-width: calc(100%);
+  height: auto;
+  border-radius: 1.5rem;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.output-img img {
+  max-width: calc(70%);
+  margin-top: -1.5rem;
+}
+.code-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem 1rem 1rem;
+}
+.output-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:0 0.25rem;
+}
+.js-output-img-hide, .js-code-hide, .js-dark-code-hide, .text-code-hide {
+  display: none;
+}
+
+ /*Footer*/
+.foot-panel-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.disclaimer {
+  font-size: 0.65rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: italic;
+  text-align: center;
+  margin: 2rem 0 0.5rem 0;  
+}
+.foot-panel3 {
+  color: white;
+  /*  border-top: 0.1rem solid white;*/
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: linear-gradient(#cae9ffd9 , #cae9ffd9 );
+  border-radius: 1rem 1rem 0 0;
+}
+.foot-panel3 a {
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.foot-panel3 i {
+  font-size: 1.75rem;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 50%;
+  transition: all 250ms linear;
+  color: #2b2d42;
+  font-weight: 500;
+}
+.foot-panel3 i:hover {
+  background-color: white;
+  padding: 0.65rem;
+  border-radius: 50%;
+}
+.logo-end {
+  height:5rem;
+  width: 5rem;
+  background-image:url(https://farhateservices.github.io/fesa/logo-head-black.png);
+  /*  margin-left: 5px;*/
+  background-size: contain;
+  font-weight: bolder;
+  border-radius: 50%;
+}
+.logo-end-hr {
+  color: white;
+  display: none;
+}
+.logo-end:hover {
+  background-color: white;
+  background-image:url(https://farhateservices.github.io/fesa/images/WEb\ Dev.gif);
+  border: 1.5px solid white;
+  box-sizing: border-box;
+}
+.copyright,.copyright a {
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  background-color: #cae9ff;
+  padding: 0.25rem;
+}
+@media screen and (max-width:538px) {
+  .control-panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+  }
+  button {
+    padding: 0.12rem 0.25rem;
+    border-radius: 0 0.5rem;
+    font-size: 0.75rem;
+  }
+  .code-img img, .output-img img {
+    border-radius: 0.5rem;
+  }
+  .code-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem 0.5rem 1rem;
+  }
+  .output-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0 0.25rem;
+  }
+  .js-output-img-hide, .js-code-hide, .js-dark-code-hide, .text-code-hide {
+    display: none;
+  }
+  .theme-btn {
+  padding: 0.25rem;
+  height: 2.65rem;
+  width: 2.65rem;
+}
+.theme-btn i {
+  font-size: 1.45rem;
+}
+}

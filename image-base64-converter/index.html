@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="https://raw.githubusercontent.com/farhateservices/fesa/main/logo-head-white.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/png" href="images/tab-top.PNG">
+  <title>Image - Base64 Converter</title>
+  <link rel="stylesheet" href="./output.css">
+</head>
+<body class="bg-blue-100 p-4 flex flex-col items-center justify-center">
+  <h1 class="p-4 font-semibold text-center text-base md:text-lg flex flex-wrap items-center justify-center gap-1">Image File <span class="hidden text-xs md:flex">(jpg, jpeg, png, gif)</span> <i class="fa-solid fa-arrow-right-arrow-left mx-2"></i> Base64 Code</h1>
+  <form action="#" name="form" id="form" class="p-6 w-full grid grid-cols-1 max-w-4xl items-center justify-center gap-4">
+
+    <div id="message" class="p-4 w-full flex flex-wrap items-center justify-start bg-white rounded-md gap-2">
+      <span id="message-title" class="font-semibold text-sm md:text-base">Progress :</span>
+      <li id="log-0" class="list-none text-sm md:text-base hidden">Loading logs... </li>
+    </div>
+
+    <div class="w-full flex flex-wrap items-center justify-center bg-white rounded-md select-none overflow-hidden">
+      <label for="input-file" class="font-semibold flex gap-2 items-center justify-center p-4 pt-6 text-sm md:text-base cursor-pointer w-full hover:bg-blue-50 active:bg-blue-200">Convert Image <i class="fa-solid fa-shuffle"></i> Base64 Code</label>
+      <input id="input-file" accept="image/png, image/gif, image/jpeg" class="flex gap-2 items-center justify-center p-4 pb-6 text-sm md:text-base cursor-pointer w-full hover:bg-blue-50 active:bg-blue-200" type="file"></input>
+    </div>
+    <div id="img-preview-div" class="p-4 rounded-md hidden bg-white flex flex-col items-center justify-center gap-2">
+      <h1 id="selected-file-name" lass="p-4 text-center w-full"></h1>
+      <img id="img-preview" src="" alt="Previewing selected file" class="bg-white rounded max-w-52 w-full">
+    </div>
+
+    <div id="output-b64-div" class="p-4 bg-white rounded-t-md flex items-center justify-between hidden cursor-pointer hover:bg-blue-200 active:bg-blue-300 select-none">
+      <h1 id="copy-b64-message" class="font-semibold">Copy Base64 Code <i class="fa-solid fa-clipboard text-xl pl-2"></i></h1>
+      <img id="output-b64-tick-img" src="https://storage.needpix.com/rsynced_images/check-mark-2180770_1280.png" alt="Base64 Code Copied" class="h-6 hidden animate-pulse">
+    </div>
+
+    <div>
+      <textarea name="base64" id="base64-snippet" rows="8" class="w-full rounded-b-md bg-blue-50 -mt-4 p-4 hidden overflow-x-hidden focus:outline-none focus:bg-white focus:border-t-2 transition">Loading base64 code...</textarea>
+    </div> 
+
+    <div id="gen-img-f-b64-div" class="p-4 bg-white rounded-t-md flex items-center justify-between gap-2 cursor-pointer hover:bg-blue-200 active:bg-blue-300 select-none text-sm md:text-base">
+      <h1 id="gen-img-f-gen-b64" class="font-semibold flex items-center justify-center gap-2 w-full">Convert Base64 <i class="fa-solid fa-shuffle"></i> Image File</h1>
+      <img id="gen-img-f-gen-b64-tick-img" src="https://storage.needpix.com/rsynced_images/check-mark-2180770_1280.png" alt="Base64 Code Copied" class="h-6 hidden animate-pulse">
+    </div>
+
+    <div>
+      <textarea rows="8" name="input-base64" id="input-base64" placeholder="Paste base64 code of image file here...&#10;Base64 code without URI prefix: 'data:image/png;base64'" class="w-full rounded-b-md bg-blue-50 -mt-4 p-4 focus:outline-none focus:bg-white focus:border-t-2 overflow-x-hidden transition"></textarea>
+    </div>
+
+    <a id="output-d-file" href="#" download="#" class="flex flex-col items-center justify-center gap-2 font-semibold bg-white rounded-md p-4 hidden w-full group">
+      <div class="flex flex-col items-center justify-center p-2 rounded-md transition w-full select-none">
+        <h1 class="p-0.5 pb-2 text-sm md:text-base w-full text-center">Regenerated Image File</h1>
+        <img id="output-f-src" src="" alt="Regenerated Image from Base64" class="max-w-96 w-full rounded">  
+      </div>
+    </a> 
+    <!-- 
+    <a id="output-d-file" href="" download class="flex flex-col items-center justify-center gap-2 font-semibold bg-white rounded-md p-6 hidden w-full group">
+      <img id="output-f-src" src="" alt="Regenerated Image from Base64" class="max-w-96 pb-2 w-full rounded">
+      <div class="flex flex-wrap items-center justify-center p-2 rounded-md group-hover:bg-blue-200 group-active:bg-blue-300 transition w-full select-none">
+        <img src="https://cdn-icons-png.flaticon.com/128/7268/7268609.png" alt="Download" class="h-6 md:h-7 p-1.5">
+        <h1 class="p-0.5 text-sm md:text-base">Regenerated File</h1>
+      </div>
+    </a>  
+    -->
+    <details id="log-history" class="relative rounded-md bg-white p-4">
+    <summary class="font-semibold transition-all rounded-md pb-2 text-sm md:text-base cursor-pointer select-none">Detailed Log History</summary>
+    <button onclick="clearLogs();" id="clear-logs-btn" class="absolute top-2 right-2 bg-red-500 text-white py-1 px-2 md:px-3 z-10 text-sm md:text-balance rounded">Clear <span class="hidden md:inline-block">logs</span>
+    </button>
+    </details>
+
+  </form>
+
+  <footer class="flex items-center flex-col justify-center">
+    <div id="copyright" class="max-w-2xl flex items-center flex-col justify-center md:flex-row md:justify-between p-2 px-6 gap-x-4 bg-blue-100 text-sm"><span class="hidden md:flex">&copy; 2024 File Reader by I. Farhat. All rights reserved. </span><a href="https://farhateservices.github.io/fesa/" target="_blank"><span class="flex flex-row gap-1 items-center justify-center"><span class="hidden md:flex">Powered by</span> <img src="https://farhateservices.github.io/fesa/logo-head-black.png" alt="Farhat e Services & Assistance" loading="lazy" class="h-5 filter bg-blend-multiply">Farhat e Services & Assistance</span></a></div>
+  </footer>
+  <script src="./index.js"></script>
+</body>
+</html>
