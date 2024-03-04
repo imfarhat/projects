@@ -1,1 +1,0 @@
-import{loadNewsMediaData}from"../utility/content-fetch.js";document.addEventListener("DOMContentLoaded",()=>{try{loadNewsMediaData()}catch(e){console.error("An error occurred:",e)}});

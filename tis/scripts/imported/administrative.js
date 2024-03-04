@@ -1,1 +1,0 @@
-import{loadAdministrativeTeamData}from"../utility/content-fetch.js";document.addEventListener("DOMContentLoaded",()=>{try{loadAdministrativeTeamData()}catch(t){console.error("An error occurred:",t)}});

@@ -1,1 +1,0 @@
-import{loadSportsDivData}from"../utility/content-fetch.js";document.addEventListener("DOMContentLoaded",()=>{try{loadSportsDivData()}catch(t){console.error("An error occurred:",t)}});
