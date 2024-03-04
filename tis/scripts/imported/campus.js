@@ -1,1 +1,0 @@
-import{loadCampusDivData}from"../utility/content-fetch.js";document.addEventListener("DOMContentLoaded",()=>{try{loadCampusDivData()}catch(t){console.error("An error occurred:",t)}});

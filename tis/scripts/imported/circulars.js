@@ -1,1 +1,0 @@
-import{loadCircularsImgPdfData}from"../utility/content-fetch.js";document.addEventListener("DOMContentLoaded",()=>{try{loadCircularsImgPdfData()}catch(r){console.error("An error occurred:",r)}});
